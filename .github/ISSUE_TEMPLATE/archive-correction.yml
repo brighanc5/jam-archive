@@ -1,0 +1,41 @@
+name: Archive correction or recording pointer
+description: Propose a source-backed show, recording, or musician relationship correction
+title: "[Archive correction] "
+labels: [research, needs-review]
+body:
+  - type: markdown
+    attributes:
+      value: "Please cite an original source. No copyrighted audio uploads, private contact details, or unsupported surprise-guest predictions."
+  - type: input
+    id: artist
+    attributes:
+      label: Artist or project
+      placeholder: "The Allman Brothers Band"
+    validations:
+      required: true
+  - type: input
+    id: performance
+    attributes:
+      label: Concert date and venue (if applicable)
+      placeholder: "1971-03-12, Fillmore East, late set"
+  - type: dropdown
+    id: type
+    attributes:
+      label: Correction type
+      options: ["Show date / venue / set", "Recording source / lineage", "Setlist excerpt", "Guest musician / band membership", "Broken link", "Artist alias", "Other"]
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Original source URL
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What should change and why?
+      description: "Distinguish facts from uncertainty. Note taper credits and rights restrictions where relevant."
+    validations:
+      required: true

@@ -1,0 +1,13 @@
+{
+  "notes": "Research targets are opt-in and explicitly selected. No all-artist scraping. Do not use protected sources without approval.",
+  "primary": [
+    {"name": "Internet Archive Live Music Archive", "adapter": "internet-archive", "status": "enabled_noncommercial_research", "terms": "https://archivesupport.zendesk.com/hc/en-us/articles/360016553532-Live-Music-Archive-etree-org", "default_limit_per_artist": 10},
+    {"name": "Ticketmaster Discovery API", "adapter": "ticketmaster", "status": "optional_key_and_terms_review", "docs": "https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/"},
+    {"name": "MusicBrainz", "adapter": "musicbrainz", "status": "identity_enrichment_next", "notes": "Noncommercial API; one request per second and meaningful User-Agent"}
+  ],
+  "restricted_not_enabled": [
+    {"name": "Bandsintown", "reason": "API primarily limited to artists and authorized teams"},
+    {"name": "Setlist.fm", "reason": "Specific API terms and restrictions on building competing services and long-lived caches; assess permissions before use"},
+    {"name": "Official fan archives", "reason": "Link out until curator collaboration or explicit ingest permission is agreed"}
+  ]
+}

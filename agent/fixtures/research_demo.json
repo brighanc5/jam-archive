@@ -1,0 +1,17 @@
+[
+  {
+    "candidate_type":"recording", "provider":"synthetic-example", "external_id":"example-cornell-tape-001", "artist_id":"grateful-dead",
+    "title":"DEMO ONLY: additional audience tape", "observed_date":"1977-05-08", "source_url":"https://archive.org/details/etree",
+    "raw_creator":["Grateful Dead"],"source_kind":"synthetic API observation"
+  },
+  {
+    "candidate_type":"recording", "provider":"synthetic-example", "external_id":"example-fillmore-001", "artist_id":"the-allman-brothers-band",
+    "title":"DEMO ONLY: Fillmore source with unresolved early/late performance", "observed_date":"1971-03-12", "source_url":"https://allmanbrothersband.com/shows/",
+    "raw_creator":["The Allman Brothers Band"],"source_kind":"synthetic API observation"
+  },
+  {
+    "candidate_type":"event", "provider":"synthetic-example", "external_id":"example-new-date-001", "artist_id":"goose",
+    "title":"DEMO ONLY: unannounced placeholder event", "observed_date":"2027-02-11", "venue":"Placeholder Theatre",
+    "source_url":"https://www.goosetheband.com/","source_kind":"synthetic ticketing observation"
+  }
+]

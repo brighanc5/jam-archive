@@ -1,0 +1,60 @@
+"""Small hand-curated source-linked v0.3 history seed. Excerpts are not full setlists.
+Recordings are external pointers only. A recording link is not a license to rehost.
+"""
+H=[]
+def show(id,artist,date,venue,city,region,source,highlight,songs,slot='',notes=''):
+ H.append(dict(id=id,artist=artist,date=date,venue=venue,city=city,region=region,source_url=source,
+  highlight=highlight,songs=songs,slot=slot,notes=notes,verification='source_linked',
+  data_checked='2026-10-26',setlist_scope='Selected songs; not the complete setlist'))
+abb='The Allman Brothers Band'
+show('abb-1971-03-12-early',abb,'1971-03-12','Fillmore East','New York','NY','https://allmanbrothersband.com/event/abb19710312/',
+ 'Fillmore East early show; one of several distinct performances recorded during the run.',
+ ['Statesboro Blues','Trouble No More',"Don’t Keep Me Wonderin’",'In Memory of Elizabeth Reed','You Don’t Love Me'],'Early show', 'The official database lists separate early and late shows; approximate times are not authoritative.')
+show('abb-1971-03-12-late',abb,'1971-03-12','Fillmore East','New York','NY','https://allmanbrothersband.com/event/abb19710312a/',
+ 'Late show from the celebrated Fillmore East recording run.',
+ ['Statesboro Blues','Trouble No More','In Memory of Elizabeth Reed','Whipping Post',"Hot ’Lanta"],'Late show','Official recording compilation documents selections from this performance.')
+show('abb-1971-03-13-early',abb,'1971-03-13','Fillmore East','New York','NY','https://allmanbrothersband.com/event/abb19710313/',
+ 'First of two separately indexed Allman Brothers performances this evening.',
+ ['Statesboro Blues','Trouble No More','In Memory of Elizabeth Reed','You Don’t Love Me','Whipping Post'],'Early show')
+show('abb-1971-03-13-late',abb,'1971-03-13','Fillmore East','New York','NY','https://allmanbrothersband.com/event/abb19710313a/',
+ 'The late performance includes Mountain Jam and a guest appearance by Elvin Bishop.',
+ ['Statesboro Blues','One Way Out','Stormy Monday','Whipping Post','Mountain Jam','Drunken Hearted Boy'],'Late show')
+show('abb-1971-06-27',abb,'1971-06-27','Fillmore East','New York','NY','https://allmanbrothersband.com/event/abb19710627/',
+ 'Fillmore East closing concert, represented on an official archival release.',
+ ['Statesboro Blues','One Way Out','Midnight Rider','Whipping Post','You Don’t Love Me'],'Closing night')
+show('abb-2014-10-28',abb,'2014-10-28','Beacon Theatre','New York','NY','https://allmanbrothersband.com/event/abb20141028/',
+ 'The Allman Brothers Band final concert, with an authorized official recording.',
+ ['Little Martha','Mountain Jam','Blue Sky','Melissa','In Memory of Elizabeth Reed','Whipping Post'],'Final concert')
+show('gd-1977-05-08','Grateful Dead','1977-05-08','Barton Hall, Cornell University','Ithaca','NY','https://www.gdao.org/items/show/10788',
+ 'A landmark Dead show with multiple independently documented circulating tape sources.',
+ ['Jack Straw','Dancin’ in the Streets','Scarlet Begonias','Fire on the Mountain','Morning Dew'],'Cornell 1977', 'Multiple source versions exist for this single performance. Tape lineage is not a measure of objective audio quality.')
+show('phish-1995-12-31','Phish','1995-12-31','Madison Square Garden','New York','NY','https://phish.net/setlists/phish-december-31-1995-madison-square-garden-new-york-ny-usa.html',
+ 'Three-set New Year’s Eve show, available as an official release.',
+ ['Punch You in the Eye','Reba','Drowned','Mike’s Song','Weekapaug Groove','You Enjoy Myself'],'NYE 1995')
+show('phish-2015-08-22','Phish','2015-08-22','Watkins Glen International','Watkins Glen','NY','https://phish.net/setlists/phish-august-22-2015-watkins-glen-international-watkins-glen-ny-usa.html',
+ 'Magnaball festival date notable for the Drive-In Jam.',
+ ['Divided Sky',"Wolfman’s Brother",'Tweezer','Prince Caspian','Cities','Drive-In Jam'],'Magnaball')
+
+R=[]
+def recording(id,show_id,title,kind,url,provider,details,access='Link to external source'):
+ R.append(dict(id=id,show_id=show_id,title=title,kind=kind,source_url=url,provider=provider,
+  description=details,access=access,source_verified='page_link_checked_2026-10-26'))
+abb_release='https://allmanbrothersband.com/discography/the-1971-fillmore-east-recordings/'
+for sid,disc in [('abb-1971-03-12-late','Disc 2'),('abb-1971-03-13-early','Disc 3'),('abb-1971-03-13-late','Discs 4–5'),('abb-1971-06-27','Disc 6')]:
+ recording('abb-1971-box-'+sid,sid,'The 1971 Fillmore East Recordings · '+disc,'Official archival release',abb_release,
+ 'The Allman Brothers Band official discography','An authorized commercial release; not freely downloadable from this site.')
+recording('abb-final-2014','abb-2014-10-28','Final Concert 10-28-14','Official archival release',
+ 'https://allmanbrothersband.com/event/abb20141028/','Allman Brothers official archive',
+ 'The official show page links the 2014 final performance to an archival release.','Authorized commercial release link.')
+recording('gd-cornell-1977-aud','gd-1977-05-08','Audience master source · Moore / Berger','Audience recording',
+ 'https://www.gdao.org/items/show/108289','Grateful Dead Archive Online',
+ 'Documents an audience tape source and its transfer notes.','External archival recording page; provider policies apply.')
+recording('gd-cornell-1977-sbd','gd-1977-05-08','Betty Board source · soundboard / audience patches','Soundboard-derived recording',
+ 'https://www.gdao.org/items/show/332929','Grateful Dead Archive Online',
+ 'Soundboard-derived source with documented transfer and patches.','External archival recording page; provider policies apply.')
+recording('gd-cornell-1977-mtx','gd-1977-05-08','Hunter’s Trix Vol. 40 · matrix','Matrix recording',
+ 'https://hunterstrix.com/releases/volume-40/','Hunter’s Trix',
+ 'A documented matrix combining soundboard and audience sources; linked page credits recordists and transfers.','External research/release page; provider policies apply.')
+recording('phish-nye-1995','phish-1995-12-31','New Year’s Eve 1995','Official archival release',
+ 'https://www.livephish.com/LP-387.html','LivePhish',
+ 'Artist-authorized release of the December 31, 1995 MSG performance.','Subscription or purchase may be required.')

@@ -1,0 +1,11 @@
+{
+  // Must exactly match the existing Cloudflare Worker name.
+  "name": "odd-king-7e31",
+  "compatibility_date": "2026-10-26",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./site",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

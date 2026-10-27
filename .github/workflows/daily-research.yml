@@ -1,0 +1,30 @@
+name: Review-only metadata research
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect source metadata, never auto-publish
+        env:
+          CONTACT: ${{ secrets.JAM_ARCHIVE_CONTACT }}
+        run: |
+          if [ -z "$CONTACT" ]; then
+            echo 'Set repository secret JAM_ARCHIVE_CONTACT before running this workflow.' >&2
+            exit 1
+          fi
+          python3 research_agent.py sync --artists grateful-dead goose the-allman-brothers-band --limit 10 --contact "$CONTACT"
+      - name: Export research-only review queue
+        run: python3 research_agent.py export
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pending-research-review
+          path: research_queue.json
+          retention-days: 30

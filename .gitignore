@@ -1,0 +1,19 @@
+# Generated or local-only data; recreate with scripts/build_public.sh
+site/
+index.html
+standalone_preview.html
+catalog.json
+jam_archive.sqlite
+research.sqlite*
+research_queue.json
+review_inbox/
+submissions/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+.dev.vars*
+node_modules/
+.wrangler/
+.DS_Store
+*.zip
