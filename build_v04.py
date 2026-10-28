@@ -14,18 +14,10 @@ q=ROOT/'research_queue.json'
 research=json.loads(q.read_text()) if q.exists() else {'version':1,'generated_at':None,'items':[],
   'summary':{'pending':0,'approved':0,'rejected':0,'demo':0}}
 cat['research']=research
-approved=[]
-show_ids={s['id'] for s in cat['historical_shows']}
-for x in research['items']:
- if x['status']!='approved' or x['demo'] or x['candidate_type']!='recording':continue
- if x['proposed_show_id'] not in show_ids:continue
- rid='agent-'+x['id']
- if any(r['id']==rid for r in cat['recording_sources']):continue
- approved.append({'id':rid,'show_id':x['proposed_show_id'],
-   'title':x['title'],'kind':'Externally indexed recording · reviewed link',
-   'source_url':x['source_url'],'provider':x['provider'],
-   'description':'Manually matched by archive reviewer. Review note: '+(x.get('review_note') or '')[:300],
-   'access':'External link only; artist rules apply','source_verified':'editorially_approved_'+str(x.get('reviewed_at') or '')[:10]})
+# Only version-controlled, explicitly reviewed pointers may become public facts.
+# The local/CI research queue is an inbox, NEVER a publication source.
+from approved_recordings import load as load_approved
+approved=load_approved(cat['historical_shows'], cat['recording_sources'])
 cat['recording_sources'].extend(approved)
 cat['about'].update(version='0.4 / source-first research agent',
  disclaimer='Original v0.3 shows and tours are dated snapshots. New source observations remain unverified until manually reviewed. Demo queue entries are synthetic, never show/tour claims. No agent is running continuously in this local file.')

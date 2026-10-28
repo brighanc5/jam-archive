@@ -9,6 +9,8 @@ if not re.fullmatch(r'https://[A-Za-z0-9.-]+(?::\d+)?',origin):
     raise SystemExit('Set JAM_ARCHIVE_ORIGIN to your actual verified HTTPS site origin')
 subprocess.run([sys.executable,str(root/'build_v06.py')],cwd=root,check=True)
 site=root/'site'
+# Explicit static security policy, rebuilt every time; no backend or third-party script dependencies.
+(site/'_headers').write_text((root/'security_headers.txt').read_text(encoding='utf-8'), encoding='utf-8')
 # The v0.6 builder handles canonical links for the generated profiles, songs and concert dossiers.
 # Add them to custom pages and the homepage; avoid duplicate canonical links.
 for rel, canonical in [('index.html','/'),('about/index.html','/about/'),('contribute/index.html','/contribute/')]:

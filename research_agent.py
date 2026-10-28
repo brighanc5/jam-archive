@@ -92,7 +92,7 @@ def ingest(db,cat,record):
     if record.get('reason_override'): reason=record['reason_override']
     cid=hashlib.sha256(f'{provider}\x1f{ext}\x1f{ent["id"]}\x1f{typ}'.encode()).hexdigest()[:18]
     now=iso_now()
-    payload={k:record.get(k) for k in ('raw_creator','raw_date','artist_evidence','source_kind','artist_match','source_excerpt') if k in record}
+    payload={k:record.get(k) for k in ('raw_creator','raw_date','artist_evidence','source_kind','artist_match','source_excerpt','creator_match') if k in record}
     db.execute('''INSERT INTO candidate(id,candidate_type,provider,external_id,artist_id,artist,
         title,observed_date,venue,source_url,proposed_show_id,status,reason,evidence_json,demo,
         first_seen,last_seen)
@@ -248,7 +248,7 @@ def do_review(args):
             db.execute('UPDATE candidate SET status=?,proposed_show_id=COALESCE(?,proposed_show_id),review_note=?,reviewed_at=? WHERE id=?',
                        ('approved' if args.verdict=='approve' else 'rejected',show,args.note,iso_now(),args.id))
         export(db,cat)
-        print('Review decision saved. Run python build_v04.py to update the offline dashboard.')
+        print('Review saved. To stage a real approved recording for public release, run: python3 scripts/stage_approved.py --id '+args.id)
 
 def main():
     p=argparse.ArgumentParser(description='Jam Archive source-first research agent')

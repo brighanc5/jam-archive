@@ -4,6 +4,20 @@
 
 **Live address:** https://odd-king-7e31.brighamhancock.workers.dev
 
+## v0.7 — Recording Explorer and reproducible source review
+
+The new [Recording Explorer](https://odd-king-7e31.brighamhancock.workers.dev/recordings/) groups the archive's documented source pages by performance, artist and recording type. It links to the original custodian and the concert dossier. **No audio is downloaded, copied or hosted.** The page starts with nine curated source references, and grows only after human review.
+
+`data/approved_recordings.json` is the sole tracked publication feed for additional source links. A local `research.sqlite` or `research_queue.json` is **never** automatically promoted into public content. To propose a new approved external Internet Archive link:
+
+1. Run the already configured, bounded manual source research or use `python3 research_agent.py sync --artists grateful-dead --limit 10 --contact 'your-public-project-contact@example.com'` (replace with a real contact; Internet Archive requests use this identification).
+2. Run `python3 research_agent.py review list` and inspect the original source itself, its musician/date and the exact performance slot.
+3. For an exact curated show, run `python3 research_agent.py review decision --id CANDIDATE_ID --verdict approve --show-id gd-1977-05-08 --note 'I checked the original archive page, performing artist, date and source notes.'` (substitute the actual candidate and show).
+4. Run `python3 scripts/stage_approved.py --id CANDIDATE_ID`. This checks the prior manual approval and stages the source link in `data/approved_recordings.json`. It does **not** commit or deploy anything.
+5. Run `bash scripts/build_public.sh`; inspect `site/recordings/index.html` and the related show page; review the changes to `data/approved_recordings.json` before committing to GitHub.
+
+Staging currently supports only exact-date/artist Internet Archive candidates attached to an existing curated show. Early/late ambiguity and unrecognized creators require more research, never automatic assignment. Other custodians' source links may be entered into the tracked JSON only after documented editorial review and schema validation. A linked Archive page is not proof of audio quality, rights, or complete provenance.
+
 ## First steps
 
 - [QUICK_START_MAC.md](QUICK_START_MAC.md): publish from GitHub Desktop or Terminal and connect the **existing** Cloudflare Worker.
