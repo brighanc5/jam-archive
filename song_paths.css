@@ -1,0 +1,38 @@
+/* The Jam Archive · Song Paths. Independent static page, no external assets. */
+.sp-hero{padding:30px 0 34px;border-bottom:1px solid var(--border)}
+.sp-hero h1{font-size:clamp(44px,7.5vw,83px);line-height:1.04;margin:17px 0 19px;letter-spacing:-.055em}
+.sp-hero h1 em{font-style:normal;color:var(--lime)}
+.sp-stats{display:flex;gap:11px;flex-wrap:wrap;margin:30px 0}
+.sp-stats>div{display:flex;flex-direction:column;min-width:156px;flex:1;background:#172824;border:1px solid #3b6153;padding:17px 21px;border-radius:13px}
+.sp-stats b{font:400 37px/1.1 Georgia,serif;color:var(--lime)}
+.sp-stats span{font-size:12px;color:var(--muted)}
+.sp-inline{display:flex;flex-wrap:wrap;gap:18px;font-size:13px;font-weight:800}
+.sp-filter{border:1px solid var(--border);background:#172724;padding:20px;border-radius:14px;margin:28px 0 18px}
+.sp-controls{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin:16px 0 7px;align-items:end}
+.sp-controls label{display:flex;flex-direction:column;gap:7px;font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.sp-controls input:not([type=checkbox]),.sp-controls select{background:#0c1918;color:var(--ink);font:14px system-ui;min-height:44px;border:1px solid #557267;border-radius:8px;padding:10px 12px;width:100%}
+.sp-controls input:focus-visible,.sp-controls select:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.sp-controls .sp-checkline{flex-direction:row;gap:10px;align-items:center;grid-column:1/-1;text-transform:none;letter-spacing:0;font-size:13px;font-weight:600;color:var(--ink)}
+.sp-checkline input{width:17px;height:17px;accent-color:var(--lime)}
+#sp-count{font-size:12px;color:var(--muted);margin:8px 0 0}
+.sp-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-bottom:34px}
+.sp-card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:19px 22px;min-width:0;position:relative;overflow:hidden}
+.sp-card:before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:#b4e17b}
+.sp-card-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;color:var(--muted);font-size:11px}
+.sp-badge{padding:4px 8px;border-radius:100px;background:#284a37;color:#d8f2ba;font-weight:750}
+.sp-card h2{font:400 27px/1.2 Georgia,serif;margin:18px 0 5px;letter-spacing:-.025em}
+.sp-artists{color:var(--muted);font-size:12px;margin:0 0 13px}
+.sp-card details{border-top:1px solid var(--border);padding-top:10px;margin-bottom:13px}
+.sp-card summary{cursor:pointer;color:var(--lime);font-size:13px;font-weight:750}
+.sp-card ol{list-style-position:outside;margin:12px 0 4px;padding-left:19px}
+.sp-card li{margin:8px 0;font-size:12px}
+.sp-card li a{font-weight:750}
+.sp-card li span{display:block;color:var(--muted);font-size:11px}
+.sp-related{font-size:12px;line-height:1.8;border-top:1px solid var(--border);padding:9px 0 10px}
+.sp-related b{display:block;color:var(--muted);font-weight:650}
+.sp-related a{white-space:normal}
+.sp-detail{display:inline-block;font-size:13px;font-weight:800;margin-top:10px}
+.sp-card[hidden],.sp-empty[hidden]{display:none}
+.sp-empty{padding:28px;border:1px dashed var(--border);border-radius:12px;color:var(--muted)}
+@media(max-width:800px){.sp-controls{grid-template-columns:1fr 1fr}.sp-controls>label:first-child{grid-column:1/-1}.sp-grid{grid-template-columns:1fr}}
+@media(max-width:420px){.sp-controls{grid-template-columns:1fr}.sp-controls>label:first-child{grid-column:auto}.sp-stats>div{min-width:110px}.sp-card{padding:18px}}

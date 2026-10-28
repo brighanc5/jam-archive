@@ -37,13 +37,19 @@ for html in site.rglob('*.html'):
 assert not missing, f'{len(missing)} broken local links: {missing[:12]}'
 ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
 urls=[t.text for t in ET.parse(site/'sitemap.xml').findall('s:url/s:loc',ns)]
-assert len(urls)==246, f'Unexpected number of sitemap routes: {len(urls)}'
+assert len(urls)==len(set(urls)), 'Duplicate sitemap entries'
+html_routes={origin + '/' + (str(path.parent.relative_to(site)).replace('\\', '/').strip('./').rstrip('/') + '/' if path.parent != site else '') for path in site.rglob('index.html')}
+assert set(urls)==html_routes, f'Sitemap does not exactly match the {len(html_routes)} public HTML routes: missing {list(html_routes-set(urls))[:3]}, extra {list(set(urls)-html_routes)[:3]}'
 assert all(url.startswith(origin+'/') for url in urls), 'Sitemap points at wrong origin'
 assert len(list((site/'artists').glob('*/index.html')))==196
-assert len(list((site/'shows').glob('*/index.html')))==9
+assert len(list((site/'shows').glob('*/index.html')))==25
+assert (site/'time-machine/index.html').is_file(), 'Missing Time Machine'
+assert (site/'song-paths/index.html').is_file(), 'Missing v0.9 Song Paths page'
+assert (site/'assets/song-paths.json').is_file(), 'Missing v0.9 Song Paths index'
+assert len(json.loads((site/'assets/song-paths.json').read_text())['songs']) == 53, 'Unexpected v0.9 Song Paths directory size'
 assert (site/'recordings/index.html').is_file(), 'Missing Recording Explorer'
 assert (site/'assets/recordings.json').is_file(), 'Missing public recordings metadata'
 assert len(json.loads((site/'assets/recordings.json').read_text())['items']) >= 9
-assert len(list((site/'songs').glob('*/index.html')))==32
+assert len(list((site/'songs').glob('*/index.html')))==len({x for h in json.loads((site/'assets/catalog.json').read_text())['historical_shows'] for x in h['songs']})
 assert 'Disallow: /' not in (site/'robots.txt').read_text()
 print(f'PUBLIC CHECK PASS: {len(urls)} URLs / {n} checked local HTML references / no private state')

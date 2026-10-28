@@ -99,7 +99,7 @@ tree.write(sitemap, encoding='unicode', xml_declaration=True)
 report_path = site / 'assets/build_report.json'
 report = json.loads(report_path.read_text(encoding='utf-8'))
 report.update(version='0.7', recording_references=len(rows), recording_explorer=True,
-              approved_recordings=len(rows)-9, site_files=sum(f.is_file() for f in site.rglob('*')))
+              approved_recordings=len(json.loads((ROOT / 'data/approved_recordings.json').read_text(encoding='utf-8'))['recordings']), site_files=sum(f.is_file() for f in site.rglob('*')))
 report_path.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
 print('v0.7 Recording Explorer:', len(rows), 'reviewed source links;',
-      len(rows)-9, 'additional approved links; one new indexed route')
+      'plus', len(json.loads((ROOT / 'data/approved_recordings.json').read_text(encoding='utf-8'))['recordings']), 'Git-reviewed supplemental links; one new indexed route')

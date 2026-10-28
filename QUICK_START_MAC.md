@@ -1,38 +1,18 @@
-# Start here: publish the archive from your Mac
+# Quick start on Mac — The Jam Archive v0.9
 
-This package contains an initialized **local Git repository** (`.git` is included), with **no remote and no GitHub credentials**. The main branch is `main`; the files have not yet been committed.
+**You already have a GitHub repository and an existing Cloudflare Worker. Do not make a new one.**
 
-## A. Easiest: GitHub Desktop
-
-1. Unzip this project. Move the extracted `jam-archive` folder somewhere permanent (for example, `~/Documents/Projects/jam-archive`), **not** into a temporary folder.
-2. Install and sign in to [GitHub Desktop](https://desktop.github.com/).
-3. **File → Add Local Repository**; choose the extracted `jam-archive` folder.
-4. On the **Changes** tab, write a commit message such as `Initial Jam Archive release`, then click **Commit to main**.
-5. Click **Publish repository**, use name `jam-archive`, and decide whether the repository should be public. Don't add a license until code/data rights have been reviewed.
-
-## B. Terminal alternative (without GitHub Desktop)
-
-1. On GitHub create a **new empty repository** called `jam-archive`: don't add README or license or .gitignore.
-2. Navigate to your extracted folder (type `cd ` then drag folder into Terminal).
-3. Run:
+1. Open GitHub Desktop → **Repository → Show in Finder** to find the **actual** repository folder. Its Finder name can be `jam-archive` or `jam-archive-2`.
+2. Make a Finder duplicate of the repository folder as a backup.
+3. Unzip **jam_archive_v09_COMPLETE_REPOSITORY.zip**, open the nested `jam-archive-v0.9` folder, reveal hidden files with **Command+Shift+Period**, and copy **all its contents** (including `.github`) into the real GitHub Desktop repository folder. Replace matching files. Do **not** replace `.git` (it is not in the ZIP).
+4. Open Terminal in that repository folder and run:
 
 ```bash
-git add .
-git commit -m "Initial Jam Archive release"
-git remote add origin https://github.com/YOUR_USERNAME/jam-archive.git
-git push -u origin main
+python3 scripts/doctor.py
+bash scripts/build_public.sh
 ```
 
-Replace YOUR_USERNAME with your actual GitHub username. Git CLI may require a browser/credential-manager login or personal access token. **Never put a password or access token in a chat or source file.**
+5. The doctor should confirm v0.9 and **37 tests**. The build should finish with **285 URLs** checked and a full-build pass.
+6. In GitHub Desktop review the changes, commit, and **Push origin**. Check the validation and the existing Cloudflare deployment.
 
-## C. Connect your existing Cloudflare Worker
-
-In Cloudflare, choose Workers & Pages → Worker `odd-king-7e31` → Settings → Builds → Connect → GitHub. Select your `jam-archive` repository and main branch, project root `/`.
-
-- Build: `bash scripts/build_public.sh`
-- Deploy: `npx -y wrangler@4 deploy`
-- Preview (optional): `npx -y wrangler@4 versions upload`
-
-This builds the **existing** Worker at `https://odd-king-7e31.brighamhancock.workers.dev`; don't create a replacement Worker. Cloudflare might prompt for an app authorization.
-
-See `GITHUB_TO_CLOUDFLARE.md` for troubleshooting and validation.
+Read [INSTALL_V09_MAC.md](INSTALL_V09_MAC.md) for troubleshooting and caveats, including why you might have seen only eight tests previously.

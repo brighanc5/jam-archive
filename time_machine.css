@@ -1,0 +1,43 @@
+/* The Jam Archive v0.8 · Time Machine — static, responsive, readable without JavaScript */
+.tm-head{padding:42px 0 30px;border-bottom:1px solid var(--border)}
+.tm-head h1{font-size:clamp(48px,8vw,92px);max-width:840px}
+.tm-kicker{color:var(--amber);text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.18em}
+.tm-sub{max-width:745px;color:var(--muted);font-size:18px;line-height:1.7}
+.tm-meta{display:flex;flex-wrap:wrap;gap:8px;margin:27px 0 10px}
+.tm-metric{display:flex;flex-direction:column;min-width:130px;background:#1b2927;border:1px solid var(--border);padding:14px 18px;border-radius:10px}
+.tm-metric b{font:400 30px/1.1 Georgia,serif;color:var(--lime)}.tm-metric span{color:var(--muted);font-size:11px}
+.tm-hero-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.tm-hero-links a{font-size:13px;font-weight:800;color:var(--lime)}
+.tm-editorial{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0}
+.tm-feature{border:1px solid #40584c;border-radius:14px;padding:22px;background:#13201b}
+.tm-feature.alt{background:#1e2426;border-color:#45515c}
+.tm-feature h2{font-size:27px;margin:9px 0}.tm-feature p{color:var(--muted);font-size:14px;margin-bottom:0}
+.tm-chapter-count{font-size:12px;font-weight:800;color:var(--amber)}
+.tm-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:end;background:#172724;border:1px solid var(--border);border-radius:13px;padding:16px;margin:28px 0 13px}
+.tm-controls label{display:flex;flex:1;min-width:160px;flex-direction:column;gap:5px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:var(--muted)}
+.tm-controls input,.tm-controls select{min-height:43px;padding:9px 11px;color:var(--ink);background:#0d1716;border:1px solid #557066;border-radius:8px;font:14px system-ui}
+.tm-controls input:focus-visible,.tm-controls select:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.tm-results{font-size:12px;color:var(--muted);margin:0 0 22px}
+.tm-year{margin:25px 0 5px;border-top:1px solid #3d5a4e;padding-top:18px;font:400 36px Georgia,serif;color:var(--amber)}
+.tm-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.tm-show{background:var(--panel);border:1px solid var(--border);border-radius:13px;padding:20px;position:relative;overflow:hidden}
+.tm-show:before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:#8bbd72}
+.tm-show[data-artist='Grateful Dead']:before{background:#c4a4d7}
+.tm-show h3{font:400 24px/1.2 Georgia,serif;margin:7px 0}
+.tm-show .tm-date{color:var(--amber);font-size:12px;font-weight:800;letter-spacing:.08em}
+.tm-show .tm-location{font-size:12px;color:var(--muted)}
+.tm-show .tm-note{font-size:13px;margin:13px 0;color:var(--muted)}
+.tm-show .tm-chips{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0}
+.tm-show .tm-chip{font-size:10px;padding:4px 7px;border:1px solid #4c695b;border-radius:5px;color:#d8e4d9}
+.tm-show .tm-chip.missing{border-color:#766747;color:#ebd0aa}
+.tm-show .tm-actions{border-top:1px solid var(--border);padding-top:12px;margin-top:15px;display:flex;flex-wrap:wrap;gap:12px;font-size:12px}
+.tm-show .tm-actions a{font-weight:800;text-decoration:none}
+.tm-empty{border:1px dashed var(--border);border-radius:12px;padding:28px;color:var(--muted);margin:18px 0}
+.tm-fineprint{font-size:12px;color:var(--muted)}
+@media(max-width:760px){.tm-editorial,.tm-list{grid-template-columns:1fr}.tm-head{padding-top:8px}.tm-metric{min-width:100px;flex:1}.tm-controls{display:grid;grid-template-columns:1fr 1fr}.tm-controls label:first-child{grid-column:1 / -1}.tm-controls label{min-width:0}.tm-show{padding:17px}}
+@media(max-width:410px){.tm-controls{grid-template-columns:1fr}.tm-controls label:first-child{grid-column:auto}}
+
+.tm-controls input[type=checkbox]{min-height:0;width:16px;height:16px;accent-color:#d1f391;vertical-align:middle;margin:0 6px 0 0}
+.tm-show[hidden],.tm-year-group[hidden],.tm-empty[hidden]{display:none}
+
+.tm-checkline{display:flex;align-items:center;min-height:43px;color:var(--ink);font-size:12px;letter-spacing:0;text-transform:none;font-weight:550}
