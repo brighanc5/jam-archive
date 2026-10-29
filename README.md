@@ -1,5 +1,17 @@
 # The Jam Archive
 
+## v0.11 — Deep Archive (research expansion)
+
+Full replacement edition, source reviewed October 29, 2026.
+
+- **New `/deep-archive/` directory**: 22 authored research dossiers, 110 linked assertions, 31 source references and open questions for each subject.
+- **Four more approved external recording pointers**; 21 total recording references.
+- Keeps all v0.10 musician connections, Time Machine, Song Paths and contribution/review safeguards.
+- Uses `data/research_dossiers.json` as the permanent version-controlled editorial record, with no external service required at build time.
+- Run `python3 scripts/doctor.py && bash scripts/build_public.sh`. For Mac installation, see **`INSTALL_V011_MAC.md`**.
+- Read **`RELEASE_NOTES_V011.md`** for source-scope limitations and research priorities.
+
+
 **Free · Fan-built · Source-first.** A public index of improvisational-music artists, performances, recordings and musical relationships. Historical and event data are incomplete research snapshots, not a live tour service.
 
 **Live address:** https://odd-king-7e31.brighamhancock.workers.dev

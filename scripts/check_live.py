@@ -14,7 +14,7 @@ ORIGIN = 'https://odd-king-7e31.brighamhancock.workers.dev'
 
 
 def fetch(path, allow_404=False):
-    request = Request(ORIGIN + path, headers={'User-Agent': 'TheJamArchive-ReleaseVerifier/0.10', 'Accept': 'text/html,application/json'})
+    request = Request(ORIGIN + path, headers={'User-Agent': 'TheJamArchive-ReleaseVerifier/0.11', 'Accept': 'text/html,application/json'})
     try:
         with urlopen(request, timeout=12) as response:
             return response.read().decode('utf-8')
@@ -30,11 +30,22 @@ def main():
     try:
         report = json.loads(fetch('/assets/build_report.json'))
         print('Live release:', report.get('version', 'unknown'))
-        if report.get('version') != '0.10':
+        if report.get('version') != '0.11':
             print('NOT DEPLOYED: GitHub and/or Cloudflare is serving an older version.')
             return 1
         if report.get('verified_relationships') != 52:
             print('MISMATCH: v0.10 relationship report is missing.')
+            return 1
+        if report.get('deep_archive_assertions') != 110 or report.get('deep_archive_dossiers') != 22:
+            print('MISMATCH: Deep Archive counts are missing from production build.')
+            return 1
+        library = fetch('/deep-archive/')
+        if 'The stories behind the shows.' not in library or 'id="da-query"' not in library:
+            print('MISMATCH: Deep Archive index missing or incomplete.')
+            return 1
+        dossier = fetch('/deep-archive/shows/gd-1977-05-08/')
+        if 'Betty Cantor-Jackson' not in dossier or 'Source bibliography' not in dossier:
+            print('MISMATCH: Cornell research dossier missing or incomplete.')
             return 1
         family = fetch('/connections/')
         if 'id="cx-data"' not in family or 'SIX DEGREES OF JAM' not in family:
@@ -48,7 +59,7 @@ def main():
         print('COULD NOT VERIFY LIVE: ' + str(exc))
         print('The local build can still be correct; check GitHub Actions and Cloudflare Deployments.')
         return 2
-    print('LIVE DEPLOYMENT PASS: v0.10 Family Tree and 404 fix are publicly served.')
+    print('LIVE DEPLOYMENT PASS: v0.11 Deep Archive, v0.10 Family Tree and 404 routing are publicly served.')
     return 0
 
 

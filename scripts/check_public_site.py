@@ -43,6 +43,10 @@ assert set(urls)==html_routes, f'Sitemap does not exactly match the {len(html_ro
 assert all(url.startswith(origin+'/') for url in urls), 'Sitemap points at wrong origin'
 assert len(list((site/'artists').glob('*/index.html')))==196
 assert len(list((site/'shows').glob('*/index.html')))==25
+assert (site/'deep-archive/index.html').is_file(), 'Missing v0.11 Deep Archive'
+assert len(list((site/'deep-archive/artists').glob('*/index.html')))==10
+assert len(list((site/'deep-archive/shows').glob('*/index.html')))==12
+assert len(json.loads((site/'assets/deep-archive.json').read_text())['dossiers'])==22
 assert (site/'connections/index.html').is_file(), 'Missing v0.10 Family Tree'
 assert (site/'assets/connections.json').is_file(), 'Missing v0.10 graph source'
 assert len(json.loads((site/'assets/connections.json').read_text())['edges']) == 52, 'Unexpected verified graph size'

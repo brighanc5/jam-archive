@@ -1,2 +1,2 @@
-THE JAM ARCHIVE v0.10 — COMPLETE REPOSITORY
-Source-backed Family Tree + Six Degrees of Jam + conflict guard + corrected 404 routing
+THE JAM ARCHIVE v0.11 — COMPLETE REPOSITORY
+Deep Archive: 22 curated dossiers, 110 sourced facts, 31 original references, 4 newly reviewed recording pointers.

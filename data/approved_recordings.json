@@ -1,4 +1,57 @@
 {
   "schema": "jam-archive-approved-recordings-v1",
-  "recordings": []
+  "recordings": [
+    {
+      "id": "abb-fillmore-1971-march12-first-disc1",
+      "show_id": "abb-1971-03-12-early",
+      "artist_id": "the-allman-brothers-band",
+      "title": "The 1971 Fillmore East Recordings · Disc 1 (March 12 first show)",
+      "kind": "Official archival release",
+      "source_url": "https://allmanbrothersband.com/discography/the-1971-fillmore-east-recordings/",
+      "provider": "The Allman Brothers Band official discography",
+      "description": "Disc 1 of the 2014 six-disc edition identifies the first March 12 performance. Official release link; no audio hosted.",
+      "access": "Official discography and authorized retail links",
+      "reviewed_at": "2026-10-29",
+      "review_note": "The official track listing explicitly labels CD 1 March 12, 1971 First Show and identifies its tracks."
+    },
+    {
+      "id": "abb-fillmore-1971-june27-peach-deluxe",
+      "show_id": "abb-1971-06-27",
+      "artist_id": "the-allman-brothers-band",
+      "title": "Eat a Peach Deluxe Edition · Disc 2 (June 27 closing show)",
+      "kind": "Official archival release",
+      "source_url": "https://allmanbrothersband.com/discography/eat-a-peach-deluxe-edition/",
+      "provider": "The Allman Brothers Band official discography",
+      "description": "The 2006 deluxe edition includes the June 27 Fillmore East concert on its second disc, separate from the original album.",
+      "access": "Official discography and authorized retail links",
+      "reviewed_at": "2026-10-29",
+      "review_note": "The official 2006 deluxe edition track listing identifies the June 27 final Fillmore East concert on Disc 2."
+    },
+    {
+      "id": "gd-boston-may1977-get-shown-light",
+      "show_id": "gd-1977-05-07",
+      "artist_id": "grateful-dead",
+      "title": "May 1977: Get Shown the Light · Boston Garden (May 7)",
+      "kind": "Official archival release",
+      "source_url": "https://media.rhino.com/press-release/grateful-dead-legendary-cornell-university-show-set-release-may-5-50th-anniversary",
+      "provider": "Rhino Records official release notes",
+      "description": "The 2017 official box set includes Boston Garden May 7, 1977, as one of four distinct concerts.",
+      "access": "Official release information; availability not guaranteed",
+      "reviewed_at": "2026-10-29",
+      "review_note": "Rhino lists Boston Garden 5/7/77 explicitly among four concerts and details its box-set disc allocation."
+    },
+    {
+      "id": "phish-magnaball-aug22-official-recordings",
+      "show_id": "phish-2015-08-22",
+      "artist_id": "phish",
+      "title": "Phish tour archive · August 22, 2015, official show audio links",
+      "kind": "Official show and recording listing",
+      "source_url": "https://phish.com/tours/dates/sat-2015-8-22-magnaball-at-watkins-glen-international-2/",
+      "provider": "Phish official tour archive",
+      "description": "Official show page with per-song purchase links; includes separately listed Drive-In Jam.",
+      "access": "External authorized recording and show-information page",
+      "reviewed_at": "2026-10-29",
+      "review_note": "Phish first-party tour archive confirms date, venue, set divisions and Buy entries adjacent to listed tracks."
+    }
+  ]
 }

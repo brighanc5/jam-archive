@@ -1,0 +1,1325 @@
+{
+  "version": "0.11",
+  "reviewed_on": "2026-10-29",
+  "scope": "Curator-authored summaries and discrete assertions, each linked to an external evidence source. Not a comprehensive discography, concert registry, definitive personnel chronology, or independently audited source collection.",
+  "sources": {
+    "abb_origin": {
+      "title": "The Allman Brothers Band · beginnings",
+      "url": "https://allmanbrothersband.com/abb-chronology-beginnings/",
+      "classification": "artist-official"
+    },
+    "abb_timeline": {
+      "title": "The Allman Brothers Band · chronology",
+      "url": "https://allmanbrothersband.com/allman-brothers-band-chronology/",
+      "classification": "artist-official"
+    },
+    "abb_later": {
+      "title": "The Allman Brothers Band · later lineups",
+      "url": "https://allmanbrothersband.com/allman-brothers-band-chronology-2/",
+      "classification": "artist-official"
+    },
+    "abb_duane": {
+      "title": "The Allman Brothers Band · Duane Allman biography",
+      "url": "https://allmanbrothersband.com/biography/duane-allman/",
+      "classification": "artist-official"
+    },
+    "abb_warren": {
+      "title": "The Allman Brothers Band · Warren Haynes interview",
+      "url": "https://allmanbrothersband.com/warren-haynes-hes-one-hot-guitarist/",
+      "classification": "archived-interview"
+    },
+    "abb_derek": {
+      "title": "Derek Trucks and Warren Haynes · Guitar Player interview",
+      "url": "https://allmanbrothersband.com/warren-and-derek-guitar-slingers-guitar-player/",
+      "classification": "archived-interview"
+    },
+    "abb_fillmore": {
+      "title": "Official discography · The 1971 Fillmore East Recordings",
+      "url": "https://allmanbrothersband.com/discography/the-1971-fillmore-east-recordings/",
+      "classification": "artist-official"
+    },
+    "abb_fillmore_original": {
+      "title": "Official discography · At Fillmore East",
+      "url": "https://allmanbrothersband.com/discography/at-fillmore-east/",
+      "classification": "artist-official"
+    },
+    "abb_atlanta": {
+      "title": "Official discography · Atlanta International Pop Festival 1970",
+      "url": "https://allmanbrothersband.com/discography/the-allman-brothers-band-live-at-the-atlanta-intnl-pop-festival-july-3-5-1970/",
+      "classification": "artist-official"
+    },
+    "abb_ludlow_event": {
+      "title": "Official concert database · Ludlow Garage 4/4/70",
+      "url": "https://allmanbrothersband.com/event/abb19700404/",
+      "classification": "artist-official"
+    },
+    "abb_ludlow_release": {
+      "title": "Official discography · Live at Ludlow Garage 1970",
+      "url": "https://allmanbrothersband.com/discography/live-at-ludlow-garage-1970/",
+      "classification": "artist-official"
+    },
+    "abb_finalnote": {
+      "title": "Official discography · The Final Note (10/17/71)",
+      "url": "https://allmanbrothersband.com/discography/the-final-note-painters-mill-music-fair-owings-mills-md-10-17-71/",
+      "classification": "artist-official"
+    },
+    "abb_closing": {
+      "title": "Official concert database · Fillmore East 6/27/71",
+      "url": "https://allmanbrothersband.com/event/abb19710627/",
+      "classification": "artist-official"
+    },
+    "abb_farewell": {
+      "title": "Official concert database · Beacon Theatre 10/28/14",
+      "url": "https://allmanbrothersband.com/event/abb20141028/",
+      "classification": "artist-official"
+    },
+    "gd_bio": {
+      "title": "Grateful Dead · official biography",
+      "url": "https://www.dead.net/biography",
+      "classification": "artist-official"
+    },
+    "gd_1965": {
+      "title": "Grateful Dead · 1965 retrospective",
+      "url": "https://www.dead.net/features/year/1965",
+      "classification": "artist-official"
+    },
+    "gd_cornell": {
+      "title": "Grateful Dead · Cornell May 8, 1977 show record",
+      "url": "https://www.dead.net/show/may-8-1977",
+      "classification": "artist-official"
+    },
+    "gd_buffalo": {
+      "title": "Grateful Dead · Buffalo May 9, 1977 show record",
+      "url": "https://www.dead.net/show/may-9-1977",
+      "classification": "artist-official"
+    },
+    "gd_boston": {
+      "title": "Grateful Dead · Boston May 7, 1977 show record",
+      "url": "https://www.dead.net/show/may-7-1977",
+      "classification": "artist-official"
+    },
+    "gd_rhino": {
+      "title": "Rhino · 2017 Cornell and May 1977 archival release",
+      "url": "https://media.rhino.com/press-release/grateful-dead-legendary-cornell-university-show-set-release-may-5-50th-anniversary",
+      "classification": "label-official"
+    },
+    "phish_faq": {
+      "title": "Phish · official FAQ and band history",
+      "url": "https://phish.com/faq/",
+      "classification": "artist-official"
+    },
+    "phish_95": {
+      "title": "Phish · December 31, 1995 official concert record",
+      "url": "https://phish.com/tours/dates/sun-1995-12-31-madison-square-garden/",
+      "classification": "artist-official"
+    },
+    "phish_95_album": {
+      "title": "Phish · New Year’s Eve 1995 album credits",
+      "url": "https://phish.com/release/new-years-eve-1995/",
+      "classification": "artist-official"
+    },
+    "phish_magnaball": {
+      "title": "Phish · August 22, 2015 official concert record",
+      "url": "https://phish.com/tours/dates/sat-2015-8-22-magnaball-at-watkins-glen-international-2/",
+      "classification": "artist-official"
+    },
+    "phish_net_magnaball": {
+      "title": "Phish.net · August 22, 2015 curated notes",
+      "url": "https://phish.net/setlists/phish-august-22-2015-watkins-glen-international-watkins-glen-ny-usa.html",
+      "classification": "community-archive"
+    },
+    "goose_bio": {
+      "title": "Goose · official band biography and lineup",
+      "url": "https://www.goosetheband.com/about",
+      "classification": "artist-official"
+    },
+    "goose_home": {
+      "title": "Goose · official homepage",
+      "url": "https://www.goosetheband.com/",
+      "classification": "artist-official"
+    },
+    "trey_bio": {
+      "title": "Trey Anastasio · official biography",
+      "url": "https://trey.com/about/",
+      "classification": "artist-official"
+    },
+    "trey_oyster": {
+      "title": "Trey Anastasio · Oysterhead project history",
+      "url": "https://trey.com/projects/oysterhead/",
+      "classification": "artist-official"
+    },
+    "trey_oyster_album": {
+      "title": "Trey Anastasio · Oysterhead album credits",
+      "url": "https://trey.com/albums/oysterhead/",
+      "classification": "artist-official"
+    },
+    "abb_peach": {
+      "title": "Official discography · Eat a Peach Deluxe Edition",
+      "url": "https://allmanbrothersband.com/discography/eat-a-peach-deluxe-edition/",
+      "classification": "artist-official"
+    }
+  },
+  "dossiers": [
+    {
+      "kind": "artist",
+      "id": "the-allman-brothers-band",
+      "name": "The Allman Brothers Band",
+      "angle": "1969–2014 · The evolving ensemble",
+      "summary": "A group defined by two-guitar conversation, dual drummers, and a performance archive that spans distinct eras. Its lineups and live releases should be dated precisely rather than compressed into one timeless band.",
+      "facts": [
+        {
+          "period": "1969",
+          "topic": "formation",
+          "text": "The original six assembled in Jacksonville, Florida, on March 26, 1969.",
+          "source_ids": [
+            "abb_origin"
+          ]
+        },
+        {
+          "period": "1969",
+          "topic": "personnel",
+          "text": "Duane and Dickey Betts played guitar; Gregg sang and played organ; Berry Oakley played bass; Butch Trucks and Jaimoe handled drums.",
+          "source_ids": [
+            "abb_origin"
+          ]
+        },
+        {
+          "period": "1969",
+          "topic": "release",
+          "text": "The band’s self-titled debut album appeared in November 1969.",
+          "source_ids": [
+            "abb_origin"
+          ]
+        },
+        {
+          "period": "1970",
+          "topic": "release",
+          "text": "Idlewild South followed in September 1970.",
+          "source_ids": [
+            "abb_origin"
+          ]
+        },
+        {
+          "period": "1971",
+          "topic": "recording",
+          "text": "The breakthrough At Fillmore East was recorded during the March 1971 Fillmore engagement and released in July.",
+          "source_ids": [
+            "abb_origin",
+            "abb_fillmore_original"
+          ]
+        },
+        {
+          "period": "1971",
+          "topic": "loss",
+          "text": "Duane Allman died on October 29, 1971, shortly after the original Fillmore release.",
+          "source_ids": [
+            "abb_duane"
+          ]
+        },
+        {
+          "period": "1989–1999",
+          "topic": "lineup",
+          "text": "The band’s later history included Warren Haynes, Allen Woody, Oteil Burbridge and Derek Trucks joining in different periods.",
+          "source_ids": [
+            "abb_timeline"
+          ]
+        },
+        {
+          "period": "2014",
+          "topic": "farewell",
+          "text": "The October 28 Beacon Theatre concert is documented as the band’s final performance.",
+          "source_ids": [
+            "abb_farewell"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Complete verified personnel timelines for every lineup.",
+        "Separate release dates, performance dates, and master-tape sources for the same concert."
+      ]
+    },
+    {
+      "kind": "artist",
+      "id": "grateful-dead",
+      "name": "Grateful Dead",
+      "angle": "1965 origins · A recording culture",
+      "summary": "The Dead’s performance history is best explored through individual nights and tape lineages, not through a simple list of famous dates. Official show records and label releases establish different kinds of evidence.",
+      "facts": [
+        {
+          "period": "1965",
+          "topic": "origins",
+          "text": "The musicians played as the Warlocks in 1965 before adopting the Grateful Dead name later that year.",
+          "source_ids": [
+            "gd_1965",
+            "gd_bio"
+          ]
+        },
+        {
+          "period": "1965",
+          "topic": "personnel",
+          "text": "Early members included Jerry Garcia, Bob Weir, Ron McKernan, Bill Kreutzmann and Phil Lesh.",
+          "source_ids": [
+            "gd_1965"
+          ]
+        },
+        {
+          "period": "1965",
+          "topic": "context",
+          "text": "The band became associated with Ken Kesey’s Acid Tests by December 1965.",
+          "source_ids": [
+            "gd_1965",
+            "gd_bio"
+          ]
+        },
+        {
+          "period": "1977",
+          "topic": "archive",
+          "text": "Official show records document the Boston, Cornell and Buffalo concerts on three consecutive May nights.",
+          "source_ids": [
+            "gd_boston",
+            "gd_cornell",
+            "gd_buffalo"
+          ]
+        },
+        {
+          "period": "1977",
+          "topic": "repertoire",
+          "text": "The Cornell concert includes Scarlet Begonias and Fire on the Mountain, followed later by Morning Dew.",
+          "source_ids": [
+            "gd_cornell"
+          ]
+        },
+        {
+          "period": "2017",
+          "topic": "official release",
+          "text": "Rhino issued Cornell 5/8/77 officially as part of a larger four-show May 1977 archival program.",
+          "source_ids": [
+            "gd_rhino"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Associate audience, soundboard and matrix recordings with distinct lineage evidence.",
+        "Document individual performance transitions without equating title adjacency with segues."
+      ]
+    },
+    {
+      "kind": "artist",
+      "id": "phish",
+      "name": "Phish",
+      "angle": "1983 onward · The setlist as a map",
+      "summary": "Phish’s own concert archive and LivePhish releases make it possible to distinguish performed material, archival recordings, and fan annotations. Performance-specific notes matter more than generalized claims about legendary jams.",
+      "facts": [
+        {
+          "period": "1983",
+          "topic": "formation",
+          "text": "Phish began around the University of Vermont in 1983 after Trey Anastasio sought fellow musicians.",
+          "source_ids": [
+            "phish_faq"
+          ]
+        },
+        {
+          "period": "1983",
+          "topic": "lineup",
+          "text": "Jon Fishman, Mike Gordon and Jeff Holdsworth were among the early participants.",
+          "source_ids": [
+            "phish_faq"
+          ]
+        },
+        {
+          "period": "1985",
+          "topic": "lineup",
+          "text": "Keyboardist Page McConnell joined in 1985; Holdsworth departed soon afterward.",
+          "source_ids": [
+            "phish_faq"
+          ]
+        },
+        {
+          "period": "1995",
+          "topic": "performance",
+          "text": "Phish performed a three-set New Year’s Eve concert at Madison Square Garden on December 31, 1995.",
+          "source_ids": [
+            "phish_95"
+          ]
+        },
+        {
+          "period": "1995",
+          "topic": "recording",
+          "text": "The 1995 New Year’s Eve album credits Paul Languedoc as recording engineer.",
+          "source_ids": [
+            "phish_95_album"
+          ]
+        },
+        {
+          "period": "2015",
+          "topic": "performance",
+          "text": "The August 22 Magnaball event included three conventional sets and a separate Drive-In Jam.",
+          "source_ids": [
+            "phish_magnaball"
+          ]
+        },
+        {
+          "period": "2015",
+          "topic": "notation",
+          "text": "The Phish.net entry documents transitions and an additional Mind Left Body Jam within Cities.",
+          "source_ids": [
+            "phish_net_magnaball"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Distinguish official setlists from fan-described teases and jam labels.",
+        "Build performance-specific song relationships rather than assuming all versions are alike."
+      ]
+    },
+    {
+      "kind": "artist",
+      "id": "goose",
+      "name": "Goose",
+      "angle": "Modern improvisation · Current roster is time-sensitive",
+      "summary": "Goose illustrates why contemporary band profiles require a dated editorial snapshot. The band’s own biography establishes its current public roster and direct pathways to authorized live-music services.",
+      "facts": [
+        {
+          "period": "2026 snapshot",
+          "topic": "lineup",
+          "text": "The official biography lists Rick Mitarotonda on guitar and vocals.",
+          "source_ids": [
+            "goose_bio"
+          ]
+        },
+        {
+          "period": "2026 snapshot",
+          "topic": "lineup",
+          "text": "Peter Anspach is listed on vocals, keyboards and guitar.",
+          "source_ids": [
+            "goose_bio"
+          ]
+        },
+        {
+          "period": "2026 snapshot",
+          "topic": "lineup",
+          "text": "Trevor Weekz is listed on bass, and Cotter Ellis on drums.",
+          "source_ids": [
+            "goose_bio"
+          ]
+        },
+        {
+          "period": "2016",
+          "topic": "recording",
+          "text": "The band says it recorded its debut Moon Cabin in a New Hampshire barn in 2016.",
+          "source_ids": [
+            "goose_bio"
+          ]
+        },
+        {
+          "period": "2026 snapshot",
+          "topic": "distribution",
+          "text": "The official site links fans to live recordings on Bandcamp and nugs.net.",
+          "source_ids": [
+            "goose_bio",
+            "goose_home"
+          ]
+        },
+        {
+          "period": "2026 snapshot",
+          "topic": "studio release",
+          "text": "The band’s official homepage identifies BIG MODERN! as its featured new studio album.",
+          "source_ids": [
+            "goose_home"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Create first-party dated tour-announcement records, with publication and modification timestamps.",
+        "Document show-specific sit-ins from authorized concert descriptions."
+      ]
+    },
+    {
+      "kind": "artist",
+      "id": "oysterhead",
+      "name": "Oysterhead",
+      "angle": "A collaboration with a traceable origin",
+      "summary": "Oysterhead offers an unusually clear link between the Phish and Primus/Police worlds, documented by the participating guitarist’s project archive.",
+      "facts": [
+        {
+          "period": "May 2000",
+          "topic": "formation",
+          "text": "Oysterhead began as a festival-period superjam at New Orleans’ Saenger Theatre.",
+          "source_ids": [
+            "trey_oyster"
+          ]
+        },
+        {
+          "period": "2000",
+          "topic": "personnel",
+          "text": "The trio consisted of Trey Anastasio, Les Claypool and Stewart Copeland.",
+          "source_ids": [
+            "trey_oyster"
+          ]
+        },
+        {
+          "period": "2001",
+          "topic": "recording",
+          "text": "The musicians reconvened at the Barn in April 2001 to record The Grand Pecking Order.",
+          "source_ids": [
+            "trey_oyster"
+          ]
+        },
+        {
+          "period": "2001",
+          "topic": "release",
+          "text": "The Grand Pecking Order has thirteen indexed tracks on Trey Anastasio’s official album page.",
+          "source_ids": [
+            "trey_oyster_album"
+          ]
+        },
+        {
+          "period": "2020",
+          "topic": "reunion",
+          "text": "Trey’s project archive documents two February 2020 reunion concerts in Broomfield, Colorado.",
+          "source_ids": [
+            "trey_oyster"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Add the two 2020 nights as separate verified concert records.",
+        "Document song-by-song author and guest credits without inferring them from band membership."
+      ]
+    },
+    {
+      "kind": "artist",
+      "id": "duane-allman",
+      "name": "Duane Allman",
+      "angle": "Slide guitar · 1969–1971 ABB era",
+      "summary": "Duane Allman’s documented studio collaborations and short touring career are critical to connecting blues, soul, and live improvisation histories.",
+      "facts": [
+        {
+          "period": "1969",
+          "topic": "formation",
+          "text": "Duane brought together the musicians who became the original Allman Brothers Band in Jacksonville.",
+          "source_ids": [
+            "abb_duane"
+          ]
+        },
+        {
+          "period": "1969–1971",
+          "topic": "technique",
+          "text": "The band’s official biography characterizes Duane’s interplay with Dickey Betts as twin-guitar dialogue.",
+          "source_ids": [
+            "abb_duane"
+          ]
+        },
+        {
+          "period": "1970",
+          "topic": "studio",
+          "text": "Duane participated in Derek and the Dominos’ Layla and Other Assorted Love Songs sessions.",
+          "source_ids": [
+            "abb_duane"
+          ]
+        },
+        {
+          "period": "March 1971",
+          "topic": "performance",
+          "text": "Duane played in the Fillmore East concerts subsequently documented by the expanded box set.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "October 17, 1971",
+          "topic": "last documented performance",
+          "text": "The official release notes describe the Painters Mill performance as Duane’s final concert.",
+          "source_ids": [
+            "abb_finalnote"
+          ]
+        },
+        {
+          "period": "October 29, 1971",
+          "topic": "death",
+          "text": "Duane died after a motorcycle accident in Macon, Georgia, at age 24.",
+          "source_ids": [
+            "abb_duane"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Build sessionography with source-specific personnel credits.",
+        "Keep live performance claims separate from commercial release metadata."
+      ]
+    },
+    {
+      "kind": "artist",
+      "id": "trey-anastasio",
+      "name": "Trey Anastasio",
+      "angle": "Phish · Oysterhead · Cross-generational appearances",
+      "summary": "Trey’s official project history provides a source-backed bridge between bands without implying every collaboration was a concert sit-in.",
+      "facts": [
+        {
+          "period": "1983",
+          "topic": "formation",
+          "text": "Trey Anastasio is a founding member of Phish.",
+          "source_ids": [
+            "trey_bio",
+            "phish_faq"
+          ]
+        },
+        {
+          "period": "2000",
+          "topic": "collaboration",
+          "text": "Trey performed with Les Claypool and Stewart Copeland in the original Oysterhead superjam.",
+          "source_ids": [
+            "trey_oyster"
+          ]
+        },
+        {
+          "period": "2001",
+          "topic": "recording",
+          "text": "Trey was part of Oysterhead’s Grand Pecking Order recording project.",
+          "source_ids": [
+            "trey_oyster_album"
+          ]
+        },
+        {
+          "period": "2013",
+          "topic": "theater",
+          "text": "His co-written score for Hands on a Hardbody received a Tony nomination.",
+          "source_ids": [
+            "trey_bio"
+          ]
+        },
+        {
+          "period": "2015",
+          "topic": "performance",
+          "text": "Trey joined surviving Grateful Dead members for five fiftieth-anniversary stadium concerts.",
+          "source_ids": [
+            "trey_bio"
+          ]
+        },
+        {
+          "period": "2017",
+          "topic": "residency",
+          "text": "Phish’s Baker’s Dozen residency at Madison Square Garden lasted thirteen nights.",
+          "source_ids": [
+            "trey_bio"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Attach precise show dates and personnel to each guest appearance.",
+        "Do not infer that a documented joint project means every member has shared other stages."
+      ]
+    },
+    {
+      "kind": "artist",
+      "id": "derek-trucks",
+      "name": "Derek Trucks",
+      "angle": "Allman Brothers · Guitar lineage",
+      "summary": "Derek Trucks is a particularly valuable bridge for musician genealogy because his career crosses generations of the Allman Brothers Band.",
+      "facts": [
+        {
+          "period": "childhood",
+          "topic": "early appearances",
+          "text": "In an archived interview, Derek recalled sitting in with the Allman Brothers as a preteen.",
+          "source_ids": [
+            "abb_derek"
+          ]
+        },
+        {
+          "period": "1999",
+          "topic": "membership",
+          "text": "Derek joined the Allman Brothers Band in 1999.",
+          "source_ids": [
+            "abb_derek"
+          ]
+        },
+        {
+          "period": "1999",
+          "topic": "lineup",
+          "text": "He described the 1999 frontline as Derek Trucks, Oteil Burbridge and Dickey Betts.",
+          "source_ids": [
+            "abb_derek"
+          ]
+        },
+        {
+          "period": "2000s",
+          "topic": "collaboration",
+          "text": "Derek described Jimmy Herring joining the guitar lineup during a transitional period.",
+          "source_ids": [
+            "abb_derek"
+          ]
+        },
+        {
+          "period": "2000s",
+          "topic": "collaboration",
+          "text": "Derek’s interview describes playing alongside Warren Haynes after Haynes returned.",
+          "source_ids": [
+            "abb_derek"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Document individual Allmans lineups by show date.",
+        "Add original sourced Tedeschi Trucks Band chronology before making additional crossover claims."
+      ]
+    },
+    {
+      "kind": "artist",
+      "id": "warren-haynes",
+      "name": "Warren Haynes",
+      "angle": "Allmans · Gov’t Mule · Ensemble transitions",
+      "summary": "Warren’s career is a useful test of time-aware network links: band membership changed, and a simple graph edge hides the sequence.",
+      "facts": [
+        {
+          "period": "1980s",
+          "topic": "early work",
+          "text": "An archived account places Warren in Dickey Betts’ band before the Allman Brothers reunion.",
+          "source_ids": [
+            "abb_warren"
+          ]
+        },
+        {
+          "period": "1989",
+          "topic": "membership",
+          "text": "He joined the Allman Brothers Band for their 1989 reunion.",
+          "source_ids": [
+            "abb_warren"
+          ]
+        },
+        {
+          "period": "1990s",
+          "topic": "studio",
+          "text": "His playing and compositions contributed to the band’s early-1990s recordings.",
+          "source_ids": [
+            "abb_warren"
+          ]
+        },
+        {
+          "period": "1997",
+          "topic": "departure",
+          "text": "Warren and bassist Allen Woody departed to concentrate on Gov’t Mule.",
+          "source_ids": [
+            "abb_warren"
+          ]
+        },
+        {
+          "period": "2000s",
+          "topic": "return",
+          "text": "Archived interviews document Warren returning to the Allmans after Dickey Betts left.",
+          "source_ids": [
+            "abb_derek"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Resolve return dates with first-party lineup ledgers before publishing year-level membership intervals.",
+        "Keep historical ensemble membership separate from current roster assumptions."
+      ]
+    },
+    {
+      "kind": "artist",
+      "id": "rick-mitarotonda",
+      "name": "Rick Mitarotonda",
+      "angle": "Goose · Improvisation and songwriting",
+      "summary": "Rick Mitarotonda’s public profile currently has verified core-role information, but our archive does not yet have enough corroborated session history or concert-specific appearances for a detailed personal discography.",
+      "facts": [
+        {
+          "period": "2026 snapshot",
+          "topic": "membership",
+          "text": "Goose identifies Rick Mitarotonda as one of its four current members.",
+          "source_ids": [
+            "goose_bio"
+          ]
+        },
+        {
+          "period": "2026 snapshot",
+          "topic": "role",
+          "text": "The band identifies him as a vocalist and guitarist.",
+          "source_ids": [
+            "goose_bio"
+          ]
+        },
+        {
+          "period": "2016–2026",
+          "topic": "band history",
+          "text": "Goose traces its recording history to the 2016 debut Moon Cabin.",
+          "source_ids": [
+            "goose_bio"
+          ]
+        },
+        {
+          "period": "2026 snapshot",
+          "topic": "live access",
+          "text": "The official Goose website provides links to its Bandcamp and nugs live catalogs.",
+          "source_ids": [
+            "goose_home"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Validate individual songwriting credits against album credits.",
+        "Add sourced guest appearances and the first dated authorized recording references."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "abb-1971-03-12-early",
+      "name": "Allmans · Fillmore East, March 12 early",
+      "angle": "March 12, 1971 · Early show",
+      "summary": "The expanded 2014 box set distinguishes this opening March 12 performance from the second show that night. They must never be collapsed into a single recording.",
+      "facts": [
+        {
+          "period": "March 12",
+          "topic": "source identity",
+          "text": "Disc 1 of the expanded 2014 Fillmore collection documents the first March 12 performance.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "March 12",
+          "topic": "setlist",
+          "text": "The disc includes Statesboro Blues, Trouble No More and In Memory of Elizabeth Reed.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "March 12",
+          "topic": "recording detail",
+          "text": "The same disc also includes an extended You Don’t Love Me.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "2014",
+          "topic": "release context",
+          "text": "The six-disc edition was issued in 2014 and distinguishes four March performances.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Index the missing Disc 1 recording reference in the canonical source ledger."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "abb-1971-03-12-late",
+      "name": "Allmans · Fillmore East, March 12 late",
+      "angle": "March 12, 1971 · Second show",
+      "summary": "The second March 12 performance was separately documented on Disc 2 of the later archival edition, including material not on the corresponding first-show disc.",
+      "facts": [
+        {
+          "period": "March 12",
+          "topic": "source identity",
+          "text": "Disc 2 of the six-disc Fillmore set covers the second March 12 performance.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "March 12",
+          "topic": "setlist",
+          "text": "The recorded program includes Whipping Post and Hot ’Lanta.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "March 12",
+          "topic": "setlist",
+          "text": "In Memory of Elizabeth Reed and You Don’t Love Me are also separately documented for this set.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "2014",
+          "topic": "release context",
+          "text": "The archival release presents this set individually rather than as one undifferentiated March 12 concert.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Review whether the original 1971 album combines recordings from different March 12–13 sets."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "abb-1971-03-13-late",
+      "name": "Allmans · Fillmore East, March 13 late",
+      "angle": "March 13, 1971 · Second show",
+      "summary": "The second March 13 concert occupies parts of two discs in the expanded archival release. Its treatment illustrates why one show may correspond to multiple release tracks or discs.",
+      "facts": [
+        {
+          "period": "March 13",
+          "topic": "recording",
+          "text": "Disc 4 carries the first part of the March 13 second show.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "March 13",
+          "topic": "recording",
+          "text": "Disc 5 continues that same second show.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "March 13",
+          "topic": "setlist",
+          "text": "The documented performance includes Mountain Jam.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "March 13",
+          "topic": "guest",
+          "text": "The released sequence includes Drunken Hearted Boy with Elvin Bishop.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Represent multi-disc release segments without inventing separate concert entities."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "abb-1971-06-27",
+      "name": "Allmans · Fillmore East closing night",
+      "angle": "June 27, 1971 · Closing performance",
+      "summary": "Official show records and later box-set releases document the performance from the venue’s closing weekend. The date is not one of the original March recording nights.",
+      "facts": [
+        {
+          "period": "June 27",
+          "topic": "event",
+          "text": "The official concert archive lists the band at Fillmore East on June 27, 1971.",
+          "source_ids": [
+            "abb_closing"
+          ]
+        },
+        {
+          "period": "June 27",
+          "topic": "performance",
+          "text": "The documented set includes Midnight Rider, Whipping Post and You Don’t Love Me.",
+          "source_ids": [
+            "abb_closing"
+          ]
+        },
+        {
+          "period": "2014",
+          "topic": "recording",
+          "text": "Disc 6 of The 1971 Fillmore East Recordings is dedicated to this closing show.",
+          "source_ids": [
+            "abb_fillmore"
+          ]
+        },
+        {
+          "period": "2006",
+          "topic": "release",
+          "text": "The deluxe Eat a Peach release also includes the June 27 concert.",
+          "source_ids": [
+            "abb_peach"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Compare differing mixes and edit points across the deluxe edition and six-disc box."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "abb-1970-07-05",
+      "name": "Allmans · Atlanta Pop Festival second appearance",
+      "angle": "Billed July 5, 1970 · Recorded after midnight",
+      "summary": "This show exposes a classic archival pitfall: the marketed date and the actual clock date differ. The original release liner notes are unusually explicit about the discrepancy.",
+      "facts": [
+        {
+          "period": "July 5 billing",
+          "topic": "date caveat",
+          "text": "The official release labels the second festival recording July 5.",
+          "source_ids": [
+            "abb_atlanta"
+          ]
+        },
+        {
+          "period": "July 6 at 03:50",
+          "topic": "date caveat",
+          "text": "The release notes say the second performance began at 3:50 a.m. on July 6.",
+          "source_ids": [
+            "abb_atlanta"
+          ]
+        },
+        {
+          "period": "July 1970",
+          "topic": "guest",
+          "text": "Johnny Winter appears on the issued Mountain Jam from the second festival performance.",
+          "source_ids": [
+            "abb_atlanta"
+          ]
+        },
+        {
+          "period": "2003",
+          "topic": "recording",
+          "text": "The festival’s two performances were issued together commercially in 2003.",
+          "source_ids": [
+            "abb_atlanta"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Retain billed and clock dates as separate typed fields rather than overwriting the original show date."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "abb-1970-04-04",
+      "name": "Allmans · Ludlow Garage",
+      "angle": "April 4, 1970 · Archive-date discrepancy",
+      "summary": "The band’s concert archive and the commercial release point to related music, but the recording date has competing documentary labels. Both should remain visible.",
+      "facts": [
+        {
+          "period": "April 4, 1970",
+          "topic": "event",
+          "text": "The official show database lists an April 4 concert at Ludlow Garage in Cincinnati.",
+          "source_ids": [
+            "abb_ludlow_event"
+          ]
+        },
+        {
+          "period": "April 4–5",
+          "topic": "date evidence",
+          "text": "The event entry notes a receipts ledger documenting two nights at the venue.",
+          "source_ids": [
+            "abb_ludlow_event"
+          ]
+        },
+        {
+          "period": "date disputed",
+          "topic": "uncertainty",
+          "text": "An archival comment notes that a release booklet gave April 11 instead.",
+          "source_ids": [
+            "abb_ludlow_event"
+          ]
+        },
+        {
+          "period": "1990/1991",
+          "topic": "release date uncertainty",
+          "text": "The official discography displays a 1990 release field while the descriptive text says released in 1991.",
+          "source_ids": [
+            "abb_ludlow_release"
+          ]
+        },
+        {
+          "period": "recording",
+          "topic": "performance detail",
+          "text": "The commercial edition includes a forty-four-minute Mountain Jam.",
+          "source_ids": [
+            "abb_ludlow_release"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Seek original tape box or contemporary documentation before resolving performance date conclusively."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "abb-1971-10-17",
+      "name": "Allmans · Painters Mill, October 17",
+      "angle": "October 17, 1971 · Duane’s final show",
+      "summary": "The official archival release describes both the significance and limitations of this audience tape, including its unusual origin.",
+      "facts": [
+        {
+          "period": "October 17, 1971",
+          "topic": "event",
+          "text": "The group’s official release identifies the Painters Mill concert as Duane Allman’s last show.",
+          "source_ids": [
+            "abb_finalnote"
+          ]
+        },
+        {
+          "period": "1971",
+          "topic": "recording source",
+          "text": "Sam Idas recorded the performance on a handheld cassette machine.",
+          "source_ids": [
+            "abb_finalnote"
+          ]
+        },
+        {
+          "period": "1971",
+          "topic": "recording limitation",
+          "text": "The tape was a spontaneous audience capture, not a purpose-built multitrack concert recording.",
+          "source_ids": [
+            "abb_finalnote"
+          ]
+        },
+        {
+          "period": "2020",
+          "topic": "release",
+          "text": "The Final Note issued eight documented songs from the performance in 2020.",
+          "source_ids": [
+            "abb_finalnote"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Document which songs are absent from the surviving cassette before claiming a complete setlist."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "gd-1977-05-08",
+      "name": "Grateful Dead · Cornell",
+      "angle": "May 8, 1977 · Barton Hall",
+      "summary": "Cornell is a prime example of three separate archival objects: the original concert, circulating recorded sources, and later official commercial release.",
+      "facts": [
+        {
+          "period": "May 8",
+          "topic": "performance",
+          "text": "The official Dead show archive lists the concert at Cornell’s Barton Hall.",
+          "source_ids": [
+            "gd_cornell"
+          ]
+        },
+        {
+          "period": "May 8",
+          "topic": "setlist",
+          "text": "The published set includes Scarlet Begonias, Fire on the Mountain and Morning Dew.",
+          "source_ids": [
+            "gd_cornell"
+          ]
+        },
+        {
+          "period": "2017",
+          "topic": "release",
+          "text": "Rhino officially released Cornell 5/8/77 after the Betty Board master tapes had been acquired.",
+          "source_ids": [
+            "gd_rhino"
+          ]
+        },
+        {
+          "period": "2017",
+          "topic": "release format",
+          "text": "Cornell was issued individually and in the four-show Get Shown the Light box.",
+          "source_ids": [
+            "gd_rhino"
+          ]
+        },
+        {
+          "period": "2017",
+          "topic": "master-tape provenance",
+          "text": "Rhino credits Betty Cantor-Jackson soundboard masters, Plangent Processes transfers and Jeffrey Norman mastering for the four-show set.",
+          "source_ids": [
+            "gd_rhino"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Crosswalk the audience, soundboard, matrix and official release sources without declaring them interchangeable."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "gd-1977-05-09",
+      "name": "Grateful Dead · Buffalo",
+      "angle": "May 9, 1977 · War Memorial Auditorium",
+      "summary": "The night after Cornell has its own canonical show, setlist, and performance sequence—valuable context for exploring how recurring songs changed.",
+      "facts": [
+        {
+          "period": "May 9",
+          "topic": "performance",
+          "text": "The official show archive identifies War Memorial Auditorium in Buffalo.",
+          "source_ids": [
+            "gd_buffalo"
+          ]
+        },
+        {
+          "period": "May 9",
+          "topic": "setlist",
+          "text": "The set begins with Help on the Way, Slipknot! and Franklin’s Tower in sequence.",
+          "source_ids": [
+            "gd_buffalo"
+          ]
+        },
+        {
+          "period": "May 9",
+          "topic": "setlist",
+          "text": "The second half includes Estimated Prophet, The Other One and Comes a Time.",
+          "source_ids": [
+            "gd_buffalo"
+          ]
+        },
+        {
+          "period": "2017",
+          "topic": "release",
+          "text": "Buffalo is one of the four concert dates packaged in Get Shown the Light.",
+          "source_ids": [
+            "gd_rhino"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Compare distinct transitions with Cornell only after reviewing recordings, not merely adjacent song titles."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "phish-1995-12-31",
+      "name": "Phish · Madison Square Garden NYE",
+      "angle": "December 31, 1995 · New Year’s Eve",
+      "summary": "This show offers exceptionally strong dual-source documentation: a first-party concert setlist and the later official release credits.",
+      "facts": [
+        {
+          "period": "December 31",
+          "topic": "performance",
+          "text": "The official archive describes a three-set performance with encore.",
+          "source_ids": [
+            "phish_95"
+          ]
+        },
+        {
+          "period": "December 31",
+          "topic": "setlist",
+          "text": "The third set includes Auld Lang Syne, Weekapaug Groove and You Enjoy Myself.",
+          "source_ids": [
+            "phish_95"
+          ]
+        },
+        {
+          "period": "1995",
+          "topic": "recording",
+          "text": "The release credits Paul Languedoc for the original concert recording.",
+          "source_ids": [
+            "phish_95_album"
+          ]
+        },
+        {
+          "period": "archival release",
+          "topic": "release",
+          "text": "The official concert entry documents the subsequent complete-concert audio edition.",
+          "source_ids": [
+            "phish_95"
+          ]
+        },
+        {
+          "period": "December 31",
+          "topic": "stage detail",
+          "text": "The show record notes Runaway Jim featured Trey on an additional percussion kit during the jam.",
+          "source_ids": [
+            "phish_95"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Avoid translating track timings into jam-analysis claims without close listening and attribution."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "phish-2015-08-22",
+      "name": "Phish · Magnaball",
+      "angle": "August 22, 2015 · Watkins Glen",
+      "summary": "Official setlist and community annotations supply different levels of detail. The extra Drive-In Jam deserves its own context without pretending it was a conventional fourth set.",
+      "facts": [
+        {
+          "period": "August 22",
+          "topic": "event",
+          "text": "Phish performed at Watkins Glen International during Magnaball.",
+          "source_ids": [
+            "phish_magnaball"
+          ]
+        },
+        {
+          "period": "August 22",
+          "topic": "setlist",
+          "text": "The official listing divides the main performance into three sets and an encore.",
+          "source_ids": [
+            "phish_magnaball"
+          ]
+        },
+        {
+          "period": "August 22",
+          "topic": "performance",
+          "text": "The official site separately lists the Drive-In Jam after the main program.",
+          "source_ids": [
+            "phish_magnaball"
+          ]
+        },
+        {
+          "period": "August 22",
+          "topic": "fan annotation",
+          "text": "Phish.net identifies an intervening Mind Left Body Jam in the third-set Cities sequence.",
+          "source_ids": [
+            "phish_net_magnaball"
+          ]
+        },
+        {
+          "period": "August 22",
+          "topic": "fan annotation",
+          "text": "Phish.net describes the Drive-In Jam being performed behind a projection screen.",
+          "source_ids": [
+            "phish_net_magnaball"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Separate official setlist data from interpretive descriptions and tease annotations."
+      ]
+    },
+    {
+      "kind": "show",
+      "id": "abb-2014-10-28",
+      "name": "Allmans · The final Beacon concert",
+      "angle": "October 28, 2014 · Farewell",
+      "summary": "The official database preserves multiple set segments and a commercial recording reference from the band’s final public concert.",
+      "facts": [
+        {
+          "period": "October 28",
+          "topic": "event",
+          "text": "The official archive identifies this as the band’s Beacon Theatre concert in New York.",
+          "source_ids": [
+            "abb_farewell"
+          ]
+        },
+        {
+          "period": "October 28",
+          "topic": "setlist",
+          "text": "The setlist includes Little Martha, Blue Sky, Whipping Post and Trouble No More.",
+          "source_ids": [
+            "abb_farewell"
+          ]
+        },
+        {
+          "period": "2024",
+          "topic": "release",
+          "text": "The archive links Final Concert 10-28-14 as a later official archival release.",
+          "source_ids": [
+            "abb_farewell"
+          ]
+        },
+        {
+          "period": "October 28",
+          "topic": "format",
+          "text": "The archive separates multiple sets, rather than a single continuous song list.",
+          "source_ids": [
+            "abb_farewell"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Distinguish the archived concert from the 2024 commercial release."
+      ]
+    }
+  ]
+}
