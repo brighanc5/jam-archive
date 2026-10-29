@@ -65,7 +65,7 @@ class TimelineTests(unittest.TestCase):
 
     def test_navigation_and_assets(self):
         self.assertIn('time-machine/index.html',(SITE/'index.html').read_text(encoding='utf-8'))
-        self.assertIn('time-machine/index.html',(SITE/'recordings/index.html').read_text(encoding='utf-8'))
+        self.assertIn('href="/time-machine/"',(SITE/'recordings/index.html').read_text(encoding='utf-8'))
         self.assertTrue((SITE/'assets/time-machine.js').is_file())
         self.assertTrue((SITE/'assets/time-machine.css').is_file())
         self.assertTrue((SITE/'time-machine/index.html').is_file())

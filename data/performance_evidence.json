@@ -1,0 +1,604 @@
+{
+  "version": "0.12",
+  "reviewed_on": "2026-10-29",
+  "editorial_principle": "Only print a transition or guest credit when the named source explicitly reports it. Release track order is not always a complete concert setlist. Do not infer song authorship or composition identity from title equality.",
+  "sources": {
+    "abb_1971_box": {
+      "title": "The 1971 Fillmore East Recordings — official six-disc track listing",
+      "url": "https://allmanbrothersband.com/discography/the-1971-fillmore-east-recordings/",
+      "type": "artist_official_discography",
+      "claims": "Track ordering and Elvin Bishop credit are reproduced as a source-based release index. Individual discs are not proof of every song played at the venue."
+    },
+    "rhino_2017": {
+      "title": "Rhino — May 1977: Get Shown the Light track listing and tape mastering notes",
+      "url": "https://media.rhino.com/press-release/grateful-dead-place-two-titles-top-15-billboards-top-albums-chart",
+      "type": "label_official_release",
+      "claims": "Release track lists and printed > markers are source-reported transitions, not independently analyzed audio."
+    },
+    "phish_net_1995": {
+      "title": "Phish.net — December 31, 1995 setlist and performance notes",
+      "url": "https://phish.net/setlists/phish-december-31-1995-madison-square-garden-new-york-ny-usa.html",
+      "type": "community_curated_setlist",
+      "claims": "Setlist punctuation and Tom Marshall guest note are drawn from the curated show entry. Source may be updated."
+    },
+    "phish_official_1995": {
+      "title": "Phish — New Year’s Eve 1995 official album information",
+      "url": "https://phish.com/release/new-years-eve-1995/",
+      "type": "artist_official_release",
+      "claims": "Supports official album context, not specific transitions on its own."
+    }
+  },
+  "sequences": [
+    {
+      "id": "abb-1971-03-12-early-cd1",
+      "show_id": "abb-1971-03-12-early",
+      "title": "March 12 · first show",
+      "section": "Disc 1 · first show",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "abb_1971_box"
+      ],
+      "release_context": "The 1971 Fillmore East Recordings (2014 six-disc edition)",
+      "editorial_note": "Official release track order for the first March 12 set; not a claim of an independently reconstructed complete performance.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Statesboro Blues",
+          "source_transition_after": null
+        },
+        {
+          "order": 2,
+          "song_title": "Trouble No More",
+          "source_transition_after": null
+        },
+        {
+          "order": 3,
+          "song_title": "Don’t Keep Me Wonderin’",
+          "source_transition_after": null
+        },
+        {
+          "order": 4,
+          "song_title": "Done Somebody Wrong",
+          "source_transition_after": null
+        },
+        {
+          "order": 5,
+          "song_title": "In Memory of Elizabeth Reed",
+          "source_transition_after": null
+        },
+        {
+          "order": 6,
+          "song_title": "You Don’t Love Me",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": []
+    },
+    {
+      "id": "abb-1971-03-12-late-cd2",
+      "show_id": "abb-1971-03-12-late",
+      "title": "March 12 · second show",
+      "section": "Disc 2 · second show",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "abb_1971_box"
+      ],
+      "release_context": "The 1971 Fillmore East Recordings (2014 six-disc edition)",
+      "editorial_note": "Official disc track list; punctuation in track names normalized for display.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Statesboro Blues",
+          "source_transition_after": null
+        },
+        {
+          "order": 2,
+          "song_title": "Trouble No More",
+          "source_transition_after": null
+        },
+        {
+          "order": 3,
+          "song_title": "Don’t Keep Me Wonderin’",
+          "source_transition_after": null
+        },
+        {
+          "order": 4,
+          "song_title": "Done Somebody Wrong",
+          "source_transition_after": null
+        },
+        {
+          "order": 5,
+          "song_title": "In Memory of Elizabeth Reed",
+          "source_transition_after": null
+        },
+        {
+          "order": 6,
+          "song_title": "You Don’t Love Me",
+          "source_transition_after": null
+        },
+        {
+          "order": 7,
+          "song_title": "Whipping Post",
+          "source_transition_after": null
+        },
+        {
+          "order": 8,
+          "song_title": "Hot ’Lanta",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": []
+    },
+    {
+      "id": "abb-1971-03-13-early-cd3",
+      "show_id": "abb-1971-03-13-early",
+      "title": "March 13 · first show",
+      "section": "Disc 3 · first show",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "abb_1971_box"
+      ],
+      "release_context": "The 1971 Fillmore East Recordings (2014 six-disc edition)",
+      "editorial_note": "Official release track list. No segue is asserted because the track list does not identify one.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Statesboro Blues",
+          "source_transition_after": null
+        },
+        {
+          "order": 2,
+          "song_title": "Trouble No More",
+          "source_transition_after": null
+        },
+        {
+          "order": 3,
+          "song_title": "Don’t Keep Me Wonderin’",
+          "source_transition_after": null
+        },
+        {
+          "order": 4,
+          "song_title": "Done Somebody Wrong",
+          "source_transition_after": null
+        },
+        {
+          "order": 5,
+          "song_title": "In Memory of Elizabeth Reed",
+          "source_transition_after": null
+        },
+        {
+          "order": 6,
+          "song_title": "You Don’t Love Me",
+          "source_transition_after": null
+        },
+        {
+          "order": 7,
+          "song_title": "Whipping Post",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": []
+    },
+    {
+      "id": "abb-1971-03-13-late-cd4-5",
+      "show_id": "abb-1971-03-13-late",
+      "title": "March 13 · second show",
+      "section": "Discs 4–5 · second show",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "abb_1971_box"
+      ],
+      "release_context": "The 1971 Fillmore East Recordings (2014 six-disc edition)",
+      "editorial_note": "The label spans this performance across discs 4 and 5. A source credit identifies Elvin Bishop on Drunken Hearted Boy; it does not establish his presence on the other tracks.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Statesboro Blues",
+          "source_transition_after": null
+        },
+        {
+          "order": 2,
+          "song_title": "One Way Out",
+          "source_transition_after": null
+        },
+        {
+          "order": 3,
+          "song_title": "Stormy Monday",
+          "source_transition_after": null
+        },
+        {
+          "order": 4,
+          "song_title": "Hot ’Lanta",
+          "source_transition_after": null
+        },
+        {
+          "order": 5,
+          "song_title": "Whipping Post",
+          "source_transition_after": null
+        },
+        {
+          "order": 6,
+          "song_title": "Mountain Jam",
+          "source_transition_after": null
+        },
+        {
+          "order": 7,
+          "song_title": "Drunken Hearted Boy",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": [
+        {
+          "name": "Elvin Bishop",
+          "on_song": "Drunken Hearted Boy",
+          "role": "Guest appearance credited on official release; instrument not specified in the cited track listing",
+          "source_ids": [
+            "abb_1971_box"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abb-1971-06-27-cd6",
+      "show_id": "abb-1971-06-27",
+      "title": "Fillmore East closing night",
+      "section": "Disc 6 · June 27 show",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "abb_1971_box"
+      ],
+      "release_context": "The 1971 Fillmore East Recordings (2014 six-disc edition)",
+      "editorial_note": "Bill Graham’s introduction is omitted from this song index; the release itself includes it before the songs.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Statesboro Blues",
+          "source_transition_after": null
+        },
+        {
+          "order": 2,
+          "song_title": "Don’t Keep Me Wonderin’",
+          "source_transition_after": null
+        },
+        {
+          "order": 3,
+          "song_title": "Done Somebody Wrong",
+          "source_transition_after": null
+        },
+        {
+          "order": 4,
+          "song_title": "One Way Out",
+          "source_transition_after": null
+        },
+        {
+          "order": 5,
+          "song_title": "In Memory of Elizabeth Reed",
+          "source_transition_after": null
+        },
+        {
+          "order": 6,
+          "song_title": "Midnight Rider",
+          "source_transition_after": null
+        },
+        {
+          "order": 7,
+          "song_title": "Hot ’Lanta",
+          "source_transition_after": null
+        },
+        {
+          "order": 8,
+          "song_title": "Whipping Post",
+          "source_transition_after": null
+        },
+        {
+          "order": 9,
+          "song_title": "You Don’t Love Me",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": []
+    },
+    {
+      "id": "gd-1977-05-05-scarlet",
+      "show_id": "gd-1977-05-05",
+      "title": "New Haven · Scarlet / Fire sequence",
+      "section": "Disc 2 · selected run",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "rhino_2017"
+      ],
+      "release_context": "May 1977: Get Shown the Light (Rhino, 2017)",
+      "editorial_note": "The Rhino track listing prints > after Scarlet Begonias and Fire on the Mountain. The markers are reported notation, not independent evidence of exact transition timing.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Scarlet Begonias",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 2,
+          "song_title": "Fire on the Mountain",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 3,
+          "song_title": "Good Lovin’",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": []
+    },
+    {
+      "id": "gd-1977-05-07-eyes",
+      "show_id": "gd-1977-05-07",
+      "title": "Boston · Eyes / Drums run",
+      "section": "Discs 4–5 · selected run",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "rhino_2017"
+      ],
+      "release_context": "May 1977: Get Shown the Light (Rhino, 2017)",
+      "editorial_note": "A selection from the label’s running order; placement across discs is not a new concert break.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Eyes of the World",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 2,
+          "song_title": "Drums",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 3,
+          "song_title": "The Wheel",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 4,
+          "song_title": "Wharf Rat",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 5,
+          "song_title": "Around and Around",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": []
+    },
+    {
+      "id": "gd-1977-05-08-scarlet",
+      "show_id": "gd-1977-05-08",
+      "title": "Cornell · Scarlet / Fire",
+      "section": "Disc 7 · selected run",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "rhino_2017"
+      ],
+      "release_context": "May 1977: Get Shown the Light (Rhino, 2017)",
+      "editorial_note": "The official listing explicitly marks the transition after Scarlet Begonias.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Scarlet Begonias",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 2,
+          "song_title": "Fire on the Mountain",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": []
+    },
+    {
+      "id": "gd-1977-05-08-stephen",
+      "show_id": "gd-1977-05-08",
+      "title": "Cornell · St. Stephen / Morning Dew",
+      "section": "Disc 8 · selected run",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "rhino_2017"
+      ],
+      "release_context": "May 1977: Get Shown the Light (Rhino, 2017)",
+      "editorial_note": "St. Stephen appears twice, and both occurrences are preserved as distinct track positions.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "St. Stephen",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 2,
+          "song_title": "Not Fade Away",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 3,
+          "song_title": "St. Stephen",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 4,
+          "song_title": "Morning Dew",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": []
+    },
+    {
+      "id": "gd-1977-05-09-help",
+      "show_id": "gd-1977-05-09",
+      "title": "Buffalo · Help / Slipknot / Franklin",
+      "section": "Disc 9 · selected run",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "rhino_2017"
+      ],
+      "release_context": "May 1977: Get Shown the Light (Rhino, 2017)",
+      "editorial_note": "Release-track sequence with explicit > markers after the first two tracks.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Help on the Way",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 2,
+          "song_title": "Slipknot!",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 3,
+          "song_title": "Franklin’s Tower",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": []
+    },
+    {
+      "id": "phish-1995-12-31-shine",
+      "show_id": "phish-1995-12-31",
+      "title": "Phish NYE · Gamehendge narrative sequence",
+      "section": "Set I · selected passage",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "phish_net_1995"
+      ],
+      "release_context": "New Year’s Eve 1995 — Phish setlist source; official album separately documented",
+      "editorial_note": "Phish.net marks the passage with > transitions and identifies Shine as a Phish debut with Tom Marshall singing. Sequence is selected, not a complete set.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Colonel Forbin’s Ascent",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 2,
+          "song_title": "Fly Famous Mockingbird",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 3,
+          "song_title": "Shine",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 4,
+          "song_title": "Fly Famous Mockingbird",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 5,
+          "song_title": "Sparkle",
+          "source_transition_after": ">"
+        },
+        {
+          "order": 6,
+          "song_title": "Chalk Dust Torture",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": [
+        {
+          "name": "Tom Marshall",
+          "on_song": "Shine",
+          "role": "Guest vocals reported in Phish.net setlist note",
+          "source_ids": [
+            "phish_net_1995"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phish-1995-12-31-delay",
+      "show_id": "phish-1995-12-31",
+      "title": "Phish NYE · Digital Delay Loop Jam",
+      "section": "Set II · end of set",
+      "evidence_scope": "release_excerpt",
+      "source_ids": [
+        "phish_net_1995"
+      ],
+      "release_context": "New Year’s Eve 1995 — Phish setlist source; official album separately documented",
+      "editorial_note": "Phish.net distinguishes the -> symbol from > in its source setlist. We reproduce the original notation rather than assert a precise musical taxonomy.",
+      "entries": [
+        {
+          "order": 1,
+          "song_title": "Mike’s Song",
+          "source_transition_after": "->"
+        },
+        {
+          "order": 2,
+          "song_title": "Digital Delay Loop Jam",
+          "source_transition_after": null
+        }
+      ],
+      "documented_guests": []
+    }
+  ],
+  "recording_lineages": [
+    {
+      "id": "abb-fillmore-2014",
+      "title": "The 1971 Fillmore East Recordings",
+      "show_ids": [
+        "abb-1971-03-12-early",
+        "abb-1971-03-12-late",
+        "abb-1971-03-13-early",
+        "abb-1971-03-13-late",
+        "abb-1971-06-27"
+      ],
+      "source_ids": [
+        "abb_1971_box"
+      ],
+      "steps": [
+        {
+          "stage": "Documented live performances",
+          "detail": "Four March 12–13 sets and the June 27 closing set"
+        },
+        {
+          "stage": "Commercial archival collection",
+          "detail": "2014 six-CD edition covering those concerts"
+        }
+      ],
+      "limitations": "The cited discography does not by itself specify a definitive original-tape-to-master chain for every track."
+    },
+    {
+      "id": "dead-betty-2017",
+      "title": "Betty Boards to Get Shown the Light",
+      "show_ids": [
+        "gd-1977-05-05",
+        "gd-1977-05-07",
+        "gd-1977-05-08",
+        "gd-1977-05-09"
+      ],
+      "source_ids": [
+        "rhino_2017"
+      ],
+      "steps": [
+        {
+          "stage": "Live performances",
+          "detail": "Four May 1977 concerts at New Haven, Boston, Cornell and Buffalo"
+        },
+        {
+          "stage": "Soundboard masters",
+          "detail": "Recorded by Betty Cantor-Jackson (per Rhino)"
+        },
+        {
+          "stage": "Master-tape transfers",
+          "detail": "Plangent Processes (per Rhino)"
+        },
+        {
+          "stage": "Mastering",
+          "detail": "Jeffrey Norman, HDCD (per Rhino)"
+        },
+        {
+          "stage": "Commercial edition",
+          "detail": "2017 Rhino eleven-disc box set"
+        }
+      ],
+      "limitations": "This documents the source chain of the Rhino release, not every circulating tape or fan-made matrix."
+    }
+  ]
+}

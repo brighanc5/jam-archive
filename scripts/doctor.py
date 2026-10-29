@@ -13,7 +13,7 @@ EXPECTED = [
     'wrangler.jsonc',
     'RELEASE_VERSION.txt',
     'build_v03.py', 'build_v04.py', 'build_v05.py', 'build_v06.py',
-    'build_v061.py', 'build_v07.py', 'build_v08.py', 'build_v09.py', 'build_v010.py', 'build_v011.py',
+    'build_v061.py', 'build_v07.py', 'build_v08.py', 'build_v09.py', 'build_v010.py', 'build_v011.py', 'build_v012.py',
     'history_seed.py', 'song_paths.js', 'song_paths.css',
     'connections.js', 'connections.css', 'deep_archive.js', 'deep_archive.css', 'data/research_dossiers.json',
     'data/approved_recordings.json',
@@ -21,7 +21,7 @@ EXPECTED = [
     'scripts/safety_check.py', 'tests/test_agent.py',
     'tests/test_publication.py', 'tests/test_contributions.py',
     'tests/test_time_machine.py', 'tests/test_song_paths.py',
-    'tests/test_connections.py', 'tests/test_deep_archive.py',
+    'tests/test_connections.py', 'tests/test_deep_archive.py', 'tests/test_performance_lab.py', 'data/performance_evidence.json',
 ]
 
 def check():
@@ -52,7 +52,7 @@ def check():
     except Exception as exc:
         print('TEST DISCOVERY ERROR:', exc)
         count = 0
-    print('Tests discovered:', count, '(v0.11 expects at least 64)')
+    print('Tests discovered:', count, '(v0.12 expects at least 79)')
     # Stop before Python evaluates unresolved Git conflict markers, a previous failure.
     conflict_files = []
     for path in ROOT.rglob('*'):
@@ -68,10 +68,10 @@ def check():
             conflict_files.append(str(path.relative_to(ROOT)))
     for path in conflict_files:
         print('UNRESOLVED MERGE CONFLICT:', path)
-    if missing or conflict_files or 'v0.11' not in version or count < 64 or not shutil.which('node'):
+    if missing or conflict_files or 'v0.12' not in version or count < 79 or not shutil.which('node'):
         print('DOCTOR FAILED: probably incomplete file copy, wrong folder, or missing Node.js.')
         return 1
-    print('REPOSITORY DOCTOR PASS: complete v0.11 source, 64+ tests, no Git conflict markers.')
+    print('REPOSITORY DOCTOR PASS: complete v0.12 source, 79+ tests, no Git conflict markers.')
     return 0
 
 if __name__ == '__main__':

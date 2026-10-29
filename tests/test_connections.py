@@ -92,7 +92,7 @@ class FamilyTreeTests(unittest.TestCase):
 
     def test_navigation_home_and_artist_profiles(self):
         for rel in ('index.html','song-paths/index.html','time-machine/index.html','recordings/index.html'):
-            self.assertIn('connections/index.html', (SITE / rel).read_text(encoding='utf-8'))
+            self.assertTrue('href="/connections/"' in (SITE / rel).read_text(encoding='utf-8') or 'connections/index.html' in (SITE / rel).read_text(encoding='utf-8'), rel)
         for artist in self.cat['entities']:
             file = SITE / 'artists' / artist['id'] / 'index.html'
             text = file.read_text(encoding='utf-8')
@@ -112,12 +112,12 @@ class FamilyTreeTests(unittest.TestCase):
 
     def test_sitemap_report_and_release_marker(self):
         report = json.loads((SITE / 'assets/build_report.json').read_text(encoding='utf-8'))
-        self.assertEqual(report['version'], '0.11')
+        self.assertEqual(report['version'], '0.12')
         self.assertEqual(report['verified_relationships'], 52)
         self.assertEqual(report['graph_entities'], 55)
         self.assertEqual(report['graph_components'], 8)
         self.assertEqual(report['unverified_relationships_excluded'], 25)
-        self.assertIn('v0.11', (ROOT / 'RELEASE_VERSION.txt').read_text())
+        self.assertIn('v0.12', (ROOT / 'RELEASE_VERSION.txt').read_text())
         ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
         locs = [x.text for x in ET.parse(SITE / 'sitemap.xml').findall('s:url/s:loc',ns)]
         self.assertEqual(len([x for x in locs if x.endswith('/connections/')]), 1)

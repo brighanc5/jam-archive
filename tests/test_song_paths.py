@@ -19,7 +19,7 @@ class SongPathTests(unittest.TestCase):
         cls.shows = {h['id']: h for h in cls.cat['historical_shows']}
 
     def test_release_is_complete(self):
-        self.assertIn('v0.11', (ROOT / 'RELEASE_VERSION.txt').read_text())
+        self.assertIn('v0.12', (ROOT / 'RELEASE_VERSION.txt').read_text())
         for file in ('build_v09.py', 'song_paths.css', 'song_paths.js',
                      'scripts/doctor.py', '.github/workflows/verify-static.yml'):
             self.assertTrue((ROOT / file).is_file(), file)
@@ -69,7 +69,7 @@ class SongPathTests(unittest.TestCase):
 
     def test_home_and_other_explorers_link_to_song_paths(self):
         for page in ('index.html','time-machine/index.html','recordings/index.html'):
-            self.assertIn('song-paths/index.html', (SITE / page).read_text(), page)
+            self.assertTrue('song-paths/index.html' in (SITE / page).read_text() or 'href="/song-paths/"' in (SITE / page).read_text(), page)
         self.assertTrue((SITE / 'assets/song-paths.js').is_file())
 
     def test_published_json_does_not_contain_internal_review_data(self):
@@ -80,7 +80,7 @@ class SongPathTests(unittest.TestCase):
 
     def test_release_report_and_sitemap(self):
         report = json.loads((SITE / 'assets/build_report.json').read_text())
-        self.assertEqual(report['version'], '0.11')
+        self.assertEqual(report['version'], '0.12')
         self.assertEqual(report['song_documented_appearances'], 106)
         self.assertEqual(report['song_titles_indexed'], 53)
         ns = {'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}

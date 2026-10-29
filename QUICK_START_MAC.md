@@ -1,3 +1,9 @@
+# Quick start — The Jam Archive v0.12
+
+For the **current** complete repository installation, read [INSTALL_V012_MAC.md](INSTALL_V012_MAC.md). The v0.9 instructions below are retained for historical reference only; do **not** follow their old ZIP filenames or test counts.
+
+---
+
 # Quick start on Mac — The Jam Archive v0.9
 
 **You already have a GitHub repository and an existing Cloudflare Worker. Do not make a new one.**

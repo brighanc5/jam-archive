@@ -1,5 +1,20 @@
 # The Jam Archive
 
+## v0.12 — Performance Lab + whole-site audit (October 29, 2026)
+
+**Current full-source release**. New [Performance Lab](https://odd-king-7e31.brighamhancock.workers.dev/performance-lab/) documents 12 cited historic sequences, 62 individual track positions, 18 source-printed transition markers, and 2 song-specific guest credits. [Recording lineages](https://odd-king-7e31.brighamhancock.workers.dev/performance-lab/lineages/) distinguish the performance, tape source, transfer, mastering and commercial album where available. The study pages link back to their official or curated original sources; no concert audio is hosted.
+
+The complete generated site now has **323 indexed routes, 79 unit tests and a 324-page structural audit**. Responsive section navigation, keyboard skip links, explicit labels and a dated/non-live tour snapshot improve usability and accuracy. **The local audit is not a live-hosted-site or browser visual audit.** Build and verify with:
+
+```bash
+python3 scripts/doctor.py
+bash scripts/build_public.sh
+python3 scripts/check_live.py  # Only after successful Cloudflare deployment
+```
+
+Read **[INSTALL_V012_MAC.md](INSTALL_V012_MAC.md)**, **[RELEASE_NOTES_V012.md](RELEASE_NOTES_V012.md)** and **[AUDIT_REPORT_V012.md](AUDIT_REPORT_V012.md)**. This is a complete repository replacement: retain your existing `.git`, `.github` must be copied, and commit/push is required before Cloudflare updates.
+
+
 ## v0.11 — Deep Archive (research expansion)
 
 Full replacement edition, source reviewed October 29, 2026.

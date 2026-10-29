@@ -1,67 +1,55 @@
 #!/usr/bin/env python3
-"""Read-only check that Cloudflare actually serves the new release.
+"""Read-only production release verifier. Run manually after Cloudflare deployment.
 
-This script is deliberately NOT included in the offline build or GitHub CI.
-Run it manually after a successful deployment. It makes only three GET requests.
+Uses a handful of HTTP GETs; never changes a deployment or Cloudflare settings.
 """
-from pathlib import Path
 from urllib.error import URLError, HTTPError
-from urllib.request import Request, urlopen
-import json
-import sys
+from urllib.request import Request,urlopen
+import json,sys
 
-ORIGIN = 'https://odd-king-7e31.brighamhancock.workers.dev'
+ORIGIN='https://odd-king-7e31.brighamhancock.workers.dev'
+HEADERS={'User-Agent':'JamArchive-ReleaseVerifier/0.12','Accept':'text/html,application/json'}
 
-
-def fetch(path, allow_404=False):
-    request = Request(ORIGIN + path, headers={'User-Agent': 'TheJamArchive-ReleaseVerifier/0.11', 'Accept': 'text/html,application/json'})
+def fetch(path,allow404=False):
+    request=Request(ORIGIN+path,headers=HEADERS)
     try:
-        with urlopen(request, timeout=12) as response:
-            return response.read().decode('utf-8')
+        with urlopen(request,timeout=12) as r:
+            return r.status,r.read().decode('utf-8'),dict(r.headers)
     except HTTPError as exc:
-        # A correct custom 404 intentionally has HTTP status 404.
-        if allow_404 and exc.code == 404:
-            return exc.read().decode('utf-8')
+        if allow404 and exc.code==404:
+            return 404,exc.read().decode('utf-8'),dict(exc.headers)
         raise
 
-
 def main():
-    print('Checking live website:', ORIGIN)
     try:
-        report = json.loads(fetch('/assets/build_report.json'))
-        print('Live release:', report.get('version', 'unknown'))
-        if report.get('version') != '0.11':
-            print('NOT DEPLOYED: GitHub and/or Cloudflare is serving an older version.')
-            return 1
-        if report.get('verified_relationships') != 52:
-            print('MISMATCH: v0.10 relationship report is missing.')
-            return 1
-        if report.get('deep_archive_assertions') != 110 or report.get('deep_archive_dossiers') != 22:
-            print('MISMATCH: Deep Archive counts are missing from production build.')
-            return 1
-        library = fetch('/deep-archive/')
-        if 'The stories behind the shows.' not in library or 'id="da-query"' not in library:
-            print('MISMATCH: Deep Archive index missing or incomplete.')
-            return 1
-        dossier = fetch('/deep-archive/shows/gd-1977-05-08/')
-        if 'Betty Cantor-Jackson' not in dossier or 'Source bibliography' not in dossier:
-            print('MISMATCH: Cornell research dossier missing or incomplete.')
-            return 1
-        family = fetch('/connections/')
-        if 'id="cx-data"' not in family or 'SIX DEGREES OF JAM' not in family:
-            print('MISMATCH: Family Tree page is missing or incomplete.')
-            return 1
-        missing = fetch('/connections/__not_an_indexed_show__/index.html', allow_404=True)
-        if 'href="/assets/detail.css"' not in missing or 'href="/connections/"' not in missing:
-            print('MISMATCH: old 404 page may still be deployed.')
-            return 1
-    except (OSError, URLError, HTTPError, json.JSONDecodeError, UnicodeDecodeError) as exc:
-        print('COULD NOT VERIFY LIVE: ' + str(exc))
-        print('The local build can still be correct; check GitHub Actions and Cloudflare Deployments.')
-        return 2
-    print('LIVE DEPLOYMENT PASS: v0.11 Deep Archive, v0.10 Family Tree and 404 routing are publicly served.')
-    return 0
-
-
-if __name__ == '__main__':
-    sys.exit(main())
+        status,raw,headers=fetch('/assets/build_report.json')
+        report=json.loads(raw)
+        print('Live release:',report.get('version','unknown'))
+        if report.get('version')!='0.12':
+            print('NOT CURRENT: v0.12 has not reached Cloudflare. Check GitHub push and production deploy.');return 1
+        if (report.get('performance_sequences'),report.get('performance_track_positions'))!=(12,62):
+            print('MISMATCH: performance evidence metadata not in published release');return 1
+        _,raw,_=fetch('/assets/site_audit.json');audit=json.loads(raw)
+        if audit.get('issues')!=0 or audit.get('html_pages_inspected')!=324:
+            print('MISMATCH: offline site quality audit report not published');return 1
+        checks={'/performance-lab/':['Find the moments.','id="pl-search"'],
+                '/performance-lab/gd-1977-05-08-scarlet/':['Scarlet Begonias','Fire on the Mountain'],
+                '/performance-lab/lineages/':['Plangent Processes','Betty Cantor-Jackson'],
+                '/deep-archive/':['The stories behind the shows.'],
+                '/connections/':['SIX DEGREES OF JAM'],
+                '/song-paths/':['Every song has'],
+                '/recordings/':['Follow the tape.']}
+        for path,needles in checks.items():
+            _,html,headers=fetch(path)
+            if not all(n in html for n in needles):
+                print('MISMATCH:',path,'does not show expected content');return 1
+        status,raw,headers=fetch('/not-an-indexed-show-v012/',allow404=True)
+        if status!=404 or 'We haven\'t indexed this page.' not in raw:
+            print('MISMATCH: missing page is not correctly returning the custom 404');return 1
+        print('LIVE DEPLOYMENT PASS: v0.12 pages, source evidence, quality audit and 404 response are served.')
+        print('Optional: use curl -I '+ORIGIN+'/performance-lab/ to inspect response security headers.')
+        return 0
+    except (OSError,URLError,HTTPError,json.JSONDecodeError,UnicodeDecodeError) as exc:
+        print('COULD NOT VERIFY LIVE: '+str(exc))
+        print('The local build may be fine. Check GitHub Actions and Cloudflare Deployments.');return 2
+if __name__=='__main__':sys.exit(main())

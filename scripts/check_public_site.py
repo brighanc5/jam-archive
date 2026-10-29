@@ -43,6 +43,10 @@ assert set(urls)==html_routes, f'Sitemap does not exactly match the {len(html_ro
 assert all(url.startswith(origin+'/') for url in urls), 'Sitemap points at wrong origin'
 assert len(list((site/'artists').glob('*/index.html')))==196
 assert len(list((site/'shows').glob('*/index.html')))==25
+assert (site/'performance-lab/index.html').is_file(), 'Missing v0.12 Performance Lab'
+assert (site/'performance-lab/lineages/index.html').is_file(), 'Missing recording-lineage page'
+assert len(list((site/'performance-lab').glob('*/index.html')))==13, 'Missing performance studies/lineage'
+assert len(json.loads((site/'assets/performance-lab.json').read_text())['sequences']) == 12
 assert (site/'deep-archive/index.html').is_file(), 'Missing v0.11 Deep Archive'
 assert len(list((site/'deep-archive/artists').glob('*/index.html')))==10
 assert len(list((site/'deep-archive/shows').glob('*/index.html')))==12
