@@ -13,13 +13,15 @@ EXPECTED = [
     'wrangler.jsonc',
     'RELEASE_VERSION.txt',
     'build_v03.py', 'build_v04.py', 'build_v05.py', 'build_v06.py',
-    'build_v061.py', 'build_v07.py', 'build_v08.py', 'build_v09.py',
+    'build_v061.py', 'build_v07.py', 'build_v08.py', 'build_v09.py', 'build_v010.py',
     'history_seed.py', 'song_paths.js', 'song_paths.css',
+    'connections.js', 'connections.css',
     'data/approved_recordings.json',
     'scripts/build_public.sh', 'scripts/check_public_site.py',
     'scripts/safety_check.py', 'tests/test_agent.py',
     'tests/test_publication.py', 'tests/test_contributions.py',
     'tests/test_time_machine.py', 'tests/test_song_paths.py',
+    'tests/test_connections.py',
 ]
 
 def check():
@@ -50,11 +52,26 @@ def check():
     except Exception as exc:
         print('TEST DISCOVERY ERROR:', exc)
         count = 0
-    print('Tests discovered:', count, '(v0.9 expects at least 37)')
-    if missing or 'v0.9' not in version or count < 37 or not shutil.which('node'):
+    print('Tests discovered:', count, '(v0.10 expects at least 50)')
+    # Stop before Python evaluates unresolved Git conflict markers, a previous failure.
+    conflict_files = []
+    for path in ROOT.rglob('*'):
+        if not path.is_file() or path.suffix not in {'.py', '.js', '.css', '.sh', '.yml', '.yaml', '.json', '.jsonc'}:
+            continue
+        if any(part in {'.git', 'site', '__pycache__'} for part in path.relative_to(ROOT).parts):
+            continue
+        try:
+            lines = path.read_text(encoding='utf-8').splitlines()
+        except (UnicodeDecodeError, OSError):
+            continue
+        if any(line.startswith(('<<<<<<< ', '>>>>>>> ')) or line == '=======' for line in lines):
+            conflict_files.append(str(path.relative_to(ROOT)))
+    for path in conflict_files:
+        print('UNRESOLVED MERGE CONFLICT:', path)
+    if missing or conflict_files or 'v0.10' not in version or count < 50 or not shutil.which('node'):
         print('DOCTOR FAILED: probably incomplete file copy, wrong folder, or missing Node.js.')
         return 1
-    print('REPOSITORY DOCTOR PASS: complete v0.9 source tree and test suite detected.')
+    print('REPOSITORY DOCTOR PASS: complete v0.10 source, 50+ tests, no Git conflict markers.')
     return 0
 
 if __name__ == '__main__':

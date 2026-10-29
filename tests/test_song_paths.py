@@ -19,7 +19,7 @@ class SongPathTests(unittest.TestCase):
         cls.shows = {h['id']: h for h in cls.cat['historical_shows']}
 
     def test_release_is_complete(self):
-        self.assertIn('v0.9', (ROOT / 'RELEASE_VERSION.txt').read_text())
+        self.assertIn('v0.10', (ROOT / 'RELEASE_VERSION.txt').read_text())
         for file in ('build_v09.py', 'song_paths.css', 'song_paths.js',
                      'scripts/doctor.py', '.github/workflows/verify-static.yml'):
             self.assertTrue((ROOT / file).is_file(), file)
@@ -80,7 +80,7 @@ class SongPathTests(unittest.TestCase):
 
     def test_release_report_and_sitemap(self):
         report = json.loads((SITE / 'assets/build_report.json').read_text())
-        self.assertEqual(report['version'], '0.9')
+        self.assertEqual(report['version'], '0.10')
         self.assertEqual(report['song_documented_appearances'], 106)
         self.assertEqual(report['song_titles_indexed'], 53)
         ns = {'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}

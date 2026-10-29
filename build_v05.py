@@ -128,17 +128,8 @@ write('research-gaps/index.html',page('Research gaps','Transparent missing metad
 old=(ROOT/'index.html').read_text()
 raw=re.search(r'<script>const db=(.*?);</script>',old,flags=re.S)
 assert raw, 'Could not find catalog embedding'
-serialized_catalog = json.dumps(
-    cat, ensure_ascii=False, separators=(',', ':')
-).replace('</', '<\\/')
-
-old = (
-    old[:raw.start()]
-    + '<script>const db='
-    + serialized_catalog
-    + ';</script>'
-    + old[raw.end():]
-)
+serialized_catalog = json.dumps(cat, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+old=old[:raw.start()] + '<script>const db=' + serialized_catalog + ';</script>' + old[raw.end():]
 nav='<button data-nav="discover"><span><span class="icon">⌕</span>Discover</span></button>\n'
 old=old.replace('<button class="active" data-nav="universe">',nav+'<button class="active" data-nav="universe">',1)
 insert='''<section class="view" id="view-discover"><div class="heading"><div><div class="eyebrow">Discovery engine / the whole archive</div><h2>Find the music, not just the band.</h2><p>Search across artists, side projects, historic shows, selected songs, tape references, published concert snapshots and the original source directory. Press / to search from anywhere.</p></div></div><div class="callout"><div class="eyebrow">Explore the living history</div><h3>One search. Every connected source we have.</h3><p>Try an unusual musician, a concert venue, a song title, or a date. Results link to permanent-style pages you can share with other fans.</p><input id="discovery-input" class="field" type="search" placeholder="Try Fillmore East, Morning Dew, Oysterhead, Derek Trucks…" aria-label="Search the entire archive" style="width:100%;margin-top:9px" autocomplete="off"></div><div class="filterrow" aria-label="Result types"><button class="pillbtn active" data-discover-type="all">Everything</button><button class="pillbtn" data-discover-type="artist">Artists</button><button class="pillbtn" data-discover-type="show">Historic shows</button><button class="pillbtn" data-discover-type="song">Songs</button><button class="pillbtn" data-discover-type="tape">Recordings</button><button class="pillbtn" data-discover-type="event">Tour snapshots</button><button class="pillbtn" data-discover-type="source">Sources</button></div><div class="twocol discovery-layout"><div><p class="tiny" id="discovery-explainer"></p><p class="tiny" id="discovery-count"></p><div class="discovery-results" id="discovery-results"></div></div><aside><div class="card"><div class="eyebrow">On your radar · <span id="discovery-following-count">0</span> followed</div><h3>Upcoming entries for your artists</h3><p class="note">Not real-time alerts. Future-dated events from our last curated snapshot only.</p><div id="discovery-radar"></div><p class="tiny" id="discovery-radar-note"></p></div><div class="card"><h3>Help close the gaps</h3><p class="note">One eyewitness correction or accurately attributed tape source can make a historical record better.</p><a class="outlink" href="contribute/index.html">How to contribute →</a><div class="divider"></div><a class="outlink" href="trails/index.html">Explore listening trails →</a><div class="divider"></div><a class="outlink" href="research-gaps/index.html">Find research gaps →</a></div></aside></div></section>'''

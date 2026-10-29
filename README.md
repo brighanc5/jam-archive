@@ -4,13 +4,21 @@
 
 **Live address:** https://odd-king-7e31.brighamhancock.workers.dev
 
+## v0.10 — The Family Tree + deploy diagnostics (October 29, 2026)
+
+**New:** [The Family Tree](https://odd-king-7e31.brighamhancock.workers.dev/connections/) lets fans select artists, explore directly sourced musician-project relationships, and calculate a shortest verified connection between two entries. The **Six Degrees of Jam** explorer shows each supporting source instead of implying undocumented sit-ins. It covers 52 verified relationship records among 55 artist/projects across eight components. Twenty-five unreviewed relationships are excluded from paths. All 52 verified links are present in the HTML itself, even with JavaScript disabled.
+
+A long-standing broken-navigation issue on nested 404 URLs is corrected. The repository doctor now catches Git merge markers before they can corrupt the build. A read-only `python3 scripts/check_live.py` command checks **whether Cloudflare truly deployed this version**, rather than relying on successful local tests. The complete v0.10 source contains **50 tests** and builds **286 public routes** without fetching external data or using paid services.
+
+See [INSTALL_V010_MAC.md](INSTALL_V010_MAC.md) for the full replacement workflow; keep your existing `.git` directory. Source and deployment are separate: copying files is not publication.
+
 ## v0.9 — Song Paths + complete-source release (October 28, 2026)
 
 **New:** [Song Paths](https://odd-king-7e31.brighamhancock.workers.dev/song-paths/), a source-linked, server-rendered directory of **53 song titles and 106 documented show-excerpt appearances**. Search song titles, venue notes or dates; filter by performer or recurring titles; open the individual concert records; browse songs co-indexed in the same shows. Co-indexed songs are not proof of a segue or adjacent performance, and the dataset does not purport to be complete setlists.
 
 This release contains the **entire GitHub-ready project**—not an incremental patch—including v0.1–v0.8 features, all data sources, scripts, GitHub workflows, tests and website configuration. It adds a source-tree diagnostic (`python3 scripts/doctor.py`) that explicitly checks version and the expected **37 test cases** before the build starts. Run `bash scripts/build_public.sh` to regenerate and validate **285 indexed URLs**; all build steps run locally with no external data fetch or paid service.
 
-See [INSTALL_V09_MAC.md](INSTALL_V09_MAC.md) for the full, beginner-safe copy procedure. Keep your existing `.git` directory so that GitHub Desktop remains connected. The built `site/` folder is generated/ignored by Git. Cloudflare deployment still requires pushing through the existing GitHub-connected project.
+The previous release used [INSTALL_V09_MAC.md](INSTALL_V09_MAC.md); use the v0.10 installation guide for the current package. Keep your existing `.git` directory so that GitHub Desktop remains connected. The built `site/` folder is generated/ignored by Git. Cloudflare deployment still requires pushing through the existing GitHub-connected project.
 
 ## v0.8 — Time Machine / historical depth
 
