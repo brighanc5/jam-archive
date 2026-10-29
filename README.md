@@ -1,5 +1,10 @@
 # The Jam Archive
 
+
+## v0.14 — Show Studies + psychedelic/mobile redesign (October 29, 2026)
+
+Start with `INSTALL_V014_MAC.md`. This edition adds 17 cited deep show studies, 238 source-listed track positions, 158 song-title pages, and an original tie-dye-influenced visual identity. The archive is easier to use on a phone, and long lists now have **Load more** controls. All source links remain credited; nothing streams from our server. Build with `bash scripts/build_public.sh`. The permanent URL is https://thejamarchive.org .
+
 ## v0.13 — Archive Atlas: major source-index expansion (October 29, 2026)
 
 **Current complete-source release.** New [Archive Atlas](https://odd-king-7e31.brighamhancock.workers.dev/era-atlas/) indexes **361 distinct documented performance records** across the Allman Brothers, Grateful Dead, Phish and Goose. The site retains the 25 more deeply researched historical show dossiers and adds **336 date-and-venue index records**, 12 tour/history chapters, and 20 short source-attributed spotlights. Every new index-only page explicitly discloses that its source has **not** established a complete setlist, lineup, surviving recording or transfer lineage.

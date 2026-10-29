@@ -1,0 +1,1841 @@
+{
+  "version": "0.14",
+  "reviewed_on": "2026-10-29",
+  "editorial_standard": "This is source-transcribed factual metadata, not independent audio analysis. Full show setlist where the show listing specifies it; otherwise published release track order. Printed > and -> reproduced only where the source documents them. Cover credit is not a guest credit. Taper lineage and personnel not inferred.",
+  "sources": {
+    "abb_box": {
+      "title": "The Allman Brothers Band — The 1971 Fillmore East Recordings, six-disc track listing",
+      "url": "https://allmanbrothersband.com/discography/the-1971-fillmore-east-recordings/",
+      "type": "artist_official_release"
+    },
+    "dead_boston": {
+      "title": "Grateful Dead official show archive — Boston Garden May 7, 1977",
+      "url": "https://www.dead.net/show/may-7-1977",
+      "type": "artist_official_setlist"
+    },
+    "dead_cornell": {
+      "title": "Grateful Dead official show archive — Barton Hall May 8, 1977",
+      "url": "https://www.dead.net/show/may-8-1977",
+      "type": "artist_official_setlist"
+    },
+    "dead_buffalo": {
+      "title": "Grateful Dead official show archive — War Memorial Auditorium May 9, 1977",
+      "url": "https://www.dead.net/show/may-9-1977",
+      "type": "artist_official_setlist"
+    },
+    "dead_winterland": {
+      "title": "Grateful Dead official show archive — Winterland Arena June 9, 1977",
+      "url": "https://www.dead.net/show/june-9-1977",
+      "type": "artist_official_setlist"
+    },
+    "phish_denver16": {
+      "title": "Phish.net community-curated setlist — November 16, 1997",
+      "url": "https://phish.net/setlists/phish-november-16-1997-mcnichols-arena-denver-co-usa.html",
+      "type": "community_curated_setlist"
+    },
+    "phish_denver17": {
+      "title": "Phish.net community-curated setlist — November 17, 1997",
+      "url": "https://phish.net/setlists/phish-november-17-1997-mcnichols-arena-denver-co-usa.html",
+      "type": "community_curated_setlist"
+    },
+    "phish_auburn": {
+      "title": "Phish.net community-curated setlist — December 6, 1997",
+      "url": "https://phish.net/setlists/phish-december-06-1997-the-palace-of-auburn-hills-auburn-hills-mi-usa.html",
+      "type": "community_curated_setlist"
+    },
+    "phish_dayton": {
+      "title": "Phish.net community-curated setlist — December 7, 1997",
+      "url": "https://phish.net/setlists/phish-december-07-1997-ervin-j-nutter-center-wright-state-university-dayton-oh-usa.html",
+      "type": "community_curated_setlist"
+    },
+    "goose_fox21": {
+      "title": "Goose — June 21, 2024 Fox Theatre official live album",
+      "url": "https://goosetheband.bandcamp.com/album/2024-06-21-fox-theatre-atlanta-ga",
+      "type": "artist_official_recording"
+    },
+    "goose_fox22": {
+      "title": "Goose — June 22, 2024 Fox Theatre official live album",
+      "url": "https://goosetheband.bandcamp.com/album/2024-06-22-fox-theatre-atlanta-ga",
+      "type": "artist_official_recording"
+    },
+    "goose_forest": {
+      "title": "Goose — June 29, 2024 Forest Hills official live album",
+      "url": "https://goosetheband.bandcamp.com/album/2024-06-29-forest-hills-queens-ny",
+      "type": "artist_official_recording"
+    },
+    "goose_greek": {
+      "title": "Goose — Live at the Greek Theatre official album",
+      "url": "https://goosetheband.bandcamp.com/album/live-at-the-greek-theatre",
+      "type": "artist_official_recording"
+    }
+  },
+  "studies": [
+    {
+      "id": "abb-1971-03-12-early",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-12",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "source_ids": [
+        "abb_box"
+      ],
+      "evidence_scope": "official_release_track_order",
+      "sections": [
+        {
+          "name": "First show · CD 1",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Statesboro Blues",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Trouble No More",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Don’t Keep Me Wonderin’",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Done Somebody Wrong",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "In Memory of Elizabeth Reed",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "You Don’t Love Me",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "2014 six-disc issue; first March 12 set.",
+      "research_notes": [
+        "The release divides the weekend into four performances; do not conflate early and late sets."
+      ],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "The 1971 Fillmore East Recordings (2014)",
+        "recording_scope": "Disc 1 includes this first show",
+        "source_id": "abb_box"
+      }
+    },
+    {
+      "id": "abb-1971-03-12-late",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-12",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "source_ids": [
+        "abb_box"
+      ],
+      "evidence_scope": "official_release_track_order",
+      "sections": [
+        {
+          "name": "Second show · CD 2",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Statesboro Blues",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Trouble No More",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Don’t Keep Me Wonderin’",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Done Somebody Wrong",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "In Memory of Elizabeth Reed",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "You Don’t Love Me",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Whipping Post",
+              "transition_after": null
+            },
+            {
+              "position": 8,
+              "title": "Hot ’Lanta",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "2014 six-disc issue; second March 12 set.",
+      "research_notes": [],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "The 1971 Fillmore East Recordings (2014)",
+        "recording_scope": "Disc 2 includes this second show",
+        "source_id": "abb_box"
+      }
+    },
+    {
+      "id": "abb-1971-03-13-early",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-13",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "source_ids": [
+        "abb_box"
+      ],
+      "evidence_scope": "official_release_track_order",
+      "sections": [
+        {
+          "name": "First show · CD 3",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Statesboro Blues",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Trouble No More",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Don’t Keep Me Wonderin’",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Done Somebody Wrong",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "In Memory of Elizabeth Reed",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "You Don’t Love Me",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Whipping Post",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "2014 six-disc issue; first March 13 set.",
+      "research_notes": [],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "The 1971 Fillmore East Recordings (2014)",
+        "recording_scope": "Disc 3 includes this first show",
+        "source_id": "abb_box"
+      }
+    },
+    {
+      "id": "abb-1971-03-13-late",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-13",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "source_ids": [
+        "abb_box"
+      ],
+      "evidence_scope": "official_release_track_order",
+      "sections": [
+        {
+          "name": "Second show · CDs 4–5",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Statesboro Blues",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "One Way Out",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Stormy Monday",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Hot ’Lanta",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Whipping Post",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Mountain Jam",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Drunken Hearted Boy",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "2014 six-disc issue; the second March 13 performance spans discs 4 and 5.",
+      "research_notes": [
+        "The source attributes Drunken Hearted Boy to a guest appearance by Elvin Bishop."
+      ],
+      "documented_guests": [
+        {
+          "name": "Elvin Bishop",
+          "role": "guest musician / vocals not independently specified",
+          "on_title": "Drunken Hearted Boy",
+          "source_ids": [
+            "abb_box"
+          ]
+        }
+      ],
+      "official_recording": {
+        "label": "The 1971 Fillmore East Recordings (2014)",
+        "recording_scope": "Discs 4–5 represent the second show; disc boundary is not a concert boundary",
+        "source_id": "abb_box"
+      }
+    },
+    {
+      "id": "abb-1971-06-27",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-27",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "source_ids": [
+        "abb_box"
+      ],
+      "evidence_scope": "official_release_track_order",
+      "sections": [
+        {
+          "name": "Fillmore East closing show · CD 6",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Statesboro Blues",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Don’t Keep Me Wonderin’",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Done Somebody Wrong",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "One Way Out",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "In Memory of Elizabeth Reed",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Midnight Rider",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Hot ’Lanta",
+              "transition_after": null
+            },
+            {
+              "position": 8,
+              "title": "Whipping Post",
+              "transition_after": null
+            },
+            {
+              "position": 9,
+              "title": "You Don’t Love Me",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "2014 six-disc issue; the Allmans’ June 27 closing-weekend headline set.",
+      "research_notes": [
+        "The source also lists an introduction by Bill Graham, which is spoken material and omitted from the song index."
+      ],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "The 1971 Fillmore East Recordings (2014)",
+        "recording_scope": "Disc 6 is the June 27 closing show",
+        "source_id": "abb_box"
+      }
+    },
+    {
+      "id": "gd-1977-05-07",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-07",
+      "venue": "Boston Garden",
+      "place": "Boston, MA",
+      "source_ids": [
+        "dead_boston"
+      ],
+      "evidence_scope": "official_show_setlist",
+      "sections": [
+        {
+          "name": "Official archive · first set",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Bertha",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Cassidy",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Deal",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Jack Straw",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Peggy-O",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "New Minglewood Blues",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Mississippi Half-Step",
+              "transition_after": null
+            },
+            {
+              "position": 8,
+              "title": "Big River",
+              "transition_after": null
+            },
+            {
+              "position": 9,
+              "title": "Tennessee Jed",
+              "transition_after": null
+            },
+            {
+              "position": 10,
+              "title": "Music Never Stopped",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Official archive · second set / encore grouping",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Terrapin Station",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Samson and Delilah",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Friend of the Devil",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Estimated Prophet",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Eyes of the World",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Drums",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "The Wheel",
+              "transition_after": null
+            },
+            {
+              "position": 8,
+              "title": "Wharf Rat",
+              "transition_after": null
+            },
+            {
+              "position": 9,
+              "title": "Around and Around",
+              "transition_after": null
+            },
+            {
+              "position": 10,
+              "title": "U.S. Blues",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Set grouping is an editorial presentation of the published ordered list; song-to-song arrows are not provided by the cited show page.",
+      "research_notes": [
+        "The official page is authoritative for ordered song titles; we do not infer segues or recording source from its list."
+      ],
+      "documented_guests": [],
+      "official_recording": null
+    },
+    {
+      "id": "gd-1977-05-08",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-08",
+      "venue": "Barton Hall",
+      "place": "Ithaca, NY",
+      "source_ids": [
+        "dead_cornell"
+      ],
+      "evidence_scope": "official_show_setlist",
+      "sections": [
+        {
+          "name": "Official archive · first set",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "New Minglewood Blues",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Loser",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "El Paso",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "They Love Each Other",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Jack Straw",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Deal",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Lazy Lightnin’",
+              "transition_after": null
+            },
+            {
+              "position": 8,
+              "title": "Supplication",
+              "transition_after": null
+            },
+            {
+              "position": 9,
+              "title": "Brown Eyed Women",
+              "transition_after": null
+            },
+            {
+              "position": 10,
+              "title": "Mama Tried",
+              "transition_after": null
+            },
+            {
+              "position": 11,
+              "title": "Row Jimmy",
+              "transition_after": null
+            },
+            {
+              "position": 12,
+              "title": "Dancin’ in the Streets",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Official archive · second set / encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Scarlet Begonias",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Fire on the Mountain",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Estimated Prophet",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "St. Stephen",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Not Fade Away",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "St. Stephen",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Morning Dew",
+              "transition_after": null
+            },
+            {
+              "position": 8,
+              "title": "One More Saturday Night",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Original show archive song sequence; see the separate Performance Lab for release-printed transitions.",
+      "research_notes": [
+        "The two appearances of St. Stephen are intentionally distinct positions; title identity does not imply duplicate data.",
+        "This official show-page transcription is not itself a tape-mastering history."
+      ],
+      "documented_guests": [],
+      "official_recording": null
+    },
+    {
+      "id": "gd-1977-05-09",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-09",
+      "venue": "War Memorial Auditorium",
+      "place": "Buffalo, NY",
+      "source_ids": [
+        "dead_buffalo"
+      ],
+      "evidence_scope": "official_show_setlist",
+      "sections": [
+        {
+          "name": "Official archive · first set",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Help on the Way",
+              "transition_after": ">"
+            },
+            {
+              "position": 2,
+              "title": "Slipknot!",
+              "transition_after": ">"
+            },
+            {
+              "position": 3,
+              "title": "Franklin’s Tower",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Cassidy",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Brown Eyed Women",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Mexicali Blues",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Tennessee Jed",
+              "transition_after": null
+            },
+            {
+              "position": 8,
+              "title": "Big River",
+              "transition_after": null
+            },
+            {
+              "position": 9,
+              "title": "Peggy-O",
+              "transition_after": null
+            },
+            {
+              "position": 10,
+              "title": "Sunrise",
+              "transition_after": null
+            },
+            {
+              "position": 11,
+              "title": "Music Never Stopped",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Official archive · second set / encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Bertha",
+              "transition_after": ">"
+            },
+            {
+              "position": 2,
+              "title": "Good Lovin’",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Ship of Fools",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Estimated Prophet",
+              "transition_after": ">"
+            },
+            {
+              "position": 5,
+              "title": "The Other One",
+              "transition_after": ">"
+            },
+            {
+              "position": 6,
+              "title": "Drums",
+              "transition_after": ">"
+            },
+            {
+              "position": 7,
+              "title": "Not Fade Away",
+              "transition_after": ">"
+            },
+            {
+              "position": 8,
+              "title": "Comes a Time",
+              "transition_after": ">"
+            },
+            {
+              "position": 9,
+              "title": "Sugar Magnolia",
+              "transition_after": ">"
+            },
+            {
+              "position": 10,
+              "title": "Uncle John’s Band",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Dead.net preserves adjacent > markers on its Buffalo setlist.",
+      "research_notes": [
+        "Show header establishes May 9, 1977; do not infer a May 8 date from timezone-dependent calendar fields."
+      ],
+      "documented_guests": [],
+      "official_recording": null
+    },
+    {
+      "id": "gd-1977-06-09",
+      "artist_id": "grateful-dead",
+      "date": "1977-06-09",
+      "venue": "Winterland Arena",
+      "place": "San Francisco, CA",
+      "source_ids": [
+        "dead_winterland"
+      ],
+      "evidence_scope": "official_show_setlist",
+      "sections": [
+        {
+          "name": "Official archive · first set",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Mississippi Half-Step",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Jack Straw",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "They Love Each Other",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Cassidy",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Sunrise",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Deal",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Looks Like Rain",
+              "transition_after": null
+            },
+            {
+              "position": 8,
+              "title": "Loser",
+              "transition_after": null
+            },
+            {
+              "position": 9,
+              "title": "Music Never Stopped",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Official archive · second set / encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Samson and Delilah",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Funiculi Funicula",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Help on the Way",
+              "transition_after": ">"
+            },
+            {
+              "position": 4,
+              "title": "Slipknot!",
+              "transition_after": ">"
+            },
+            {
+              "position": 5,
+              "title": "Franklin’s Tower",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Estimated Prophet",
+              "transition_after": ">"
+            },
+            {
+              "position": 7,
+              "title": "St. Stephen",
+              "transition_after": ">"
+            },
+            {
+              "position": 8,
+              "title": "Not Fade Away",
+              "transition_after": ">"
+            },
+            {
+              "position": 9,
+              "title": "Drums",
+              "transition_after": ">"
+            },
+            {
+              "position": 10,
+              "title": "St. Stephen",
+              "transition_after": ">"
+            },
+            {
+              "position": 11,
+              "title": "Terrapin Station",
+              "transition_after": ">"
+            },
+            {
+              "position": 12,
+              "title": "Sugar Magnolia",
+              "transition_after": null
+            },
+            {
+              "position": 13,
+              "title": "U.S. Blues",
+              "transition_after": null
+            },
+            {
+              "position": 14,
+              "title": "One More Saturday Night",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Dead.net distinguishes the Funiculi Funicula tuning before Help on the Way.",
+      "research_notes": [
+        "The source records Funiculi Funicula as tuning, not necessarily a full song rendition."
+      ],
+      "documented_guests": [],
+      "official_recording": null
+    },
+    {
+      "id": "phish-1997-11-16",
+      "artist_id": "phish",
+      "date": "1997-11-16",
+      "venue": "McNichols Arena",
+      "place": "Denver, CO",
+      "source_ids": [
+        "phish_denver16"
+      ],
+      "evidence_scope": "community_curated_setlist",
+      "sections": [
+        {
+          "name": "Set I",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "NICU",
+              "transition_after": ">"
+            },
+            {
+              "position": 2,
+              "title": "My Soul",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Black-Eyed Katy",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Farmhouse",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "The Old Home Place",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Billy Breathes",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Cars Trucks Buses",
+              "transition_after": null
+            },
+            {
+              "position": 8,
+              "title": "Scent of a Mule",
+              "transition_after": null
+            },
+            {
+              "position": 9,
+              "title": "Poor Heart",
+              "transition_after": null
+            },
+            {
+              "position": 10,
+              "title": "Taste",
+              "transition_after": null
+            },
+            {
+              "position": 11,
+              "title": "Hello My Baby",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Set II",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Timber (Jerry the Mule)",
+              "transition_after": "->"
+            },
+            {
+              "position": 2,
+              "title": "Simple",
+              "transition_after": "->"
+            },
+            {
+              "position": 3,
+              "title": "Wilson",
+              "transition_after": ">"
+            },
+            {
+              "position": 4,
+              "title": "Harry Hood",
+              "transition_after": ">"
+            },
+            {
+              "position": 5,
+              "title": "Izabella",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "David Bowie",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Source documents Farmhouse as first concert performance and an unfinished Harry Hood.",
+      "research_notes": [
+        "Pete Wernick is specifically credited on banjo for Scent of a Mule and Poor Heart, not the entire concert."
+      ],
+      "documented_guests": [
+        {
+          "name": "Pete Wernick",
+          "role": "banjo",
+          "on_title": "Scent of a Mule",
+          "source_ids": [
+            "phish_denver16"
+          ]
+        },
+        {
+          "name": "Pete Wernick",
+          "role": "banjo",
+          "on_title": "Poor Heart",
+          "source_ids": [
+            "phish_denver16"
+          ]
+        }
+      ],
+      "official_recording": null
+    },
+    {
+      "id": "phish-1997-11-17",
+      "artist_id": "phish",
+      "date": "1997-11-17",
+      "venue": "McNichols Arena",
+      "place": "Denver, CO",
+      "source_ids": [
+        "phish_denver17"
+      ],
+      "evidence_scope": "community_curated_setlist",
+      "sections": [
+        {
+          "name": "Set I",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Tweezer",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Reba",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Train Song",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Ghost",
+              "transition_after": ">"
+            },
+            {
+              "position": 5,
+              "title": "Fire",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Set II",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Down with Disease",
+              "transition_after": "->"
+            },
+            {
+              "position": 2,
+              "title": "Olivia’s Pool",
+              "transition_after": ">"
+            },
+            {
+              "position": 3,
+              "title": "Johnny B. Goode",
+              "transition_after": "->"
+            },
+            {
+              "position": 4,
+              "title": "Jesus Just Left Chicago",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "When the Circus Comes",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "You Enjoy Myself",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Character Zero",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Phish.net documents an unfinished Down with Disease and the official Live Phish 11 release.",
+      "research_notes": [
+        "Song notes are sourced from Phish.net. Do not infer composition identity across covers from title matching."
+      ],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "Live Phish 11",
+        "recording_scope": "Official archival concert release according to Phish.net",
+        "source_id": "phish_denver17"
+      }
+    },
+    {
+      "id": "phish-1997-12-06",
+      "artist_id": "phish",
+      "date": "1997-12-06",
+      "venue": "The Palace of Auburn Hills",
+      "place": "Auburn Hills, MI",
+      "source_ids": [
+        "phish_auburn"
+      ],
+      "evidence_scope": "community_curated_setlist",
+      "sections": [
+        {
+          "name": "Set I",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Golgi Apparatus",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Run Like an Antelope",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Train Song",
+              "transition_after": ">"
+            },
+            {
+              "position": 4,
+              "title": "Bathtub Gin",
+              "transition_after": "->"
+            },
+            {
+              "position": 5,
+              "title": "Foam",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Sample in a Jar",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Fee",
+              "transition_after": ">"
+            },
+            {
+              "position": 8,
+              "title": "Maze",
+              "transition_after": null
+            },
+            {
+              "position": 9,
+              "title": "Cavern",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Set II",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Tweezer",
+              "transition_after": "->"
+            },
+            {
+              "position": 2,
+              "title": "Izabella",
+              "transition_after": "->"
+            },
+            {
+              "position": 3,
+              "title": "Twist",
+              "transition_after": "->"
+            },
+            {
+              "position": 4,
+              "title": "Piper",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Sleeping Monkey",
+              "transition_after": ">"
+            },
+            {
+              "position": 6,
+              "title": "Tweezer Reprise",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Rocky Top",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Source documents the second-set four-song sequence and official archival release availability.",
+      "research_notes": [],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "LivePhish archival release",
+        "recording_scope": "Official archival release identified by Phish.net; tape lineage not asserted",
+        "source_id": "phish_auburn"
+      }
+    },
+    {
+      "id": "phish-1997-12-07",
+      "artist_id": "phish",
+      "date": "1997-12-07",
+      "venue": "Ervin J. Nutter Center",
+      "place": "Dayton, OH",
+      "source_ids": [
+        "phish_dayton"
+      ],
+      "evidence_scope": "community_curated_setlist",
+      "sections": [
+        {
+          "name": "Set I",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "AC/DC Bag",
+              "transition_after": "->"
+            },
+            {
+              "position": 2,
+              "title": "Psycho Killer",
+              "transition_after": "->"
+            },
+            {
+              "position": 3,
+              "title": "Jesus Just Left Chicago",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "My Mind’s Got a Mind of its Own",
+              "transition_after": ">"
+            },
+            {
+              "position": 5,
+              "title": "It’s Ice",
+              "transition_after": "->"
+            },
+            {
+              "position": 6,
+              "title": "Swept Away",
+              "transition_after": ">"
+            },
+            {
+              "position": 7,
+              "title": "Steep",
+              "transition_after": ">"
+            },
+            {
+              "position": 8,
+              "title": "It’s Ice",
+              "transition_after": ">"
+            },
+            {
+              "position": 9,
+              "title": "Theme from the Bottom",
+              "transition_after": null
+            },
+            {
+              "position": 10,
+              "title": "Tube",
+              "transition_after": null
+            },
+            {
+              "position": 11,
+              "title": "Jam",
+              "transition_after": "->"
+            },
+            {
+              "position": 12,
+              "title": "Slave to the Traffic Light",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Set II",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Timber (Jerry the Mule)",
+              "transition_after": ">"
+            },
+            {
+              "position": 2,
+              "title": "Wolfman’s Brother",
+              "transition_after": "->"
+            },
+            {
+              "position": 3,
+              "title": "Boogie On Reggae Woman",
+              "transition_after": ">"
+            },
+            {
+              "position": 4,
+              "title": "Reba",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Guyute",
+              "transition_after": ">"
+            },
+            {
+              "position": 6,
+              "title": "Possum",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "A Day in the Life",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Phish.net documents the Psycho Killer and Boogie On Reggae Woman returns; these song gaps are source assertions, not independently recomputed.",
+      "research_notes": [
+        "The source identifies Psycho Killer as unfinished and Reba without whistling."
+      ],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "LivePhish archival release",
+        "recording_scope": "Official archival release identified by Phish.net",
+        "source_id": "phish_dayton"
+      }
+    },
+    {
+      "id": "goose-2024-06-21",
+      "artist_id": "goose",
+      "date": "2024-06-21",
+      "venue": "Fox Theatre",
+      "place": "Atlanta, GA",
+      "source_ids": [
+        "goose_fox21"
+      ],
+      "evidence_scope": "artist_official_setlist_and_release",
+      "sections": [
+        {
+          "name": "Set I",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "The Killing Moon",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Elizabeth",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Dr. Darkness",
+              "transition_after": ">"
+            },
+            {
+              "position": 4,
+              "title": "Rock the Casbah",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Drive",
+              "transition_after": ">"
+            },
+            {
+              "position": 6,
+              "title": "Bob Don",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Everything Must Go",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Set II",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Hungersite",
+              "transition_after": ">"
+            },
+            {
+              "position": 2,
+              "title": "Give It Time",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Thatch",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Feel It Now",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "726",
+              "transition_after": ">"
+            },
+            {
+              "position": 6,
+              "title": "Dripfield",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Turbulence & The Night Rays",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Artist-issued Bandcamp concert recording with setlist and coach’s notes.",
+      "research_notes": [
+        "The source credits cover songs separately and notes teases in Thatch; a tease is not a full performance."
+      ],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "Goose 2024/06/21 Fox Theatre",
+        "recording_scope": "Band-issued streaming/download album; do not infer underlying master format",
+        "source_id": "goose_fox21"
+      }
+    },
+    {
+      "id": "goose-2024-06-22",
+      "artist_id": "goose",
+      "date": "2024-06-22",
+      "venue": "Fox Theatre",
+      "place": "Atlanta, GA",
+      "source_ids": [
+        "goose_fox22"
+      ],
+      "evidence_scope": "artist_official_setlist_and_release",
+      "sections": [
+        {
+          "name": "Set I",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Hot Love & The Lazy Poet",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Atlas",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Mr. Action",
+              "transition_after": ">"
+            },
+            {
+              "position": 4,
+              "title": "Arrow",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Silver Rising",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "SOS",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Set II",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Tumble",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "A Western Sun",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Red Bird",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "The Night They Drove Old Dixie Down",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Factory Fiction",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Band-issued live album documents an 11-track concert release.",
+      "research_notes": [
+        "Coach’s notes attribute Atlas to the Wood Brothers and The Night They Drove Old Dixie Down to The Band; these are cover credits, not guest-musician credits."
+      ],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "Goose 2024/06/22 Fox Theatre",
+        "recording_scope": "Band-issued streaming/download album; no independent taper lineage verified",
+        "source_id": "goose_fox22"
+      }
+    },
+    {
+      "id": "goose-2024-06-29",
+      "artist_id": "goose",
+      "date": "2024-06-29",
+      "venue": "Forest Hills Stadium",
+      "place": "Queens, NY",
+      "source_ids": [
+        "goose_forest"
+      ],
+      "evidence_scope": "artist_official_setlist_and_release",
+      "sections": [
+        {
+          "name": "Set I",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Hot Tea",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Lead Up",
+              "transition_after": null
+            },
+            {
+              "position": 3,
+              "title": "Turned Clouds",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Yeti",
+              "transition_after": null
+            },
+            {
+              "position": 5,
+              "title": "Hot Love & The Lazy Poet",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "I Would Die 4 U",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "So Ready",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Set II",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Travelers",
+              "transition_after": ">"
+            },
+            {
+              "position": 2,
+              "title": "Elmeg The Wise",
+              "transition_after": ">"
+            },
+            {
+              "position": 3,
+              "title": "Thatch",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "726",
+              "transition_after": ">"
+            },
+            {
+              "position": 5,
+              "title": "Dripfield",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Give It Time",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Goose’s concert release notes call Forest Hills their biggest headlining show to that date and identify the performance as sold out.",
+      "research_notes": [
+        "The band’s coach’s notes credit I Would Die 4 U to Prince."
+      ],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "Goose 2024/06/29 Forest Hills",
+        "recording_scope": "Band-issued recording published June 30, 2024",
+        "source_id": "goose_forest"
+      }
+    },
+    {
+      "id": "goose-2024-09-27",
+      "artist_id": "goose",
+      "date": "2024-09-27",
+      "venue": "Greek Theatre",
+      "place": "Los Angeles, CA",
+      "source_ids": [
+        "goose_greek"
+      ],
+      "evidence_scope": "artist_official_setlist_and_release",
+      "sections": [
+        {
+          "name": "Set I",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Dr. Darkness",
+              "transition_after": null
+            },
+            {
+              "position": 2,
+              "title": "Hot Love & The Lazy Poet",
+              "transition_after": ">"
+            },
+            {
+              "position": 3,
+              "title": "Turned Clouds",
+              "transition_after": null
+            },
+            {
+              "position": 4,
+              "title": "Echo of a Rose",
+              "transition_after": ">"
+            },
+            {
+              "position": 5,
+              "title": "No California",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Big Modern!",
+              "transition_after": null
+            },
+            {
+              "position": 7,
+              "title": "Give It Time",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Set II",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Eminence Front",
+              "transition_after": ">"
+            },
+            {
+              "position": 2,
+              "title": "Dripfield",
+              "transition_after": ">"
+            },
+            {
+              "position": 3,
+              "title": "Yeti",
+              "transition_after": "->"
+            },
+            {
+              "position": 4,
+              "title": "Pumped Up Kicks",
+              "transition_after": "->"
+            },
+            {
+              "position": 5,
+              "title": "Yeti",
+              "transition_after": null
+            },
+            {
+              "position": 6,
+              "title": "Arise",
+              "transition_after": ">"
+            },
+            {
+              "position": 7,
+              "title": "Arcadia",
+              "transition_after": null
+            }
+          ]
+        },
+        {
+          "name": "Encore",
+          "tracks": [
+            {
+              "position": 1,
+              "title": "Hot Tea",
+              "transition_after": null
+            }
+          ]
+        }
+      ],
+      "context": "Live at the Greek Theatre was remixed and remastered from September 27, 2024.",
+      "research_notes": [
+        "Source credits Eric Loomis and Sam Bardani as recording engineers and Peter Anspach for mixing/mastering. These production credits do not identify the raw recording medium."
+      ],
+      "documented_guests": [],
+      "official_recording": {
+        "label": "Live at the Greek Theatre",
+        "recording_scope": "Recorded by Eric Loomis and Sam Bardani; mixed and mastered by Peter Anspach; released November 22, 2024",
+        "source_id": "goose_greek"
+      }
+    }
+  ]
+}

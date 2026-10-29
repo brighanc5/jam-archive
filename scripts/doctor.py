@@ -16,8 +16,8 @@ EXPECTED = [
     'build_v061.py', 'build_v07.py', 'build_v08.py', 'build_v09.py', 'build_v010.py', 'build_v011.py', 'build_v012.py', 'build_v013.py',
     'history_seed.py', 'song_paths.js', 'song_paths.css',
     'connections.js', 'connections.css', 'deep_archive.js', 'deep_archive.css', 'data/research_dossiers.json',
-    'data/approved_recordings.json',
-    'scripts/build_public.sh', 'scripts/check_public_site.py',
+    'data/approved_recordings.json', 'data/show_depth_v014.json', 'show_depth.css', 'show_depth.js', 'build_v014.py', 'tests/test_show_depth_v014.py',
+    'scripts/build_public.sh', 'scripts/check_public_site.py', 'scripts/polish_site.py', 'jam_look.css', 'jam_experience.js', 'tests/test_v014_experience.py',
     'scripts/safety_check.py', 'tests/test_agent.py',
     'tests/test_publication.py', 'tests/test_contributions.py',
     'tests/test_time_machine.py', 'tests/test_song_paths.py',
@@ -65,7 +65,7 @@ def check():
             and node.name.startswith('test_')
             for node in ast.walk(tree)
         )
-    print('Test definitions discovered:', count, '(v0.13 expects at least 91; full suite runs after build)')
+    print('Test definitions discovered:', count, '(v0.14 expects at least 116; full suite runs after build)')
     # Stop before Python evaluates unresolved Git conflict markers, a previous failure.
     conflict_files = []
     for path in ROOT.rglob('*'):
@@ -81,10 +81,10 @@ def check():
             conflict_files.append(str(path.relative_to(ROOT)))
     for path in conflict_files:
         print('UNRESOLVED MERGE CONFLICT:', path)
-    if missing or conflict_files or 'v0.13' not in version or count < 91 or not shutil.which('node'):
+    if missing or conflict_files or 'v0.14' not in version or count < 116 or not shutil.which('node'):
         print('DOCTOR FAILED: check missing source files, test definitions, merge markers, or Node.js.')
         return 1
-    print('REPOSITORY DOCTOR PASS: complete v0.13 source, 91+ tests, no Git conflict markers.')
+    print('REPOSITORY DOCTOR PASS: complete v0.14 source, 116+ tests, no Git conflict markers.')
     return 0
 
 if __name__ == '__main__':

@@ -1,0 +1,95 @@
+/* THE JAM ARCHIVE — NIGHT MARKET / ORIGINAL PSYCHEDELIC PRINT SYSTEM
+   All graphics are procedural CSS. No borrowed band artwork or fonts.
+   Keep reading surfaces dark and calm; let the poster color live in the margins. */
+:root{
+ color-scheme:dark;
+ --bg:#11101c; --sidebar:#171322; --panel:#211d2b; --panel2:#2a2334;
+ --edge:#55425f; --cream:#f9edda; --muted:#c8bbd4; --lime:#e1f98a;
+ --gold:#ffbf63; --blue:#94e5e2; --red:#f3a3ba;
+ --ink:#f9edda; --border:#55425f; --amber:#ffbf63;
+ --sd-bg:#13101f;--sd-panel:#231c2c;--sd-border:#685075;
+ --sd-accent:#e6f890;--sd-ink:#f9edda;--sd-muted:#c8bbd4;
+ --ja-violet:#9e75dc;--ja-pink:#fa6fa8;--ja-teal:#7ad7d0;
+}
+html{scroll-padding-top:88px}
+body{background:#11101c;color:var(--cream,var(--ink));font-family:"Trebuchet MS",Verdana,system-ui,sans-serif;overflow-wrap:anywhere}
+::selection{background:#ef89c9;color:#1e1024}
+a{color:var(--lime)}
+:where(button,a,input,select,textarea):focus-visible{outline:3px solid #ffcc65!important;outline-offset:3px}
+:where(input,select,textarea){font-size:16px;max-width:100%}
+:where(button,.button,.primary,.outline,.pillbtn,.ea-card,.sd-card,.cx-card,.da-tile,.sp-card){touch-action:manipulation}
+:where(h1,h2,h3,.brand,.metric b,.sd-metrics b){font-family:Georgia,"Palatino Linotype",serif;letter-spacing:-.025em}
+:where(.eyebrow,.sd-tag,.ea-tag,.tagline){letter-spacing:.08em!important}
+/* Distinctive, original tie-dye vortex — decoration, never underneath body copy. */
+.hero,.sd-hero,.ea-hero,.cx-hero,.pl-hero,.tm-hero,.da-hero{
+ position:relative;isolation:isolate;overflow:hidden;
+ background:radial-gradient(ellipse at 8% 100%,#48335f 0%,transparent 44%),
+  radial-gradient(ellipse at 100% 0%,#174c56 0%,transparent 53%),#201c2f!important;
+ border-color:#70547b!important;
+}
+.hero::before,.sd-hero::before,.ea-hero::before,.cx-hero::before,.pl-hero::before,.tm-hero::before,.da-hero::before{
+ content:"";position:absolute;right:-165px;top:-210px;width:min(660px,95vw);aspect-ratio:1;
+ background:repeating-conic-gradient(from 30deg at 48% 52%,#f19d58 0deg 15deg,#ea6dac 19deg 30deg,#8555bd 34deg 48deg,#51bbc1 52deg 67deg,#c6e783 71deg 83deg,#f19d58 89deg 97deg);
+ -webkit-mask:radial-gradient(circle,transparent 0 6%,#000 8% 17%,transparent 19% 21%,#000 23% 42%,transparent 44% 46%,#000 48% 74%,transparent 76%);
+ mask:radial-gradient(circle,transparent 0 6%,#000 8% 17%,transparent 19% 21%,#000 23% 42%,transparent 44% 46%,#000 48% 74%,transparent 76%);
+ border-radius:50%;transform:rotate(-16deg) skewX(-8deg);
+ opacity:.37;pointer-events:none;z-index:-1;
+}
+.hero>* ,.sd-hero>* ,.ea-hero>* ,.cx-hero>* ,.pl-hero>* ,.tm-hero>* ,.da-hero>*{position:relative}
+.hero h1 em,.cx-hero h1 em,.ea-hero h1 em{color:var(--lime)!important;text-shadow:2px 2px 0 #502c77}
+.hero .lead,.sd-hero p,.ea-hero .lead{max-width:650px;color:#f0e7e9}
+/* A handbill rather than a corporate dashboard: mismatched edges and poster ink. */
+:where(.card,.sd-panel,.ea-panel,.history-card,.artist,.discovery-result,.sd-card,.ea-card,.da-tile,.sp-card,.cx-panel){border-color:#544361;background-color:#211c2b}
+:where(.sd-card,.ea-card,.discovery-result,.sp-card,.history-card):hover{border-color:#efac80;box-shadow:0 0 0 1px #f080ad50}
+:where(.card,.sd-panel,.ea-panel,.cx-panel){box-shadow:2px 3px 0 #100d1a45}
+:where(.badge,.tag,.sd-tag,.ea-tag){color:#f5e4bd}
+:where(.button,.primary,button.primary,.ja-load-more){background:#d4f185;color:#231a31;border-color:#e9ffab;font-weight:800}
+:where(.button,.primary,button.primary,.ja-load-more):hover{background:#ffe184;color:#281832}
+:where(.ja-pager){margin:22px auto 8px;text-align:center;display:grid;justify-items:center;gap:9px}
+.ja-load-more{display:inline-flex;align-items:center;justify-content:center;min-height:46px;min-width:192px;border:2px solid #efe8a9;border-radius:24px;padding:11px 20px;font:800 15px "Trebuchet MS",sans-serif;cursor:pointer}
+.ja-load-more[hidden], [hidden].ja-load-more{display:none!important}
+.ja-pager-note{font-size:13px;color:#d2bfd8}
+/* Desktop navigation. */
+.sidebar{background:linear-gradient(180deg,#191323,#151323)!important;border-color:#544361!important}
+.sidebar .brand,.brand,header>a:first-child{font:900 21px/1.1 "Trebuchet MS",system-ui,sans-serif;letter-spacing:-.045em}
+.brand span,header span{color:#f3a8bd}
+.sidebar .nav button.active,.nav button.active{background:#503357!important;color:#fff2ce!important;border-color:#b57c90!important}
+header{background:#191323!important;border-bottom-color:#62436d!important}
+.mast{color:#e5c2d8}
+/* Mobile site-wide bottom nav, a small set of useful exits rather than nine cramped tabs. */
+.ja-mobile-bar{display:none}
+.ja-mobile-bar a{color:#efe4cf;text-decoration:none;font:700 11px/1.15 "Trebuchet MS",system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:0;min-height:52px}
+.ja-mobile-bar a span:first-child{font-size:21px;line-height:1}
+.ja-mobile-bar a[aria-current="page"]{color:#e7fa95}
+.ja-mobile-bar a:focus-visible{outline-offset:-4px}
+/* Short, useful context note; do not imply that sources are independently verified when they aren't. */
+.ja-plain-note{display:inline-block;padding:9px 13px;margin:12px 0;border-left:3px solid #f2b869;background:#302637;color:#f9e7ca;font-size:13px}
+.ja-skip{background:#ffdc8a!important;color:#1b1621!important}
+@media(max-width:760px){
+ html{scroll-padding-top:10px}
+ body{padding-bottom:calc(73px + env(safe-area-inset-bottom,0px))!important}
+ .ja-mobile-bar{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));position:fixed;bottom:0;left:0;right:0;z-index:2000;background:#171222f5;border-top:2px solid #b05a9d;padding:4px 6px calc(4px + env(safe-area-inset-bottom,0px));box-shadow:0 -8px 32px #090612a6;backdrop-filter:blur(12px)}
+ .ja-mobile-bar a{padding:4px 1px}
+ .main{padding-left:15px!important;padding-right:15px!important}
+ .app{min-width:0;overflow-x:clip}
+ .sidebar{padding:12px 15px!important}
+ .sidebar .nav{max-width:100%;padding:8px 0 12px;scrollbar-width:thin}
+ .sidebar .nav button{min-height:44px}
+ .hero,.sd-hero,.ea-hero{padding:24px 18px!important}
+ .hero::before,.sd-hero::before,.ea-hero::before{right:-205px;top:-165px;opacity:.23;width:430px}
+ .hero h1{font-size:clamp(34px,10vw,51px);line-height:1.02}
+ main{padding-bottom:95px}
+ .sd-columns,.cols,.twocol,.history-main-grid,.cx-layout{grid-template-columns:minmax(0,1fr)!important}
+ .sd-grid,.ea-grid,.cards{grid-template-columns:minmax(0,1fr)!important}
+ .sd-panel{padding:16px!important}
+ header{padding:12px 14px!important}
+ header nav[aria-label="Archive sections"]{gap:14px!important}
+ header nav[aria-label="Archive sections"] a{min-height:44px!important}
+ .sd-tracklist li{flex-wrap:wrap;gap:7px}
+ .sd-metrics span{flex:1 1 130px}
+ .ea-controls{grid-template-columns:minmax(0,1fr)!important}
+ .modalpanel{padding:18px!important}
+ .event{grid-template-columns:54px minmax(0,1fr)}
+}
+@media(max-width:370px){.ja-mobile-bar a{font-size:10px}.ja-mobile-bar a span:first-child{font-size:19px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}

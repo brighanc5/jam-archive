@@ -42,8 +42,8 @@ assert '/*__EMBEDDED_CATALOG__*/' not in html
 for name in ['discover','universe','shows','network','history','recordings','following','sources','research']:
  assert f'id="view-{name}"' in html
 assert 'id="history-dialog"' in html
-scripts=re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>',html,flags=re.DOTALL|re.IGNORECASE)
-assert len(scripts)==5
+scripts=[s for s in re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>',html,flags=re.DOTALL|re.IGNORECASE) if s.strip()]
+assert len(scripts)==4
 for i,script in enumerate(scripts):
  with tempfile.NamedTemporaryFile(mode='w',suffix='.js') as tmp:
   tmp.write(script);tmp.flush()

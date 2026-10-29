@@ -120,7 +120,7 @@ class DeepArchiveTests(unittest.TestCase):
 
     def test_meta_report_counts_match(self):
         report=json.loads((SITE/'assets/build_report.json').read_text())
-        self.assertEqual(report['version'],'0.13')
+        self.assertEqual(report['version'],'0.14')
         self.assertEqual(report['deep_archive_assertions'],110)
         self.assertEqual(report['deep_archive_dossiers'],22)
         self.assertEqual(report['deep_archive_sources'],31)

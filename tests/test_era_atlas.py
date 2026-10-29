@@ -93,7 +93,7 @@ class EraAtlasTest(unittest.TestCase):
    self.assertIn('/era-atlas/?artist='+artist,page)
  def test_reports_and_public_json(self):
   report=json.loads((SITE/'assets/build_report.json').read_text())
-  self.assertEqual(report['version'],'0.13')
+  self.assertEqual(report['version'],'0.14')
   self.assertEqual(report['era_atlas_records'],361)
   self.assertEqual(report['era_atlas_new_source_pointers'],336)
   self.assertNotIn('private_key',json.dumps(ATLAS))
@@ -103,6 +103,6 @@ class EraAtlasTest(unittest.TestCase):
  def test_global_audit_includes_new_routes(self):
   result=json.loads((SITE/'assets/site_audit.json').read_text())
   self.assertEqual(result['issues'],0)
-  self.assertEqual(result['html_pages_inspected'],673)
-  self.assertEqual(result['version'],'0.13')
+  self.assertEqual(result['html_pages_inspected'],850)
+  self.assertEqual(result['version'],'0.14')
 if __name__=='__main__':unittest.main()

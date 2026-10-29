@@ -67,7 +67,14 @@ assert (site/'era-atlas/index.html').is_file(), 'Missing v0.13 archive index'
 assert (site/'assets/era-atlas.json').is_file(), 'Missing v0.13 editorial source data'
 assert len(list((site/'era-atlas/shows').glob('*/index.html')))==336, 'Incomplete v0.13 indexed show pages'
 assert len(list((site/'era-atlas/chapters').glob('*/index.html')))==12, 'Incomplete v0.13 historical chapters'
-assert json.loads((site/'assets/build_report.json').read_text())['version']=='0.13'
+assert json.loads((site/'assets/build_report.json').read_text())['version']=='0.14'
 
+assert (site/'show-depth/index.html').is_file(), 'Missing v0.14 show studies'
+assert (site/'repertoire/index.html').is_file(), 'Missing v0.14 repertoire'
+assert len(list((site/'show-depth').glob('*/index.html')))==17
+assert len(list((site/'repertoire/songs').glob('*/index.html')))==158
+studies=json.loads((site/'assets/show-depth.json').read_text())
+assert len(studies['studies'])==17 and len(studies['sources'])==13
+assert json.loads((site/'assets/build_report.json').read_text())['show_depth_track_positions']==238
 assert 'Disallow: /' not in (site/'robots.txt').read_text()
 print(f'PUBLIC CHECK PASS: {len(urls)} URLs / {n} checked local HTML references / no private state')

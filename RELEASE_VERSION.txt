@@ -1,2 +1,2 @@
-The Jam Archive v0.13 — Archive Atlas, source-indexed historical expansion
-Released 2026-10-29 · Complete repository · No API calls, paid services or scheduled automation in public build
+The Jam Archive v0.14 — Show Studies & Source-Linked Repertoire
+Builds on v0.13 Archive Atlas; all previous v0.12 features preserved.
