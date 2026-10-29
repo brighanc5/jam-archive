@@ -1,0 +1,6264 @@
+{
+  "version": "0.13",
+  "reviewed_on": "2026-10-29",
+  "method": "Hand-curated, date-and-venue pointers from the cited year/tour index. The base catalog contains separately researched concert dossiers. This index does not assert a complete setlist, lineup, performance duration, guest or tape availability. The source is linked directly to permit later review. Phish.net and Goose Index are independent fan sources, not official band databases.",
+  "sources": {
+    "phish_summer97_europe": {
+      "title": "Phish.net — 1997 Summer European Tour",
+      "url": "https://phish.net/tour/35-1997-summer-european-tour.html",
+      "category": "community_tour_calendar",
+      "scope": "date_venue_city"
+    },
+    "phish_summer97_us": {
+      "title": "Phish.net — 1997 Summer U.S. Tour",
+      "url": "https://phish.net/tour/36-1997-summer-us-tour.html",
+      "category": "community_tour_calendar",
+      "scope": "date_venue_city"
+    },
+    "phish_fall97": {
+      "title": "Phish.net — 1997 Fall Tour",
+      "url": "https://phish.net/tour/37",
+      "category": "community_tour_calendar",
+      "scope": "date_venue_city"
+    },
+    "phish_summer98": {
+      "title": "Phish.net — 1998 Summer U.S. Tour",
+      "url": "https://phish.net/tour/41-1998-summer-us-tour.html",
+      "category": "community_tour_calendar",
+      "scope": "date_venue_city"
+    },
+    "phish_fall98": {
+      "title": "Phish.net — 1998 Fall Tour",
+      "url": "https://phish.net/tour/42",
+      "category": "community_tour_calendar",
+      "scope": "date_venue_city"
+    },
+    "dead_1977_may_a": {
+      "title": "Grateful Dead official show index — spring 1977, page 97",
+      "url": "https://www.dead.net/shows-by-year?page=97",
+      "category": "artist_official_show_index",
+      "scope": "date_venue"
+    },
+    "dead_1977_may_b": {
+      "title": "Grateful Dead official show index — spring 1977, page 98",
+      "url": "https://www.dead.net/shows-by-year?page=98",
+      "category": "artist_official_show_index",
+      "scope": "date_venue"
+    },
+    "dead_1977_june": {
+      "title": "Grateful Dead official show index — summer/fall 1977, page 99",
+      "url": "https://www.dead.net/shows-by-year?page=99",
+      "category": "artist_official_show_index",
+      "scope": "date_venue"
+    },
+    "goose_2024": {
+      "title": "Goose Index — indexed 2024 concerts (attributed to elgoose.net)",
+      "url": "https://www.gooseindex.com/shows?page=2&per=100",
+      "category": "community_derived_concert_index",
+      "scope": "date_venue_city"
+    },
+    "phish_setlist97": {
+      "title": "Phish.net — 1997 setlist archive",
+      "url": "https://phish.net/setlists/1997.html",
+      "category": "community_setlist",
+      "scope": "selected_highlight"
+    },
+    "phish_setlist98": {
+      "title": "Phish.net — 1998 setlist archive",
+      "url": "https://phish.net/setlists/?year=1998",
+      "category": "community_setlist",
+      "scope": "selected_highlight"
+    },
+    "phish_went": {
+      "title": "Phish.net FAQ — The Great Went",
+      "url": "https://phish.net/faq/great-went",
+      "category": "community_event_history",
+      "scope": "selected_highlight"
+    },
+    "dead_1977_may1": {
+      "title": "Grateful Dead official show page — May 1, 1977",
+      "url": "https://www.dead.net/show/may-1-1977",
+      "category": "artist_official_show",
+      "scope": "selected_highlight"
+    },
+    "dead_1977_cornell": {
+      "title": "Grateful Dead official show page — May 8, 1977",
+      "url": "https://www.dead.net/show/may-8-1977",
+      "category": "artist_official_show",
+      "scope": "selected_highlight"
+    },
+    "abb_year1969": {
+      "title": "Allman Brothers Band — official 1969 show database",
+      "url": "https://allmanbrothersband.com/shows/browse/?yr=1969",
+      "category": "artist_official_show_index",
+      "scope": "date_venue_city"
+    },
+    "abb_year1970": {
+      "title": "Allman Brothers Band — official 1970 show database",
+      "url": "https://allmanbrothersband.com/shows/browse/?yr=1970",
+      "category": "artist_official_show_index",
+      "scope": "date_venue_city"
+    },
+    "abb_year1971": {
+      "title": "Allman Brothers Band — official 1971 show database",
+      "url": "https://allmanbrothersband.com/shows/browse/?yr=1971",
+      "category": "artist_official_show_index",
+      "scope": "date_venue_city"
+    },
+    "abb_1970_first_fillmore": {
+      "title": "Allman Brothers Band — official posters, tickets and dated memorabilia",
+      "url": "https://allmanbrothersband.com/gallery/posters-and-tickets/",
+      "category": "artist_official_show_index",
+      "scope": "selected_highlight"
+    }
+  },
+  "indexed_events": [
+    {
+      "id": "abb-1969-03-30",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-03-30",
+      "venue": "Jacksonville Armory",
+      "place": "Jacksonville, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-04-01",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-04-01",
+      "venue": "On The Beach",
+      "place": "Cocoa Beach, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-04-02",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-04-02",
+      "venue": "Battle Of Bands",
+      "place": "Gainesville, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-04-03",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-04-03",
+      "venue": "Apollo South",
+      "place": "Jacksonville, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-04-04",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-04-04",
+      "venue": "Comic Book Club",
+      "place": "Jacksonville, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-04-05",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-04-05",
+      "venue": "Jax Bch Aud",
+      "place": "Jacksonville, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-04-06",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-04-06",
+      "venue": "Murry Dance",
+      "place": "Jacksonville, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-04-09",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-04-09",
+      "venue": "City Park Amp.",
+      "place": "Palatka, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-05-02",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-05-02",
+      "venue": "College Discotheque",
+      "place": "Macon, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-05-03",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-05-03",
+      "venue": "College Discotheque",
+      "place": "Macon, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-05-04",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-05-04",
+      "venue": "Central City Park",
+      "place": "Macon, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-05-11",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-05-11",
+      "venue": "Piedmont Music Festival",
+      "place": "Atlanta, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-05-18",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-05-18",
+      "venue": "Central City Park",
+      "place": "Macon, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-05-21",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-05-21",
+      "venue": "Seabreeze High School",
+      "place": "Daytona Beach, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-05-25",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-05-25",
+      "venue": "Central City Park",
+      "place": "Macon, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-05-30",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-05-30",
+      "venue": "Boston Tea Party",
+      "place": "Boston, MA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-05-31",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-05-31",
+      "venue": "Boston Tea Party",
+      "place": "Boston, MA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-06-07",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-06-07",
+      "venue": "The Hanger",
+      "place": "Columbia, SC",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-06-19",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-06-19",
+      "venue": "Boston Tea Party",
+      "place": "Boston, MA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-06-20",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-06-20",
+      "venue": "Boston Tea Party",
+      "place": "Boston, MA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-06-21",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-06-21",
+      "venue": "Boston Tea Party",
+      "place": "Boston, MA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-06-27",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-06-27",
+      "venue": "Atlantic Auditorium",
+      "place": "Cocoa Beach, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-06-28",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-06-28",
+      "venue": "Atlantic Auditorium",
+      "place": "Cocoa Beach, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-06-29",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-06-29",
+      "venue": "Daytona Armory",
+      "place": "Daytona Beach, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-07-01",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-07-01",
+      "venue": "Knoxville Civic Coliseum",
+      "place": "Knoxville, TN",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-07-02",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-07-02",
+      "venue": "National Guard Armory",
+      "place": "Auburn, AL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-07-04",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-07-04",
+      "venue": "Atlanta International Raceway",
+      "place": "Atlanta, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-07-05",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-07-05",
+      "venue": "Atlanta International Raceway",
+      "place": "Atlanta, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-07-06",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-07-06",
+      "venue": "Piedmont Park",
+      "place": "Atlanta, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-08-04",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-08-04",
+      "venue": "Ungano's",
+      "place": "New York, NY",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-08-05",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-08-05",
+      "venue": "Ungano's",
+      "place": "New York, NY",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-08-06",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-08-06",
+      "venue": "Ungano's",
+      "place": "New York, NY",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-08-27",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-08-27",
+      "venue": "Piedmont Park",
+      "place": "Atlanta, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-08-31",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-08-31",
+      "venue": "Central City Park",
+      "place": "Macon, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-09-05",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-09-05",
+      "venue": "National Guard Armory",
+      "place": "Tampa, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-09-06",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-09-06",
+      "venue": "Electric Zoo",
+      "place": "St. Petersburg, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-09-14",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-09-14",
+      "venue": "Central City Park",
+      "place": "Macon, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-09-16",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-09-16",
+      "venue": "Mercer University",
+      "place": "Macon, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-09-21",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-09-21",
+      "venue": "Piedmont Music Festival",
+      "place": "Atlanta, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-09-26",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-09-26",
+      "venue": "Exhibition Hall",
+      "place": "Ft. Myers, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-09-27",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-09-27",
+      "venue": "Piedmont Music Festival",
+      "place": "Atlanta, GA",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1969-09-28",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1969-09-28",
+      "venue": "Sarasota Armory",
+      "place": "Sarasota, FL",
+      "era": "1969 beginnings",
+      "source_ids": [
+        "abb_year1969"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-01-09",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-09",
+      "venue": "Electric Factory",
+      "place": "Philadelphia, PA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-01-10",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-10",
+      "venue": "Electric Factory",
+      "place": "Philadelphia, PA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-01-15",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-15",
+      "venue": "Fillmore West",
+      "place": "San Francisco, CA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970",
+        "abb_1970_first_fillmore"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "First Fillmore West stand",
+        "summary": "The band’s official memorabilia archive labels January 15, 1970 as its first Fillmore West show. This is a source-backed event-history note, not evidence of an extant tape.",
+        "source_ids": [
+          "abb_1970_first_fillmore"
+        ]
+      }
+    },
+    {
+      "id": "abb-1970-01-16",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-16",
+      "venue": "Fillmore West",
+      "place": "San Francisco, CA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-01-17",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-17",
+      "venue": "Fillmore West",
+      "place": "San Francisco, CA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-01-18",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-18",
+      "venue": "Fillmore West",
+      "place": "San Francisco, CA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-01-20",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-20",
+      "venue": "UC Riverside",
+      "place": "Riverside, CA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-01-22",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-22",
+      "venue": "Whiskey A Go-Go",
+      "place": "Los Angeles, CA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-01-23",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-23",
+      "venue": "Whiskey A Go-Go",
+      "place": "Los Angeles, CA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-01-24",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-24",
+      "venue": "Whiskey A Go-Go",
+      "place": "Los Angeles, CA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-01-25",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-01-25",
+      "venue": "Whiskey A Go-Go",
+      "place": "Los Angeles, CA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-02-06",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-02-06",
+      "venue": "Pappaliski's",
+      "place": "Dayton, OH",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-02-07",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-02-07",
+      "venue": "Pappaliski's",
+      "place": "Dayton, OH",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-02-11",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-02-11",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-02-13",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-02-13",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-02-14",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-02-14",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-02-27",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-02-27",
+      "venue": "Mercer University",
+      "place": "Macon, GA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-01",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-01",
+      "venue": "The Aragon",
+      "place": "St. Petersburg, FL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-06",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-06",
+      "venue": "National Guard Armory",
+      "place": "Macon, GA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-07",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-07",
+      "venue": "Athens College Gym",
+      "place": "Athens, AL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-13",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-13",
+      "venue": "Warehouse",
+      "place": "New Orleans, LA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-14",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-14",
+      "venue": "Warehouse",
+      "place": "New Orleans, LA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-19",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-19",
+      "venue": "Municipal Auditorium",
+      "place": "Atlanta, GA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-20",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-20",
+      "venue": "The Aragon",
+      "place": "St. Petersburg, FL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-21",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-21",
+      "venue": "Melbourne Civic Auditorium",
+      "place": "Melbourne, FL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-26",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-26",
+      "venue": "Municipal Auditorium",
+      "place": "Atlanta, GA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-28",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-28",
+      "venue": "Orlando Speed World",
+      "place": "Bithlo, FL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-03-29",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-03-29",
+      "venue": "Jackson Zoo",
+      "place": "Jackson, MS",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-04-04",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-04-04",
+      "venue": "Ludlow Garage",
+      "place": "Cincinnati, OH",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-04-05",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-04-05",
+      "venue": "Ludlow Garage",
+      "place": "Cincinnati, OH",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-04-08",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-04-08",
+      "venue": "Dekalb College Gym",
+      "place": "Clarkston, GA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-04-09",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-04-09",
+      "venue": "Florida Jr. College",
+      "place": "Miami, FL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-04-18",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-04-18",
+      "venue": "Florida Presbyterian College",
+      "place": "St. Petersburg, FL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-04-24",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-04-24",
+      "venue": "Woodrose",
+      "place": "Springfield, MA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-04-25",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-04-25",
+      "venue": "Sullivan Co. Community Coll.",
+      "place": "Fallsburg, NY",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-04-28",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-04-28",
+      "venue": "SUNY Stony Brook",
+      "place": "Stony Brook, NY",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-04-29",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-04-29",
+      "venue": "Aliotta's Lounge",
+      "place": "Buffalo, NY",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-04",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-04",
+      "venue": "The Scene",
+      "place": "Milwaukee, WI",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-05",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-05",
+      "venue": "The Scene",
+      "place": "Milwaukee, WI",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-06",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-06",
+      "venue": "Jolly's Place",
+      "place": "Des Moines, IA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-07",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-07",
+      "venue": "Rush Up Club",
+      "place": "Chicago, IL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-08",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-08",
+      "venue": "Rush Up Club",
+      "place": "Chicago, IL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-11",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-11",
+      "venue": "The Jam Factory",
+      "place": "San Antonio, TX",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-12",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-12",
+      "venue": "Clark Field, U. of Texas",
+      "place": "Austin, TX",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-13",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-13",
+      "venue": "Continental Club",
+      "place": "Houston, TX",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-16",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-16",
+      "venue": "Peabody Auditorium",
+      "place": "Daytona Beach, FL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-18",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-18",
+      "venue": "Memorial Auditorium",
+      "place": "Raleigh, NC",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-20",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-20",
+      "venue": "RFK Stadium",
+      "place": "Washington, DC",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-23",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-23",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-25",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-25",
+      "venue": "Dixie Caverns",
+      "place": "Salem, VA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-26",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-26",
+      "venue": "Municipal Auditorium",
+      "place": "Charleston, SC",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-27",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-27",
+      "venue": "Piedmont Music Festival",
+      "place": "Atlanta, GA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-09-30",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-09-30",
+      "venue": "Rathskeller, University of Florida",
+      "place": "Gainesville, FL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-03",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-03",
+      "venue": "Centre College",
+      "place": "Danville, KY",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-08",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-08",
+      "venue": "Berry College Gym",
+      "place": "Rome, GA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-09",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-09",
+      "venue": "FSU Tully Gym",
+      "place": "Tallahassee, FL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-10",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-10",
+      "venue": "Miami Jai-Alai Fronton",
+      "place": "Miami, FL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-13",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-13",
+      "venue": "South GA College Gym",
+      "place": "Douglas, GA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-14",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-14",
+      "venue": "Leon Cole Auditorium",
+      "place": "Jacksonville, AL",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-15",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-15",
+      "venue": "Grove City College",
+      "place": "Grove City, PA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-16",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-16",
+      "venue": "Georgetown College Chapel",
+      "place": "Georgetown, KY",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-17",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-17",
+      "venue": "The Sitar",
+      "place": "Spartanburg, SC",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-18",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-18",
+      "venue": "Music Hall",
+      "place": "Cincinnati, OH",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-23",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-23",
+      "venue": "SUNY Stony Brook",
+      "place": "Stony Brook, NY",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-24",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-24",
+      "venue": "Boston Common",
+      "place": "Boston, MA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-25",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-25",
+      "venue": "Bucks County Community College",
+      "place": "Bucks Co., PA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-28",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-28",
+      "venue": "Western Carolina College",
+      "place": "Cullowee, NC",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-30",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-30",
+      "venue": "Vanderbilt University",
+      "place": "Nashville, TN",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1970-10-31",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1970-10-31",
+      "venue": "Emory University",
+      "place": "Atlanta, GA",
+      "era": "1970 tour",
+      "source_ids": [
+        "abb_year1970"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-07",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-07",
+      "venue": "Georgia Southern Gym",
+      "place": "Statesboro, GA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-08",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-08",
+      "venue": "UNC Charlotte Cafeteria",
+      "place": "Charlotte, NC",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-09",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-09",
+      "venue": "Coliseum",
+      "place": "Knoxville, TN",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-15",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-15",
+      "venue": "Appalachian State Univ",
+      "place": "Boone, NC",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-16",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-16",
+      "venue": "Atlanta Municipal Auditorium",
+      "place": "Atlanta, GA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-17",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-17",
+      "venue": "Syria Mosque",
+      "place": "Pittsburgh, PA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-22",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-22",
+      "venue": "Capitol Theater",
+      "place": "Portchester, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-23",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-23",
+      "venue": "Capitol Theater",
+      "place": "Portchester, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-24",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-24",
+      "venue": "Hampton Roads Coliseum",
+      "place": "Hampton, VA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-26",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-26",
+      "venue": "Reflections",
+      "place": "Cincinnati, OH",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-27",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-27",
+      "venue": "U of California Gym",
+      "place": "Riverside, CA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-28",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-28",
+      "venue": "Fillmore West",
+      "place": "San Francisco, CA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-29",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-29",
+      "venue": "Fillmore West",
+      "place": "San Francisco, CA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-30",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-30",
+      "venue": "Fillmore West",
+      "place": "San Francisco, CA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-01-31",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-01-31",
+      "venue": "Fillmore West",
+      "place": "San Francisco, CA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-01",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-01",
+      "venue": "Whiskey A Go-Go",
+      "place": "Los Angeles, CA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-02",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-02",
+      "venue": "Whiskey A Go Go",
+      "place": "Los Angeles, CA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-03",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-03",
+      "venue": "Whiskey A Go Go",
+      "place": "Los Angeles, CA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-04",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-04",
+      "venue": "Ohio Wesleyan",
+      "place": "Delaware, OH",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-05",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-05",
+      "venue": "Spectrum",
+      "place": "Philadelphia, PA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-06",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-06",
+      "venue": "Washington & Lee University",
+      "place": "Lexington, VA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-08",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-08",
+      "venue": "Troy S.U.",
+      "place": "Troy, AL",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-10",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-10",
+      "venue": "High Point College",
+      "place": "High Point, NC",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-12",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-12",
+      "venue": "Furman University",
+      "place": "Greenville, SC",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-13",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-13",
+      "venue": "Gaillard Municipal Aud.",
+      "place": "Charleston, SC",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-15",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-15",
+      "venue": "Broward County Community College",
+      "place": "Ft. Lauderdale, FL",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-16",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-16",
+      "venue": "Albany Jr. College",
+      "place": "Albany, GA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-17",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-17",
+      "venue": "Jacksonville Coliseum",
+      "place": "Jacksonville Beach, FL",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-20",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-20",
+      "venue": "Franklin Pierce College",
+      "place": "Rindge, NH",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-23",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-23",
+      "venue": "Col. of Steubenville",
+      "place": "Steubenville, OH",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-24",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-24",
+      "venue": "Thiel College",
+      "place": "Greenville, PA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-25",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-25",
+      "venue": "Case Western Reserve Univ.",
+      "place": "Cleveland, OH",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-26",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-26",
+      "venue": "Eastown Theatre",
+      "place": "Detroit, MI",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-27",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-27",
+      "venue": "Eastown Theatre",
+      "place": "Detroit, MI",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-02-28",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-02-28",
+      "venue": "Brewer FieldHse, UMO",
+      "place": "Columbia, MO",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-03-01",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-01",
+      "venue": "Mississippi State Univ.",
+      "place": "Starkville, MS",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-03-11",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-11",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-03-12",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-12",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-03-13",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-13",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-03-14",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-14",
+      "venue": "Suffolk County Community College",
+      "place": "Selden, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-03-20",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-20",
+      "venue": "Warehouse",
+      "place": "New Orleans, LA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-03-21",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-21",
+      "venue": "Blackham Coliseum",
+      "place": "Lafayette, LA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-03-24",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-24",
+      "venue": "U of AL - Foster Aud",
+      "place": "Tuscaloosa, AL",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-03-25",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-25",
+      "venue": "St. Catherine's",
+      "place": "Minneapolis, MN",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-03-27",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-03-27",
+      "venue": "Sunshine In Concert Hall",
+      "place": "Asbury Park, NJ",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-04",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-04",
+      "venue": "South Mountain Arena",
+      "place": "West Orange, NJ",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-05",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-05",
+      "venue": "Warehouse",
+      "place": "New Orleans, LA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-06",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-06",
+      "venue": "Hofheinz Pavilion",
+      "place": "Houston, TX",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-10",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-10",
+      "venue": "San Antonio Auditorium",
+      "place": "San Antonio, TX",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-11",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-11",
+      "venue": "Eastown Theatre",
+      "place": "Detroit, MI",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-12",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-12",
+      "venue": "Eastown Theatre",
+      "place": "Detroit, MI",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-16",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-16",
+      "venue": "Municipal Auditorium",
+      "place": "Birmingham, AL",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-23",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-23",
+      "venue": "Warehouse",
+      "place": "New Orleans, LA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-24",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-24",
+      "venue": "Memorial Auditorium",
+      "place": "Lowell, MA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-25",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-25",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-26",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-26",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-06-27",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-06-27",
+      "venue": "Fillmore East",
+      "place": "New York, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-05",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-05",
+      "venue": "Steel Pier",
+      "place": "Atlantic City, NJ",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-06",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-06",
+      "venue": "Steel Pier",
+      "place": "Atlantic City, NJ",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-07",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-07",
+      "venue": "Steel Pier",
+      "place": "Atlantic City, NJ",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-08",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-08",
+      "venue": "Steel Pier",
+      "place": "Atlantic City, NJ",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-09",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-09",
+      "venue": "Steel Pier",
+      "place": "Atlantic City, NJ",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-10",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-10",
+      "venue": "Steel Pier",
+      "place": "Atlantic City, NJ",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-15",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-15",
+      "venue": "Coliseum",
+      "place": "Tampa, FL",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-17",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-17",
+      "venue": "Municipal Auditorium",
+      "place": "Atlanta, GA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-20",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-20",
+      "venue": "Century's Huntington Theater",
+      "place": "Huntington, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-21",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-21",
+      "venue": "Central Park",
+      "place": "New York, NY",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-23",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-23",
+      "venue": "The Dome",
+      "place": "Virginia Beach, VA",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-24",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-24",
+      "venue": "Superball Fest",
+      "place": "St. Paul, MN",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "abb-1971-07-31",
+      "artist": "The Allman Brothers Band",
+      "artist_id": "the-allman-brothers-band",
+      "date": "1971-07-31",
+      "venue": "The Park",
+      "place": "No. Baltimore, OH",
+      "era": "1971 before October",
+      "source_ids": [
+        "abb_year1971"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-01",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-01",
+      "venue": "The Palladium",
+      "place": "New York, NY",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_a",
+        "dead_1977_may1"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "The Palladium — first Sunrise",
+        "summary": "The official show entry identifies this performance as the first Sunrise and documents a show setlist.",
+        "source_ids": [
+          "dead_1977_may1"
+        ]
+      }
+    },
+    {
+      "id": "gd-1977-05-03",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-03",
+      "venue": "The Palladium",
+      "place": "New York, NY",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_a"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-04",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-04",
+      "venue": "The Palladium",
+      "place": "New York, NY",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_a"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-05",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-05",
+      "venue": "Veterans Memorial Coliseum",
+      "place": "New Haven, CT",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_a"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-07",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-07",
+      "venue": "Boston Garden",
+      "place": "Boston, MA",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_a"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-08",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-08",
+      "venue": "Barton Hall",
+      "place": "Ithaca, NY",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_a",
+        "dead_1977_cornell"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Cornell — canonical show record",
+        "summary": "The band’s show archive identifies Scarlet Begonias, Fire on the Mountain, St. Stephen, Not Fade Away and Morning Dew in the setlist.",
+        "source_ids": [
+          "dead_1977_cornell"
+        ]
+      }
+    },
+    {
+      "id": "gd-1977-05-09",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-09",
+      "venue": "War Memorial Auditorium",
+      "place": "Buffalo, NY",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_a"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-11",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-11",
+      "venue": "St. Paul Civic Center Arena",
+      "place": "St. Paul, MN",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_a"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-12",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-12",
+      "venue": "Auditorium Theater",
+      "place": "Chicago, IL",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_a"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-13",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-13",
+      "venue": "Auditorium Theater",
+      "place": "Chicago, IL",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_a"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-15",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-15",
+      "venue": "St. Louis Arena",
+      "place": "St. Louis, MO",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_b"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-17",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-17",
+      "venue": "Memorial Coliseum",
+      "place": "Tuscaloosa, AL",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_b"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-18",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-18",
+      "venue": "Fox Theatre",
+      "place": "Atlanta, GA",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_b"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-19",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-19",
+      "venue": "Fox Theatre",
+      "place": "Atlanta, GA",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_b"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-21",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-21",
+      "venue": "Lakeland Civic Center Arena",
+      "place": "Lakeland, FL",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_b"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-22",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-22",
+      "venue": "Sportatorium",
+      "place": "Pembroke Pines, FL",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_b"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-25",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-25",
+      "venue": "The Mosque",
+      "place": "Richmond, VA",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_b"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-26",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-26",
+      "venue": "Baltimore Civic Center",
+      "place": "Baltimore, MD",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_b"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-05-28",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-05-28",
+      "venue": "Hartford Civic Center",
+      "place": "Hartford, CT",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_b"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-06-04",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-06-04",
+      "venue": "The Forum",
+      "place": "Inglewood, CA",
+      "era": "1977 spring",
+      "source_ids": [
+        "dead_1977_may_b"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-06-07",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-06-07",
+      "venue": "Winterland Arena",
+      "place": "San Francisco, CA",
+      "era": "1977 later",
+      "source_ids": [
+        "dead_1977_june"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-06-08",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-06-08",
+      "venue": "Winterland Arena",
+      "place": "San Francisco, CA",
+      "era": "1977 later",
+      "source_ids": [
+        "dead_1977_june"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-06-09",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-06-09",
+      "venue": "Winterland Arena",
+      "place": "San Francisco, CA",
+      "era": "1977 later",
+      "source_ids": [
+        "dead_1977_june"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-09-03",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-09-03",
+      "venue": "Raceway Park",
+      "place": "Englishtown, NJ",
+      "era": "1977 later",
+      "source_ids": [
+        "dead_1977_june"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-09-28",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-09-28",
+      "venue": "Paramount Northwest Theatre",
+      "place": "Seattle, WA",
+      "era": "1977 later",
+      "source_ids": [
+        "dead_1977_june"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-09-29",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-09-29",
+      "venue": "Paramount Northwest Theatre",
+      "place": "Seattle, WA",
+      "era": "1977 later",
+      "source_ids": [
+        "dead_1977_june"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-10-01",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-10-01",
+      "venue": "Paramount Theater",
+      "place": "Portland, OR",
+      "era": "1977 later",
+      "source_ids": [
+        "dead_1977_june"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-10-02",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-10-02",
+      "venue": "Paramount Theater",
+      "place": "Portland, OR",
+      "era": "1977 later",
+      "source_ids": [
+        "dead_1977_june"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-10-06",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-10-06",
+      "venue": "Activity Center",
+      "place": "Tempe, AZ",
+      "era": "1977 later",
+      "source_ids": [
+        "dead_1977_june"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "gd-1977-10-07",
+      "artist": "Grateful Dead",
+      "artist_id": "grateful-dead",
+      "date": "1977-10-07",
+      "venue": "University of New Mexico",
+      "place": "Albuquerque, NM",
+      "era": "1977 later",
+      "source_ids": [
+        "dead_1977_june"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-13",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-13",
+      "venue": "The S.F.X. Centre",
+      "place": "Dublin, Ireland",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-14",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-14",
+      "venue": "The S.F.X. Centre",
+      "place": "Dublin, Ireland",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-16",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-16",
+      "venue": "Royal Albert Hall",
+      "place": "London, England",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-19",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-19",
+      "venue": "Arena Wien",
+      "place": "Vienna, Austria",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-20",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-20",
+      "venue": "Divadlo Archa",
+      "place": "Prague, Czech Republic",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-21",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-21",
+      "venue": "Hurricane Festival",
+      "place": "Scheeßel, Germany",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-22",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-22",
+      "venue": "Loreley",
+      "place": "St. Goarshausen, Germany",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-24",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-24",
+      "venue": "La Laiterie",
+      "place": "Strasbourg, France",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-25",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-25",
+      "venue": "L’Aeronef",
+      "place": "Lille, France",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-27",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-27",
+      "venue": "Worthy Farm",
+      "place": "Somerset, England",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-06-29",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-06-29",
+      "venue": "Roskilde Festival",
+      "place": "Roskilde, Denmark",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-01",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-01",
+      "venue": "Paradiso",
+      "place": "Amsterdam, Netherlands",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-02",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-02",
+      "venue": "Paradiso",
+      "place": "Amsterdam, Netherlands",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-03",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-03",
+      "venue": "Serenadenhof",
+      "place": "Nuremberg, Germany",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-05",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-05",
+      "venue": "Piazza Risorgimento",
+      "place": "Como, Italy",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-06",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-06",
+      "venue": "Spiaggia di Rivoltella",
+      "place": "Desenzano, Italy",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-09",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-09",
+      "venue": "Le Transbordeur",
+      "place": "Lyon/Villeurbanne, France",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-10",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-10",
+      "venue": "Espace Julien",
+      "place": "Marseille, France",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-11",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-11",
+      "venue": "Doctor Music Festival",
+      "place": "Escalarre, Spain",
+      "era": "1997 Europe",
+      "source_ids": [
+        "phish_summer97_europe"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-21",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-21",
+      "venue": "GTE Virginia Beach Amphitheater",
+      "place": "Virginia Beach, VA",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-22",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-22",
+      "venue": "Walnut Creek Amphitheater",
+      "place": "Raleigh, NC",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-23",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-23",
+      "venue": "Lakewood Amphitheatre",
+      "place": "Atlanta, GA",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-25",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-25",
+      "venue": "Starplex Amphitheatre",
+      "place": "Dallas, TX",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-26",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-26",
+      "venue": "South Park Meadows",
+      "place": "Austin, TX",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-29",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-29",
+      "venue": "Desert Sky Pavilion",
+      "place": "Phoenix, AZ",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-30",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-30",
+      "venue": "Ventura County Fairgrounds",
+      "place": "Ventura, CA",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-07-31",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-07-31",
+      "venue": "Shoreline Amphitheatre",
+      "place": "Mountain View, CA",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-08-02",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-02",
+      "venue": "Gorge Amphitheatre",
+      "place": "George, WA",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-08-03",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-03",
+      "venue": "Gorge Amphitheatre",
+      "place": "George, WA",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-08-06",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-06",
+      "venue": "Riverport Amphitheater",
+      "place": "Maryland Heights, MO",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-08-08",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-08",
+      "venue": "New World Music Theatre",
+      "place": "Tinley Park, IL",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-08-09",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-09",
+      "venue": "Alpine Valley Music Theatre",
+      "place": "East Troy, WI",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-08-10",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-10",
+      "venue": "Deer Creek Music Center",
+      "place": "Noblesville, IN",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-08-11",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-11",
+      "venue": "Deer Creek Music Center",
+      "place": "Noblesville, IN",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-08-13",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-13",
+      "venue": "Star Lake Amphitheatre",
+      "place": "Burgettstown, PA",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-08-14",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-14",
+      "venue": "Darien Lake Performing Arts Center",
+      "place": "Darien Center, NY",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-08-16",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-16",
+      "venue": "Loring Commerce Centre",
+      "place": "Limestone, ME",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us",
+        "phish_went"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "The Great Went — opening night",
+        "summary": "The first of the two Great Went festival performances, part of the multi-set event at the former Loring Air Force Base.",
+        "source_ids": [
+          "phish_went"
+        ]
+      }
+    },
+    {
+      "id": "phish-1997-08-17",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-08-17",
+      "venue": "Loring Commerce Centre",
+      "place": "Limestone, ME",
+      "era": "1997 U.S. summer",
+      "source_ids": [
+        "phish_summer97_us",
+        "phish_went",
+        "phish_setlist97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "The Great Went — second night",
+        "summary": "The second of the two Great Went performances. The community archive describes an Art Jam and a Digital Delay Loop Jam within the event.",
+        "source_ids": [
+          "phish_went",
+          "phish_setlist97"
+        ]
+      }
+    },
+    {
+      "id": "phish-1997-11-13",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-13",
+      "venue": "Thomas & Mack Center",
+      "place": "Las Vegas, NV",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-11-14",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-14",
+      "venue": "The E Center",
+      "place": "West Valley City, UT",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-11-16",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-16",
+      "venue": "McNichols Arena",
+      "place": "Denver, CO",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-11-17",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-17",
+      "venue": "McNichols Arena",
+      "place": "Denver, CO",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97",
+        "phish_setlist97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Denver 1997 — official archival release",
+        "summary": "Phish.net identifies this show as the performance issued as Live Phish 11 and notes Ghost into Fire in the first set.",
+        "source_ids": [
+          "phish_setlist97"
+        ]
+      }
+    },
+    {
+      "id": "phish-1997-11-19",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-19",
+      "venue": "Assembly Hall",
+      "place": "Champaign, IL",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97",
+        "phish_setlist97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Champaign — a quoted lyrical reference",
+        "summary": "Phish.net notes Meatstick quotes in the transition from Fee into Run Like an Antelope.",
+        "source_ids": [
+          "phish_setlist97"
+        ]
+      }
+    },
+    {
+      "id": "phish-1997-11-21",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-21",
+      "venue": "Hampton Coliseum",
+      "place": "Hampton, VA",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-11-22",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-22",
+      "venue": "Hampton Coliseum",
+      "place": "Hampton, VA",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-11-23",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-23",
+      "venue": "Lawrence Joel Veterans Memorial Coliseum",
+      "place": "Winston-Salem, NC",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-11-26",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-26",
+      "venue": "Hartford Civic Center",
+      "place": "Hartford, CT",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-11-28",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-28",
+      "venue": "Worcester Centrum Centre",
+      "place": "Worcester, MA",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-11-29",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-29",
+      "venue": "Worcester Centrum Centre",
+      "place": "Worcester, MA",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-11-30",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-11-30",
+      "venue": "Worcester Centrum Centre",
+      "place": "Worcester, MA",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-12-02",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-12-02",
+      "venue": "CoreStates Spectrum",
+      "place": "Philadelphia, PA",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-12-03",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-12-03",
+      "venue": "CoreStates Spectrum",
+      "place": "Philadelphia, PA",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-12-05",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-12-05",
+      "venue": "CSU Convocation Center",
+      "place": "Cleveland, OH",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-12-06",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-12-06",
+      "venue": "The Palace of Auburn Hills",
+      "place": "Auburn Hills, MI",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97",
+        "phish_setlist97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Auburn Hills 1997 — second-set sequence",
+        "summary": "The Phish.net record marks a sequence beginning with Tweezer and continuing through Izabella, Twist and Piper.",
+        "source_ids": [
+          "phish_setlist97"
+        ]
+      }
+    },
+    {
+      "id": "phish-1997-12-07",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-12-07",
+      "venue": "Ervin J. Nutter Center",
+      "place": "Dayton, OH",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-12-09",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-12-09",
+      "venue": "Bryce Jordan Center",
+      "place": "State College, PA",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-12-11",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-12-11",
+      "venue": "Rochester War Memorial",
+      "place": "Rochester, NY",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-12-12",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-12-12",
+      "venue": "Pepsi Arena",
+      "place": "Albany, NY",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1997-12-13",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1997-12-13",
+      "venue": "Pepsi Arena",
+      "place": "Albany, NY",
+      "era": "1997 fall",
+      "source_ids": [
+        "phish_fall97"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-15",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-15",
+      "venue": "Portland Meadows",
+      "place": "Portland, OR",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-16",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-16",
+      "venue": "Gorge Amphitheatre",
+      "place": "George, WA",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-17",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-17",
+      "venue": "Gorge Amphitheatre",
+      "place": "George, WA",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-19",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-19",
+      "venue": "Shoreline Amphitheatre",
+      "place": "Mountain View, CA",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-20",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-20",
+      "venue": "Ventura County Fairgrounds",
+      "place": "Ventura, CA",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-21",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-21",
+      "venue": "Desert Sky Pavilion",
+      "place": "Phoenix, AZ",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-24",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-24",
+      "venue": "Cynthia Woods Mitchell Pavilion",
+      "place": "The Woodlands, TX",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-25",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-25",
+      "venue": "South Park Meadows",
+      "place": "Austin, TX",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-26",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-26",
+      "venue": "Starplex Amphitheatre",
+      "place": "Dallas, TX",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-28",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-28",
+      "venue": "Sandstone Amphitheatre",
+      "place": "Bonner Springs, KS",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-29",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-29",
+      "venue": "Riverport Amphitheater",
+      "place": "Maryland Heights, MO",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-07-31",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-07-31",
+      "venue": "Polaris Amphitheater",
+      "place": "Columbus, OH",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-08-01",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-01",
+      "venue": "Alpine Valley Music Theatre",
+      "place": "East Troy, WI",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-08-02",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-02",
+      "venue": "Deer Creek Music Center",
+      "place": "Noblesville, IN",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-08-03",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-03",
+      "venue": "Deer Creek Music Center",
+      "place": "Noblesville, IN",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Deer Creek — Rhinoceros debut",
+        "summary": "Phish.net identifies this show as the live debut of the Smashing Pumpkins cover Rhinoceros.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-08-06",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-06",
+      "venue": "Lakewood Amphitheatre",
+      "place": "Atlanta, GA",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Atlanta — Van Halen debut",
+        "summary": "The setlist notes report the Phish debut of Runnin’ with the Devil in the encore.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-08-07",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-07",
+      "venue": "Walnut Creek Amphitheater",
+      "place": "Raleigh, NC",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Walnut Creek — eclipse narration",
+        "summary": "The show notes document a lunar-eclipse explanation in the Colonel Forbin’s Ascent / Fly Famous Mockingbird narrative.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-08-08",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-08",
+      "venue": "Merriweather Post Pavilion",
+      "place": "Columbia, MD",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Merriweather — double debut",
+        "summary": "The Phish.net account identifies the first Phish performances of Sweet Jane and Sabotage at this show.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-08-09",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-09",
+      "venue": "GTE Virginia Beach Amphitheater",
+      "place": "Virginia Beach, VA",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Virginia Beach — Garcia remembrance",
+        "summary": "Phish.net documents the band performing Terrapin Station on the third anniversary of Jerry Garcia’s death.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-08-11",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-11",
+      "venue": "Star Lake Amphitheatre",
+      "place": "Burgettstown, PA",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Star Lake — Marley opener",
+        "summary": "The published notes identify this performance as the band’s debut of Trench Town Rock.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-08-12",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-12",
+      "venue": "Vernon Downs",
+      "place": "Vernon, NY",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-08-15",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-15",
+      "venue": "Loring Commerce Centre",
+      "place": "Limestone, ME",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-08-16",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-08-16",
+      "venue": "Loring Commerce Centre",
+      "place": "Limestone, ME",
+      "era": "1998 U.S. summer",
+      "source_ids": [
+        "phish_summer98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-10-29",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-10-29",
+      "venue": "Greek Theatre",
+      "place": "Los Angeles, CA",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Los Angeles — Beatles encore",
+        "summary": "Phish.net identifies Something as a debut in this Greek Theatre encore.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-10-30",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-10-30",
+      "venue": "Thomas & Mack Center",
+      "place": "Las Vegas, NV",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-10-31",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-10-31",
+      "venue": "Thomas & Mack Center",
+      "place": "Las Vegas, NV",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Halloween 1998 — Velvet Underground costume",
+        "summary": "The second set covers the Velvet Underground album Loaded; this is the published setlist context, not an inference from the tour listing.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-11-02",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-02",
+      "venue": "The E Center",
+      "place": "West Valley City, UT",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-04",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-04",
+      "venue": "McNichols Arena",
+      "place": "Denver, CO",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-06",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-06",
+      "venue": "Kohl Center",
+      "place": "Madison, WI",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-07",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-07",
+      "venue": "UIC Pavilion",
+      "place": "Chicago, IL",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-08",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-08",
+      "venue": "UIC Pavilion",
+      "place": "Chicago, IL",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-09",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-09",
+      "venue": "UIC Pavilion",
+      "place": "Chicago, IL",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-11",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-11",
+      "venue": "Van Andel Arena",
+      "place": "Grand Rapids, MI",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Grand Rapids — documented archival release",
+        "summary": "The Phish.net concert note identifies this performance as available through LivePhish. It does not on its own define a recording lineage.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-11-13",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-13",
+      "venue": "CSU Convocation Center",
+      "place": "Cleveland, OH",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Cleveland — Mind Left Body reference",
+        "summary": "The Phish.net annotation identifies a Mind Left Body Jam between portions of Wolfman’s Brother.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-11-14",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-14",
+      "venue": "The Crown",
+      "place": "Cincinnati, OH",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-15",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-15",
+      "venue": "Murphy Center",
+      "place": "Murfreesboro, TN",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-18",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-18",
+      "venue": "BI-LO Center",
+      "place": "Greenville, SC",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-19",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-19",
+      "venue": "Lawrence Joel Veterans Memorial Coliseum",
+      "place": "Winston-Salem, NC",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-20",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-20",
+      "venue": "Hampton Coliseum",
+      "place": "Hampton, VA",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-21",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-21",
+      "venue": "Hampton Coliseum",
+      "place": "Hampton, VA",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98",
+        "phish_setlist98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "spotlight": {
+        "title": "Hampton 1998 — archival night",
+        "summary": "The Phish.net account records Sabotage opening the second set and a Tubthumping encore.",
+        "source_ids": [
+          "phish_setlist98"
+        ]
+      }
+    },
+    {
+      "id": "phish-1998-11-24",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-24",
+      "venue": "New Haven Veterans Memorial Coliseum",
+      "place": "New Haven, CT",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-25",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-25",
+      "venue": "Pepsi Arena",
+      "place": "Albany, NY",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-27",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-27",
+      "venue": "Worcester Centrum Centre",
+      "place": "Worcester, MA",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-28",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-28",
+      "venue": "Worcester Centrum Centre",
+      "place": "Worcester, MA",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "phish-1998-11-29",
+      "artist": "Phish",
+      "artist_id": "phish",
+      "date": "1998-11-29",
+      "venue": "Worcester Centrum Centre",
+      "place": "Worcester, MA",
+      "era": "1998 fall",
+      "source_ids": [
+        "phish_fall98"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-10",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-10",
+      "venue": "Steelhouse",
+      "place": "Omaha, NE",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-11",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-11",
+      "venue": "The Midland Theatre",
+      "place": "Kansas City, MO",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-12",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-12",
+      "venue": "Everwise Amphitheater at White River State Park",
+      "place": "Indianapolis, IN",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-14",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-14",
+      "venue": "Northlands Live",
+      "place": "Swanzey, NH",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-15",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-15",
+      "venue": "Constellation Brands-Marvin Sands Performing Arts Center",
+      "place": "Canandaigua, NY",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-16",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-16",
+      "venue": "Jacobs Pavilion at Nautica",
+      "place": "Cleveland, OH",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-18",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-18",
+      "venue": "Red Hat Amphitheater",
+      "place": "Raleigh, NC",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-20",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-20",
+      "venue": "Fox Theatre",
+      "place": "Atlanta, GA",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-21",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-21",
+      "venue": "Fox Theatre",
+      "place": "Atlanta, GA",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-22",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-22",
+      "venue": "Fox Theatre",
+      "place": "Atlanta, GA",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-23",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-23",
+      "venue": "Skyla Credit Union Amphitheatre",
+      "place": "Charlotte, NC",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-25",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-25",
+      "venue": "Thompson's Point",
+      "place": "Portland, ME",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-26",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-26",
+      "venue": "Thompson's Point",
+      "place": "Portland, ME",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-28",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-28",
+      "venue": "Mann Center for the Performing Arts",
+      "place": "Philadelphia, PA",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-29",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-29",
+      "venue": "Forest Hills Stadium",
+      "place": "Queens, NY",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-06-30",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-06-30",
+      "venue": "Westville Music Bowl",
+      "place": "New Haven, CT",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-09-01",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-09-01",
+      "venue": "PNC Bank Arts Center",
+      "place": "Holmdel, NJ",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-10-24",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-10-24",
+      "venue": "Ascend Amphitheater",
+      "place": "Nashville, TN",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-10-25",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-10-25",
+      "venue": "Lawrence Joel Veterans Memorial Coliseum",
+      "place": "Winston-Salem, NC",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-10-26",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-10-26",
+      "venue": "Avondale Brewing Company",
+      "place": "Birmingham, AL",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-10-29",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-10-29",
+      "venue": "The Fillmore Miami Beach",
+      "place": "Miami, FL",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-10-30",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-10-30",
+      "venue": "The Fillmore Miami Beach",
+      "place": "Miami, FL",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-10-31",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-10-31",
+      "venue": "The St. Pete Pier",
+      "place": "St. Petersburg, FL",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-11-01",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-11-01",
+      "venue": "The St. Augustine Amphitheatre",
+      "place": "St. Augustine, FL",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-11-02",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-11-02",
+      "venue": "The St. Augustine Amphitheatre",
+      "place": "St. Augustine, FL",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-11-04",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-11-04",
+      "venue": "The Revelry",
+      "place": "Charlotte, NC",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-11-07",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-11-07",
+      "venue": "Petersen Events Center",
+      "place": "Pittsburgh, PA",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-11-08",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-11-08",
+      "venue": "Andrew J Brady Music Center",
+      "place": "Cincinnati, OH",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-11-09",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-11-09",
+      "venue": "Andrew J Brady Music Center",
+      "place": "Cincinnati, OH",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-11-10",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-11-10",
+      "venue": "Andrew J Brady Music Center",
+      "place": "Cincinnati, OH",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-11-12",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-11-12",
+      "venue": "The Anthem",
+      "place": "Washington, DC",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-11-13",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-11-13",
+      "venue": "The Anthem",
+      "place": "Washington, DC",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-11-24",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-11-24",
+      "venue": "Madison Square Garden",
+      "place": "New York, NY",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated",
+      "editorial_warning": "This entry is a short appearance within a broader event per the source index; do not assume it was a full Goose headline show.",
+      "spotlight": {
+        "title": "New York — short Goose appearance",
+        "summary": "Goose Index lists five songs for this Madison Square Garden appearance. It should not be presented as a full Goose headlining concert.",
+        "source_ids": [
+          "goose_2024"
+        ]
+      }
+    },
+    {
+      "id": "goose-2024-12-13",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-12-13",
+      "venue": "North Charleston Coliseum",
+      "place": "North Charleston, SC",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-12-14",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-12-14",
+      "venue": "North Charleston Coliseum",
+      "place": "North Charleston, SC",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-12-30",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-12-30",
+      "venue": "Moody Center",
+      "place": "Austin, TX",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    },
+    {
+      "id": "goose-2024-12-31",
+      "artist": "Goose",
+      "artist_id": "goose",
+      "date": "2024-12-31",
+      "venue": "Moody Center",
+      "place": "Austin, TX",
+      "era": "2024 tour and appearances",
+      "source_ids": [
+        "goose_2024"
+      ],
+      "record_status": "source_indexed",
+      "evidence_scope": "concert_date_venue",
+      "songs": [],
+      "recording_status": "not_investigated",
+      "lineup_status": "not_investigated"
+    }
+  ],
+  "spotlight_count": 20
+}

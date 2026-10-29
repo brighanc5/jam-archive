@@ -1,8 +1,22 @@
 # The Jam Archive
 
+## v0.13 — Archive Atlas: major source-index expansion (October 29, 2026)
+
+**Current complete-source release.** New [Archive Atlas](https://odd-king-7e31.brighamhancock.workers.dev/era-atlas/) indexes **361 distinct documented performance records** across the Allman Brothers, Grateful Dead, Phish and Goose. The site retains the 25 more deeply researched historical show dossiers and adds **336 date-and-venue index records**, 12 tour/history chapters, and 20 short source-attributed spotlights. Every new index-only page explicitly discloses that its source has **not** established a complete setlist, lineup, surviving recording or transfer lineage.
+
+**91 tests, 672 sitemap routes, 673 generated HTML files and zero structural audit issues.** Source and scope metadata are tracked in `data/era_index.json` and published in a dedicated citation directory. The build remains offline, static, free of hosted recordings, and does not automatically publish research-agent discoveries.
+
+```bash
+python3 scripts/doctor.py
+bash scripts/build_public.sh
+python3 scripts/check_live.py  # After GitHub push and new Ready deployment only
+```
+
+Read [INSTALL_V013_MAC.md](INSTALL_V013_MAC.md), [RELEASE_NOTES_V013.md](RELEASE_NOTES_V013.md) and [ARCHIVE_ATLAS_EDITORIAL.md](ARCHIVE_ATLAS_EDITORIAL.md). Copy the *contents* of the full source directory into your actual GitHub Desktop working repository, **preserving `.git`**. This build has no remote side effects.
+
 ## v0.12 — Performance Lab + whole-site audit (October 29, 2026)
 
-**Current full-source release**. New [Performance Lab](https://odd-king-7e31.brighamhancock.workers.dev/performance-lab/) documents 12 cited historic sequences, 62 individual track positions, 18 source-printed transition markers, and 2 song-specific guest credits. [Recording lineages](https://odd-king-7e31.brighamhancock.workers.dev/performance-lab/lineages/) distinguish the performance, tape source, transfer, mastering and commercial album where available. The study pages link back to their official or curated original sources; no concert audio is hosted.
+**Prior release.** New [Performance Lab](https://odd-king-7e31.brighamhancock.workers.dev/performance-lab/) documents 12 cited historic sequences, 62 individual track positions, 18 source-printed transition markers, and 2 song-specific guest credits. [Recording lineages](https://odd-king-7e31.brighamhancock.workers.dev/performance-lab/lineages/) distinguish the performance, tape source, transfer, mastering and commercial album where available. The study pages link back to their official or curated original sources; no concert audio is hosted.
 
 The complete generated site now has **323 indexed routes, 79 unit tests and a 324-page structural audit**. Responsive section navigation, keyboard skip links, explicit labels and a dated/non-live tour snapshot improve usability and accuracy. **The local audit is not a live-hosted-site or browser visual audit.** Build and verify with:
 

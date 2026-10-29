@@ -117,10 +117,10 @@ class PerformanceLabTests(unittest.TestCase):
     def test_public_report_and_audit_show_clean_build(self):
         report=json.loads((SITE/'assets/build_report.json').read_text())
         audit=json.loads((SITE/'assets/site_audit.json').read_text())
-        self.assertEqual(report['version'],'0.12')
+        self.assertEqual(report['version'],'0.13')
         self.assertEqual(report['performance_sequences'],12)
         self.assertEqual(audit['issues'],0)
-        self.assertEqual(audit['html_pages_inspected'],324)
+        self.assertGreaterEqual(audit['html_pages_inspected'],673)
         self.assertTrue(audit['audit_limitations'])
 
     def test_no_unsupported_media_or_review_queue_leaks(self):

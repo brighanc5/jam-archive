@@ -62,5 +62,12 @@ assert (site/'recordings/index.html').is_file(), 'Missing Recording Explorer'
 assert (site/'assets/recordings.json').is_file(), 'Missing public recordings metadata'
 assert len(json.loads((site/'assets/recordings.json').read_text())['items']) >= 9
 assert len(list((site/'songs').glob('*/index.html')))==len({x for h in json.loads((site/'assets/catalog.json').read_text())['historical_shows'] for x in h['songs']})
+
+assert (site/'era-atlas/index.html').is_file(), 'Missing v0.13 archive index'
+assert (site/'assets/era-atlas.json').is_file(), 'Missing v0.13 editorial source data'
+assert len(list((site/'era-atlas/shows').glob('*/index.html')))==336, 'Incomplete v0.13 indexed show pages'
+assert len(list((site/'era-atlas/chapters').glob('*/index.html')))==12, 'Incomplete v0.13 historical chapters'
+assert json.loads((site/'assets/build_report.json').read_text())['version']=='0.13'
+
 assert 'Disallow: /' not in (site/'robots.txt').read_text()
 print(f'PUBLIC CHECK PASS: {len(urls)} URLs / {n} checked local HTML references / no private state')

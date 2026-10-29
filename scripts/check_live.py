@@ -8,7 +8,7 @@ from urllib.request import Request,urlopen
 import json,sys
 
 ORIGIN='https://odd-king-7e31.brighamhancock.workers.dev'
-HEADERS={'User-Agent':'JamArchive-ReleaseVerifier/0.12','Accept':'text/html,application/json'}
+HEADERS={'User-Agent':'JamArchive-ReleaseVerifier/0.13','Accept':'text/html,application/json'}
 
 def fetch(path,allow404=False):
     request=Request(ORIGIN+path,headers=HEADERS)
@@ -25,14 +25,17 @@ def main():
         status,raw,headers=fetch('/assets/build_report.json')
         report=json.loads(raw)
         print('Live release:',report.get('version','unknown'))
-        if report.get('version')!='0.12':
-            print('NOT CURRENT: v0.12 has not reached Cloudflare. Check GitHub push and production deploy.');return 1
+        if report.get('version')!='0.13':
+            print('NOT CURRENT: v0.13 has not reached Cloudflare. Check GitHub push and production deploy.');return 1
         if (report.get('performance_sequences'),report.get('performance_track_positions'))!=(12,62):
             print('MISMATCH: performance evidence metadata not in published release');return 1
         _,raw,_=fetch('/assets/site_audit.json');audit=json.loads(raw)
-        if audit.get('issues')!=0 or audit.get('html_pages_inspected')!=324:
+        if audit.get('issues')!=0 or audit.get('html_pages_inspected')!=673:
             print('MISMATCH: offline site quality audit report not published');return 1
-        checks={'/performance-lab/':['Find the moments.','id="pl-search"'],
+        checks={'/era-atlas/':['History is bigger','id="ea-search"'],
+                '/era-atlas/shows/phish-1997-11-17/':['McNichols Arena','Live Phish 11'],
+                '/era-atlas/chapters/goose-2024/':['Goose: selected 2024 dates'],
+                '/performance-lab/':['Find the moments.','id="pl-search"'],
                 '/performance-lab/gd-1977-05-08-scarlet/':['Scarlet Begonias','Fire on the Mountain'],
                 '/performance-lab/lineages/':['Plangent Processes','Betty Cantor-Jackson'],
                 '/deep-archive/':['The stories behind the shows.'],
@@ -43,10 +46,10 @@ def main():
             _,html,headers=fetch(path)
             if not all(n in html for n in needles):
                 print('MISMATCH:',path,'does not show expected content');return 1
-        status,raw,headers=fetch('/not-an-indexed-show-v012/',allow404=True)
+        status,raw,headers=fetch('/not-an-indexed-show-v013/',allow404=True)
         if status!=404 or 'We haven\'t indexed this page.' not in raw:
             print('MISMATCH: missing page is not correctly returning the custom 404');return 1
-        print('LIVE DEPLOYMENT PASS: v0.12 pages, source evidence, quality audit and 404 response are served.')
+        print('LIVE DEPLOYMENT PASS: v0.13 pages, source evidence, quality audit and 404 response are served.')
         print('Optional: use curl -I '+ORIGIN+'/performance-lab/ to inspect response security headers.')
         return 0
     except (OSError,URLError,HTTPError,json.JSONDecodeError,UnicodeDecodeError) as exc:
