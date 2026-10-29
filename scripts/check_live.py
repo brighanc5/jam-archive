@@ -5,9 +5,9 @@ Uses a handful of HTTP GETs; never changes a deployment or Cloudflare settings.
 """
 from urllib.error import URLError, HTTPError
 from urllib.request import Request,urlopen
-import json,sys
+import json,sys,os
 
-ORIGIN='https://odd-king-7e31.brighamhancock.workers.dev'
+ORIGIN=os.environ.get('JAM_ARCHIVE_ORIGIN','https://thejamarchive.org').rstrip('/')
 HEADERS={'User-Agent':'JamArchive-ReleaseVerifier/0.13','Accept':'text/html,application/json'}
 
 def fetch(path,allow404=False):

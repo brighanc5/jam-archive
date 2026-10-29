@@ -1,6 +1,7 @@
 """v0.11 editorial quality, source traceability and cross-feature integrity."""
 from pathlib import Path
 import json
+import os
 import re
 import unittest
 import xml.etree.ElementTree as ET
@@ -87,10 +88,11 @@ class DeepArchiveTests(unittest.TestCase):
         ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
         loc=[x.text for x in ET.parse(SITE/'sitemap.xml').findall('s:url/s:loc',ns)]
         self.assertEqual(len(loc),len(set(loc)))
-        self.assertIn('https://odd-king-7e31.brighamhancock.workers.dev/deep-archive/',loc)
+        origin=os.environ.get('JAM_ARCHIVE_ORIGIN','https://thejamarchive.org').rstrip('/')
+        self.assertIn(origin+'/deep-archive/',loc)
         for d in self.dossiers:
             sub='artists' if d['kind']=='artist' else 'shows'
-            self.assertIn('https://odd-king-7e31.brighamhancock.workers.dev/deep-archive/'+sub+'/'+d['id']+'/',loc)
+            self.assertIn(origin+'/deep-archive/'+sub+'/'+d['id']+'/',loc)
 
     def test_four_added_release_pointers_are_specific_and_reviewed(self):
         r=json.loads((ROOT/'data/approved_recordings.json').read_text())['recordings']

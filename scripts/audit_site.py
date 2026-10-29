@@ -8,11 +8,11 @@ from datetime import date
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
-import json,re,sys
+import json,re,sys,os
 
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'site'
-ORIGIN='https://odd-king-7e31.brighamhancock.workers.dev'
+ORIGIN=os.environ.get('JAM_ARCHIVE_ORIGIN','https://thejamarchive.org').rstrip('/')
 
 class Page(HTMLParser):
     def __init__(self):

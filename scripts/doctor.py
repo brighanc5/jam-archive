@@ -4,7 +4,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import unittest
+import ast
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = [
@@ -45,14 +45,27 @@ def check():
         print('NOTE: git is unavailable; use GitHub Desktop to confirm the repository folder.')
     for tool in ('python3', 'node'):
         print(tool + ':', shutil.which(tool) or 'MISSING')
-    loader = unittest.TestLoader()
-    try:
-        suite = loader.discover(str(ROOT / 'tests'), pattern='test_*.py')
-        count = suite.countTestCases()
-    except Exception as exc:
-        print('TEST DISCOVERY ERROR:', exc)
-        count = 0
-    print('Tests discovered:', count, '(v0.13 expects at least 91)')
+    # The clean Git checkout intentionally has no generated site/ directory.
+    # unittest discovery imports tests, and some v0.13 tests load site/assets
+    # at module import time. A missing generated asset turns that module into
+    # one _FailedTest, incorrectly reporting 80 rather than 91 methods.
+    # Inspect test definitions without importing them. The full unittest suite
+    # runs AFTER site generation in scripts/build_public.sh.
+    count = 0
+    test_sources = sorted((ROOT / 'tests').glob('test_*.py'))
+    for source in test_sources:
+        try:
+            tree = ast.parse(source.read_text(encoding='utf-8'), filename=str(source))
+        except (SyntaxError, OSError, UnicodeDecodeError) as exc:
+            print('TEST SOURCE ERROR:', source.name, exc)
+            missing.append(str(source.relative_to(ROOT)))
+            continue
+        count += sum(
+            isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+            and node.name.startswith('test_')
+            for node in ast.walk(tree)
+        )
+    print('Test definitions discovered:', count, '(v0.13 expects at least 91; full suite runs after build)')
     # Stop before Python evaluates unresolved Git conflict markers, a previous failure.
     conflict_files = []
     for path in ROOT.rglob('*'):
@@ -69,7 +82,7 @@ def check():
     for path in conflict_files:
         print('UNRESOLVED MERGE CONFLICT:', path)
     if missing or conflict_files or 'v0.13' not in version or count < 91 or not shutil.which('node'):
-        print('DOCTOR FAILED: probably incomplete file copy, wrong folder, or missing Node.js.')
+        print('DOCTOR FAILED: check missing source files, test definitions, merge markers, or Node.js.')
         return 1
     print('REPOSITORY DOCTOR PASS: complete v0.13 source, 91+ tests, no Git conflict markers.')
     return 0

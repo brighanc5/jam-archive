@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
-export JAM_ARCHIVE_ORIGIN="${JAM_ARCHIVE_ORIGIN:-https://odd-king-7e31.brighamhancock.workers.dev}"
+export JAM_ARCHIVE_ORIGIN="${JAM_ARCHIVE_ORIGIN:-https://thejamarchive.org}"
 python3 scripts/doctor.py
 python3 build_v013.py
 python3 validate.py
