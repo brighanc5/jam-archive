@@ -29,7 +29,10 @@ check(wrangler.get('workers_dev') is True, 'workers_dev unexpectedly disabled')
 check(wrangler.get('assets', {}).get('directory') == './site', 'static asset directory changed')
 # Fail closed: any new key must undergo review. This prevents quietly adding
 # paid storage, AI, cron triggers, email bindings, or executable Worker logic.
-allowed_worker_keys = {'name', 'compatibility_date', 'workers_dev', 'assets'}
+# 'previews' is reviewed: wrangler preview requires the block for branch
+# preview builds. It must stay empty so no preview-only bindings sneak in.
+allowed_worker_keys = {'name', 'compatibility_date', 'workers_dev', 'assets', 'previews'}
+check(wrangler.get('previews', {}) == {}, 'previews block must stay empty (no preview-only bindings)')
 check(set(wrangler) <= allowed_worker_keys,
       'Cloudflare config gained unreviewed settings: ' + str(sorted(set(wrangler) - allowed_worker_keys)))
 check(not any(x in wrangler for x in ('main', 'triggers', 'd1_databases', 'kv_namespaces',
