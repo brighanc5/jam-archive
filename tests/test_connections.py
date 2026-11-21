@@ -67,8 +67,14 @@ class FamilyTreeTests(unittest.TestCase):
                         seen.add(node);q.append(node)
             self.assertIn(end, seen)
 
-    def test_unconnected_groups_are_not_silently_bridged(self):
-        self.assertNotEqual(self.nodes['trey-anastasio']['component'], self.nodes['derek-trucks']['component'])
+    def test_core_scene_is_one_connected_web(self):
+        # The flagship promise: the big names connect through sourced links.
+        core = ['grateful-dead', 'phish', 'the-allman-brothers-band', 'goose', 'widespread-panic',
+                'medeski-martin-wood', 'primus', 'joe-russo-s-almost-dead', 'billy-strings',
+                'the-disco-biscuits', 'ween', 'dead-company', 'gov-t-mule', 'tedeschi-trucks-band']
+        components = {self.nodes[c]['component'] for c in core}
+        self.assertEqual(len(components), 1, {c: self.nodes[c]['component'] for c in core})
+        # Disconnected leftovers are still reported honestly, never bridged.
         self.assertIn('different verified network groups', (ROOT / 'connections.js').read_text())
 
     def test_no_claim_that_paths_prove_collaboration(self):

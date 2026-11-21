@@ -142,11 +142,6 @@ assert len([s for s in data['source_entries'] if s['list']=='precursor'])==11
 data['about'].update(version='0.2 / source-connected preview',as_of='2026-10-26',
  disclaimer='Concert listings are a SOURCE-CHECKED SNAPSHOT as of October 26, 2026, not live updates, ticket availability, or notifications. The recording index is empty until optional authorized metadata ingestion.')
 data['events']=sorted(events,key=lambda x:(x['date'],x['artist']))
-# Editable Family Tree additions live in data/family_tree.json (see CLAUDE.md).
-import family_tree_data
-_ft=family_tree_data.merge(data)
-nameid={e['name']:e['id'] for e in data['entities']}; entities={e['id']:e for e in data['entities']}
-print(f'family_tree.json: {_ft[0]} entries added, {_ft[1]} links added, {_ft[2]} links upgraded')
 rec_file=ROOT/'recordings.json'
 if rec_file.exists(): data['recordings']=json.loads(rec_file.read_text())
 else: data['recordings']=[];rec_file.write_text('[]\n')

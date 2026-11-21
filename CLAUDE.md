@@ -54,7 +54,7 @@ The site grew as 14 release layers. `build_v014.py` runs `build_v013.py`, which 
 | `validate.py`, `scripts/audit_site.py`, `tests/`, `safety_check.py`, `check_public_site.py` | Integrity, links, safety, tests |
 
 Where data lives:
-- Artists and relationships: `seed_v01.py` + `build_archive.py` (legacy, inline Python) **plus `data/family_tree.json` (preferred for all new additions)**, merged by `family_tree_data.py`.
+- Artists and relationships: `seed_v01.py` + `build_archive.py` (legacy, inline Python) **plus `data/family_tree.json` (preferred for all new additions)**, merged by `family_tree_data.py` inside `build_v03.py` (after every legacy entity list, so links can reference any existing name).
 - Shows, studies, atlas: `history_seed.py`, `data/*.json`.
 - Homepage: `template.html` (a single-page app with tabs; the catalog is embedded as `const db={…}`).
 
