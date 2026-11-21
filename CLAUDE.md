@@ -57,6 +57,7 @@ Where data lives:
 - Artists and relationships: `seed_v01.py` + `build_archive.py` (legacy, inline Python) **plus `data/family_tree.json` (preferred for all new additions)**, merged by `family_tree_data.py` inside `build_v03.py` (after every legacy entity list, so links can reference any existing name).
 - Shows, studies, atlas: `history_seed.py`, `data/*.json`.
 - Homepage: `template.html` (a single-page app with tabs; the catalog is embedded as `const db={…}`).
+- Family Tree (`/connections/`): page HTML, map layout and examples in `build_v010.py`; behavior in `connections.js`; styles in `connections.css`. The whole-web map is laid out at build time (deterministic), so it renders without JavaScript.
 
 Rules of thumb:
 - **New data goes in `data/`.** Don't add more inline lists to the legacy Python.

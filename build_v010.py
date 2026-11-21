@@ -75,7 +75,9 @@ assets = SITE / 'assets'
 (assets / 'connections.css').write_text((ROOT / 'connections.css').read_text(encoding='utf-8'), encoding='utf-8')
 (assets / 'connections.js').write_text((ROOT / 'connections.js').read_text(encoding='utf-8'), encoding='utf-8')
 
-choices = ''.join('<option value="' + e(n['id']) + '">' + e(n['name']) + '</option>' for n in public['nodes'])
+def _options(kinds):
+    return ''.join('<option value="' + e(n['id']) + '">' + e(n['name']) + '</option>' for n in public['nodes'] if n['type'] in kinds)
+choices = '<optgroup label="Bands &amp; projects">' + _options({'band', 'project'}) + '</optgroup><optgroup label="Musicians">' + _options({'person'}) + '</optgroup>'
 
 # Real paths verified from the graph, not hand-entered claims.
 def shortest(a, b):
@@ -91,17 +93,19 @@ def shortest(a, b):
                 q.append(path + [nxt])
     return None
 
-examples = [('trey-anastasio', 'les-claypool'),
-            ('derek-trucks', 'warren-haynes'),
-            ('joe-russo', 'leo-kottke'),
-            ('oteil-burbridge', 'john-mayer')]
+examples = [('gov-t-mule', 'grateful-dead'),
+            ('goose', 'grateful-dead'),
+            ('ween', 'phish'),
+            ('billy-strings', 'jerry-garcia'),
+            ('the-disco-biscuits', 'the-allman-brothers-band'),
+            ('hot-tuna', 'goose')]
 example_markup = ''
 for start, end in examples:
     path = shortest(start, end)
     assert path and len(path) >= 3, (start, end)
     example_markup += ('<button class="cx-example" data-start="' + e(start) + '" data-end="' + e(end) + '">' +
-                       e(entities[start]['name']) + ' <span>↔</span> ' + e(entities[end]['name']) +
-                       '<small>' + str(len(path) - 1) + ' documented links</small></button>')
+                       e(entities[start]['name']) + ' <span>→</span> ' + e(entities[end]['name']) +
+                       '<small>' + str(len(path) - 1) + ' links</small></button>')
 
 edges_by_project = defaultdict(list)
 for r in verified:
@@ -117,17 +121,92 @@ for r in sorted(verified, key=lambda r: (entities[r['from']]['name'], entities[r
                   '<div class="cx-ledger-detail">' + typ + note + '</div></div>' +
                   '<a class="cx-cite" href="' + e(r['source_url']) + '" target="_blank" rel="noopener noreferrer">Evidence ↗</a></li>')
 
+
+# ---- Whole-web map: deterministic force layout computed at build time ----
+import math, random
+def _layout(ids, pairs, W=1000.0, H=640.0, iters=320, seed=11):
+    rnd = random.Random(seed)
+    pos = {n: [rnd.uniform(0.25, 0.75) * W, rnd.uniform(0.25, 0.75) * H] for n in ids}
+    k = 0.95 * math.sqrt(W * H / max(1, len(ids)))
+    temp = W / 8
+    for step in range(iters):
+        disp = {n: [0.0, 0.0] for n in ids}
+        for i, a in enumerate(ids):
+            ax, ay = pos[a]
+            for b in ids[i + 1:]:
+                dx, dy = ax - pos[b][0], ay - pos[b][1]
+                d2 = dx * dx + dy * dy or 0.01
+                f = k * k / d2
+                disp[a][0] += dx * f; disp[a][1] += dy * f
+                disp[b][0] -= dx * f; disp[b][1] -= dy * f
+        for a, b in pairs:
+            dx, dy = pos[a][0] - pos[b][0], pos[a][1] - pos[b][1]
+            d = math.hypot(dx, dy) or 0.01
+            f = d / k
+            disp[a][0] -= dx * f; disp[a][1] -= dy * f
+            disp[b][0] += dx * f; disp[b][1] += dy * f
+        for n in ids:
+            disp[n][0] += (W / 2 - pos[n][0]) * 0.025
+            disp[n][1] += (H / 2 - pos[n][1]) * 0.04
+            dx, dy = disp[n]
+            d = math.hypot(dx, dy) or 0.01
+            pos[n][0] += dx / d * min(d, temp)
+            pos[n][1] += dy / d * min(d, temp)
+        temp = max(1.0, temp * 0.985)
+    xs = [p[0] for p in pos.values()]; ys = [p[1] for p in pos.values()]
+    pad = 34
+    sx = (W - 2 * pad) / ((max(xs) - min(xs)) or 1); sy = (H - 2 * pad) / ((max(ys) - min(ys)) or 1)
+    return {n: (round(pad + (p[0] - min(xs)) * sx, 1), round(pad + (p[1] - min(ys)) * sy, 1)) for n, p in pos.items()}
+
+_deg = {n['id']: n['degree'] for n in public['nodes']}
+_pairs = [(r['from'], r['to']) for r in verified]
+# Main web fills the canvas; smaller islands sit in a narrow column on the right.
+_main = [m for m in components[0]]
+_pos = _layout(_main, [pr for pr in _pairs if pr[0] in set(_main)], W=880.0, H=640.0, iters=420)
+_y = 60.0
+for grp in components[1:]:
+    for j, m in enumerate(grp):
+        _pos[m] = (950.0, round(_y + j * 30, 1))
+    _y += len(grp) * 30 + 40
+_parts = ['<svg id="cx-map" viewBox="0 0 1000 640" role="img" aria-label="Map of every musician and band in the verified network"><g class="cx-map-edges">']
+for r in verified:
+    (x1, y1), (x2, y2) = _pos[r['from']], _pos[r['to']]
+    _parts.append('<line class="cx-map-edge" data-a="' + e(r['from']) + '" data-b="' + e(r['to']) + '" x1="' + str(x1) + '" y1="' + str(y1) + '" x2="' + str(x2) + '" y2="' + str(y2) + '"/>')
+_parts.append('</g><g class="cx-map-nodes">')
+# Labels: biggest names first, skipped when they would collide with one already placed.
+_placed = []
+_label_for = {}
+for n in sorted(public['nodes'], key=lambda n: -n['degree']):
+    if n['degree'] < 5:
+        continue
+    x, y = _pos[n['id']]
+    rad = 3.2 + math.sqrt(n['degree']) * 2.1
+    w = 6.4 * len(n['name'])
+    ly = y - rad - 4
+    if all(not (abs(x - px) * 2 < w + pw and abs(ly - py) < 14) for px, py, pw in _placed):
+        _placed.append((x, ly, w))
+        _label_for[n['id']] = round(ly, 1)
+for n in sorted(public['nodes'], key=lambda n: n['degree']):
+    x, y = _pos[n['id']]
+    rad = round(3.2 + math.sqrt(n['degree']) * 2.1, 1)
+    kind = 'person' if n['type'] == 'person' else 'band'
+    label = ''
+    if n['id'] in _label_for:
+        label = '<text x="' + str(x) + '" y="' + str(_label_for[n['id']]) + '" text-anchor="middle">' + e(n['name']) + '</text>'
+    _parts.append('<a class="cx-map-node cx-map-' + kind + '" data-id="' + e(n['id']) + '" href="?artist=' + e(n['id']) + '#cx-focus-panel"><circle cx="' + str(x) + '" cy="' + str(y) + '" r="' + str(rad) + '"/><title>' + e(n['name']) + '</title>' + label + '</a>')
+_parts.append('</g></svg>')
+map_svg = ''.join(_parts)
 html = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Explore ''' + str(len(verified)) + ''' source-verified links among musicians and projects, follow documented membership paths, and read the original evidence in The Jam Archive.">
 <meta property="og:title" content="The Family Tree · The Jam Archive"><meta property="og:type" content="website"><title>The Family Tree · The Jam Archive</title>
 <link rel="canonical" href="''' + e(os.environ['JAM_ARCHIVE_ORIGIN'].rstrip('/')) + '''/connections/"><link rel="stylesheet" href="../assets/detail.css"><link rel="stylesheet" href="../assets/connections.css"><script src="../assets/connections.js" defer></script></head><body>
 <header><a href="../index.html">THE <span>JAM</span> ARCHIVE</a><nav><a href="../index.html">Discover</a><a href="../song-paths/index.html">Song Paths</a><a href="../time-machine/index.html">Time Machine</a><a href="../recordings/index.html">Recordings</a><a href="../contribute/index.html">Contribute</a></nav></header><main>
-<section class="cx-hero"><div class="eyebrow">THE FAMILY TREE · v0.10</div><h1>Everyone's connected.<br><em>Prove it.</em></h1><p class="lead">Trace how improvisational musicians cross paths through documented bands and projects. Every link in this explorer points back to its original evidence. If we can't establish a connection from our reviewed records, we won't manufacture one.</p><div class="cx-metrics"><div><b>''' + str(len(verified)) + '''</b><span>Verified links</span></div><div><b>''' + str(len(nodes)) + '''</b><span>Connected musicians &amp; projects</span></div><div><b>''' + str(len(components)) + '''</b><span>Documented network groups</span></div></div><p class="cx-small">''' + str(len(reviewed)-len(verified)) + ''' additional relationship leads await verification and are excluded from all paths.</p></section>
-<div class="warning"><strong>How to read this:</strong> A path proves only that this catalog has a chain of separately sourced relationships. It does <strong>not</strong> prove musicians met, played together, toured at the same time, influenced each other, or appeared on the same recording. Membership links can be historical. The network is intentionally incomplete.</div>
-<section class="cx-panel" aria-label="Explore a musician and their direct connections"><div class="cx-panel-heading"><div class="eyebrow">01 / FOCUS THE NETWORK</div><h2>Pick a musician. Follow the branches.</h2><p>Select any indexed musician or project, then explore only its directly verified neighbors.</p></div><label for="cx-focus">Focus on<select id="cx-focus">''' + choices + '''</select></label><div class="cx-layout"><div class="cx-visual"><svg id="cx-network" viewBox="0 0 760 470" role="img" aria-label="Direct verified relationships for the selected artist, available in the adjacent accessible list"><text x="380" y="220" text-anchor="middle" fill="#abc0b4">Loading diagram…</text></svg></div><div class="cx-aside"><h3 id="cx-focus-title">Direct relationships</h3><p id="cx-focus-note" class="cx-small">Select a node or use the list.</p><ul id="cx-neighbors" class="cx-neighbors"><li>Loading verified relationships…</li></ul><a id="cx-profile" href="../artists/trey-anastasio/index.html" class="cx-profile">Open artist / project profile →</a></div></div></section>
-<section class="cx-panel" aria-label="Find a documented relationship path"><div class="eyebrow">02 / SIX DEGREES OF JAM</div><h2>Can you connect these artists?</h2><p>Choose two entries. We'll calculate the shortest available chain using only verified, cited relationships.</p><div class="cx-controls"><label for="cx-from">From<select id="cx-from">''' + choices + '''</select></label><label for="cx-to">To<select id="cx-to">''' + choices + '''</select></label><button type="button" id="cx-find" class="cx-find">Find the connection →</button></div><div id="cx-path" class="cx-path" role="status" aria-live="polite"><p>Choose a pair to begin.</p></div><div class="cx-presets"><strong>Try a route:</strong>''' + example_markup + '''</div></section>
-<section class="cx-panel" aria-label="Verified relationship ledger"><div class="eyebrow">03 / SOURCE LEDGER</div><h2>Every edge has evidence.</h2><p>Browse all ''' + str(len(verified)) + ''' reviewed relationships. These links remain visible and usable even if JavaScript is disabled.</p><label for="cx-ledger-search">Filter musician or project<input id="cx-ledger-search" type="search" placeholder="Try Allman Brothers, Oysterhead, Goose…"></label><p id="cx-ledger-count" class="cx-small">''' + str(len(verified)) + ''' verified relationships</p><ol class="cx-ledger">''' + ''.join(ledger) + '''</ol></section>
-<div class="card"><h2>Who belongs in the tree next?</h2><p>Many musicians are not connected by the evidence we've reviewed yet. Rather than infer their histories, we're inviting source-backed corrections, accurate personnel credits, and links to original project documentation.</p><a class="button" href="../contribute/index.html">Help document a connection →</a><a class="button alt" href="../research-gaps/index.html">See research gaps →</a></div><footer>THE JAM ARCHIVE · Independent fan research · No audio hosted · Evidence belongs to original publishers · Editorial snapshot: October 29, 2026.</footer></main></body></html>'''
+<section class="cx-hero"><div class="eyebrow">THE FAMILY TREE</div><h1>Everyone's connected.<br><em>Prove it.</em></h1><p class="lead">Pick any two bands or musicians. We'll find the shortest chain of bandmates between them, and show you where every link came from.</p><div class="cx-metrics"><div><b>''' + str(len(verified)) + '''</b><span>Sourced links</span></div><div><b>''' + str(len(nodes)) + '''</b><span>Musicians &amp; bands</span></div><div><b>''' + str(len(components[0])) + '''</b><span>In the main web</span></div></div></section>
+<section class="cx-panel cx-panel-path" id="cx-path-panel" aria-label="Find a documented relationship path"><div class="eyebrow">SIX DEGREES OF JAM</div><h2>Can you connect these two?</h2><div class="cx-controls"><label for="cx-from">From<select id="cx-from">''' + choices + '''</select></label><button type="button" id="cx-swap" class="cx-ghost" aria-label="Swap from and to">⇄</button><label for="cx-to">To<select id="cx-to">''' + choices + '''</select></label><button type="button" id="cx-find" class="cx-find">Connect them →</button></div><div class="cx-actions"><button type="button" id="cx-random" class="cx-ghost">🎲 Surprise me</button><button type="button" id="cx-share" class="cx-ghost" hidden>Copy link to this path</button><span id="cx-share-status" class="cx-small" role="status"></span></div><div id="cx-path" class="cx-path" role="status" aria-live="polite"><p>Choose a pair to begin.</p></div><div class="cx-presets"><strong>Try one:</strong>''' + example_markup + '''</div><p class="cx-note">A path is a chain of separately sourced memberships. It does <strong>not</strong> prove musicians met, played together, toured at the same time, or influenced each other.</p></section>
+<section class="cx-panel cx-panel-map" aria-label="Map of the whole verified network"><div class="eyebrow">THE WHOLE WEB</div><h2>''' + str(len(nodes)) + ''' names, ''' + str(len(verified)) + ''' sourced links.</h2><p>Bands and projects are <span class="cx-key cx-key-band">green</span>, musicians are <span class="cx-key cx-key-person">pink</span>. Tap any dot to explore it; paths you find light up here.</p><div class="cx-map-wrap">''' + map_svg + '''</div></section>
+<section class="cx-panel" id="cx-focus-panel" aria-label="Explore a musician and their direct connections"><div class="cx-panel-heading"><div class="eyebrow">UP CLOSE</div><h2>Pick a name. Follow the branches.</h2><p>See everyone directly linked to one musician or band, with the source for each link.</p></div><label for="cx-focus">Focus on<select id="cx-focus">''' + choices + '''</select></label><div class="cx-layout"><div class="cx-visual"><svg id="cx-network" viewBox="0 0 760 470" role="img" aria-label="Direct verified relationships for the selected artist, available in the adjacent accessible list"><text x="380" y="220" text-anchor="middle" fill="#abc0b4">Loading diagram…</text></svg></div><div class="cx-aside"><h3 id="cx-focus-title">Direct relationships</h3><p id="cx-focus-note" class="cx-small">Select a node or use the list.</p><ul id="cx-neighbors" class="cx-neighbors"><li>Loading verified relationships…</li></ul><a id="cx-profile" href="../artists/trey-anastasio/index.html" class="cx-profile">Open artist / project profile →</a></div></div></section>
+<section class="cx-panel" aria-label="Verified relationship ledger"><div class="eyebrow">SOURCE LEDGER</div><h2>Every link has evidence.</h2><p>All ''' + str(len(verified)) + ''' links, each with its source. Works without JavaScript.</p><label for="cx-ledger-search">Filter musician or project<input id="cx-ledger-search" type="search" placeholder="Try Allman Brothers, Oysterhead, Goose…"></label><p id="cx-ledger-count" class="cx-small">''' + str(len(verified)) + ''' verified relationships</p><ol class="cx-ledger">''' + ''.join(ledger) + '''</ol></section>
+<div class="card"><h2>Know a connection we're missing?</h2><p>String Cheese Incident and Keller Williams aren't linked to the main web yet, and plenty of lineups are still missing. Send a link that states the membership and we'll add it.</p><a class="button" href="../contribute/index.html">Suggest a connection →</a><a class="button alt" href="../research-gaps/index.html">See research gaps →</a></div><footer>THE JAM ARCHIVE · Independent fan research · No audio hosted · Evidence belongs to original publishers.</footer></main></body></html>'''
 page = SITE / 'connections/index.html'
 page.parent.mkdir(parents=True, exist_ok=True)
 embedded = json.dumps(public, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
