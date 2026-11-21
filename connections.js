@@ -169,9 +169,19 @@
     for(const li of ledger) { li.hidden=!!term&&!li.dataset.names.includes(term);if(!li.hidden) visible++; }
     get('cx-ledger-count').textContent=visible+' of '+ledger.length+' verified relationships';
   });
-  const requested = new URLSearchParams(window.location.search).get('artist');
+  const params = new URLSearchParams(window.location.search);
+  const requested = params.get('artist');
   setFocus(byId.has(requested) ? requested : 'trey-anastasio');
-  fromInput.value = 'trey-anastasio';
-  toInput.value = 'les-claypool';
+  // Shareable paths: /connections/?from=primus&to=phish
+  const sharedFrom = params.get('from'), sharedTo = params.get('to');
+  const shared = byId.has(sharedFrom) && byId.has(sharedTo);
+  fromInput.value = shared ? sharedFrom : 'trey-anastasio';
+  toInput.value = shared ? sharedTo : 'les-claypool';
   showPath();
+  if (shared) pathArea.scrollIntoView({block:'center'});
+  get('cx-find').addEventListener('click', () => {
+    const url = new URL(window.location.href);
+    url.searchParams.set('from', fromInput.value);url.searchParams.set('to', toInput.value);
+    window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+  });
 })();

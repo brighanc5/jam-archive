@@ -5,6 +5,7 @@ export JAM_ARCHIVE_ORIGIN="${JAM_ARCHIVE_ORIGIN:-https://thejamarchive.org}"
 python3 scripts/doctor.py
 python3 build_v014.py
 python3 scripts/polish_site.py
+python3 scripts/presentation_fixes.py
 python3 validate.py
 python3 scripts/audit_site.py
 python3 -m unittest discover -s tests -v
