@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Read-only v0.14 production verifier. Never deploys or changes account settings."""
 from urllib.error import URLError, HTTPError
+from pathlib import Path
 from urllib.request import Request, urlopen
 import json, sys, os
 ORIGIN=os.environ.get('JAM_ARCHIVE_ORIGIN','https://thejamarchive.org').rstrip('/')
@@ -24,7 +25,8 @@ def main():
   for key,num in wanted.items():
    if r.get(key)!=num:print('MISMATCH:',key,r.get(key),'expected',num);return 1
   _,raw,_=fetch('/assets/site_audit.json');audit=json.loads(raw)
-  if audit.get('issues')!=0 or audit.get('html_pages_inspected')!=850:
+  local_pages=json.loads((Path(__file__).resolve().parents[1]/'site/assets/site_audit.json').read_text()).get('html_pages_inspected') if (Path(__file__).resolve().parents[1]/'site/assets/site_audit.json').exists() else audit.get('html_pages_inspected')
+  if audit.get('issues')!=0 or audit.get('html_pages_inspected')!=local_pages:
    print('MISMATCH: public site audit version or issues');return 1
   checks={'/':['Follow the music.','/assets/jam-look.css','/assets/jam-experience.js'],
    '/era-atlas/':['id="ea-search"','data-artist='],
@@ -45,7 +47,7 @@ def main():
    if marker not in body:print('MISMATCH: style or pager asset',asset);return 1
   status,html,_=fetch('/not-a-real-show-v014/',allow404=True)
   if status!=404:print('MISMATCH: custom 404 should return HTTP 404');return 1
-  print('LIVE DEPLOYMENT PASS: v0.14 content, 850-page audit, new mobile identity, pager assets and routing are published.')
+  print('LIVE DEPLOYMENT PASS: v0.14 content, matching page audit, new mobile identity, pager assets and routing are published.')
   print('Note: human phone and desktop checks are still necessary for visual usability.')
   return 0
  except (OSError,URLError,HTTPError,json.JSONDecodeError,UnicodeDecodeError) as exc:

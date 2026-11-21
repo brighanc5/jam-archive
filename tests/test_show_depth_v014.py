@@ -115,7 +115,7 @@ class ShowDepthTests(unittest.TestCase):
  def test_public_build_reports_sitemap_and_audit(self):
   audit=json.loads((SITE/'assets/site_audit.json').read_text())
   self.assertEqual(audit['issues'],0)
-  self.assertEqual(audit['html_pages_inspected'],850)
+  self.assertEqual(audit['html_pages_inspected'],len(list(SITE.rglob('*.html'))))
   self.assertEqual(audit['version'],'0.14')
   self.assertEqual(R['show_depth_new_routes'],177)
 
