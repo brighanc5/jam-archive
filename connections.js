@@ -1,4 +1,4 @@
-/* The Jam Archive v0.10: entirely local, source-verified relationship explorer. */
+/* The Jam Archive Family Tree: local, source-verified relationship explorer. No network calls. */
 (() => {
   'use strict';
   const payload = document.querySelector('#cx-data');
@@ -124,44 +124,119 @@
     }
     return null;
   }
+  const map = get('cx-map');
+  const mapNodes = map ? new Map([...map.querySelectorAll('.cx-map-node')].map(n => [n.dataset.id, n])) : new Map();
+  const mapEdges = map ? [...map.querySelectorAll('.cx-map-edge')] : [];
+  function highlightOnMap(path) {
+    if (!map) return;
+    const onPath = new Set(path || []);
+    const pairs = new Set();
+    for (let i = 0; path && i < path.length - 1; i++) { pairs.add(path[i] + '|' + path[i+1]); pairs.add(path[i+1] + '|' + path[i]); }
+    map.classList.toggle('has-path', !!(path && path.length > 1));
+    map.querySelectorAll('.cx-map-tmp').forEach(t => t.remove());
+    for (const [id, node] of mapNodes) {
+      const on = onPath.has(id);
+      node.classList.toggle('on-path', on);
+      if (on && !node.querySelector('text')) {
+        const c = node.querySelector('circle');
+        node.append(svg('text', {x: c.getAttribute('cx'), y: Number(c.getAttribute('cy')) - Number(c.getAttribute('r')) - 4, 'text-anchor': 'middle', 'class': 'cx-map-tmp'}, name(id)));
+      }
+    }
+    for (const line of mapEdges) line.classList.toggle('on-path', pairs.has(line.dataset.a + '|' + line.dataset.b));
+    const wrap = map.parentElement;
+    if (path && path.length && wrap.scrollWidth > wrap.clientWidth) {
+      const xs = path.map(id => Number(mapNodes.get(id)?.querySelector('circle').getAttribute('cx') || 500));
+      const mid = (Math.min(...xs) + Math.max(...xs)) / 2 / 1000 * wrap.scrollWidth;
+      wrap.scrollLeft = Math.max(0, mid - wrap.clientWidth / 2);
+    }
+  }
+  const verb = (edge, a) => {
+    if (edge.type !== 'member_of') return 'collaborated with';
+    return a === edge.from ? 'was in' : 'included';
+  };
+  const chainNode = id => {
+    const n = byId.get(id);
+    const a = link('../artists/' + encodeURIComponent(id) + '/index.html', n.name, 'cx-chain-node cx-chain-' + (n.type === 'person' ? 'person' : 'band'));
+    return a;
+  };
+  function shareUrl() {
+    const url = new URL(window.location.href);
+    url.search = ''; url.hash = '';
+    url.searchParams.set('from', fromInput.value); url.searchParams.set('to', toInput.value);
+    return url;
+  }
   function showPath() {
     const start = fromInput.value, end = toInput.value;
     pathArea.replaceChildren();
+    get('cx-share').hidden = true; get('cx-share-status').textContent = '';
+    highlightOnMap(null);
     if (!byId.has(start) || !byId.has(end)) return;
     const path = shortest(start,end);
     if (!path) {
-      pathArea.append(make('h3',null,'No reviewed path in this catalog—yet.'),
+      pathArea.append(make('h3',null,'No sourced path yet.'),
         make('p',null,name(start)+' and '+name(end)+' are in different verified network groups. This is a research gap, not evidence that the musicians never played together.'));
       return;
     }
     if (path.length === 1) {
-      pathArea.append(make('p',null,'You selected the same entry twice. Choose another to discover a path.'));
+      pathArea.append(make('p',null,'Same name twice. Pick someone else to connect.'));
       return;
     }
-    pathArea.append(make('h3',null,(path.length-1)+' verified ' + ((path.length-1)===1?'link':'links')+' connect '+name(start)+' and '+name(end)+'.'));
-    const ol = make('ol','cx-route');
-    for(let i=0;i<path.length-1;i++) {
-      const a=path[i],b=path[i+1];
-      const found=adjacency.get(a).find(x=>x.id===b);
-      const step=make('li');
-      step.append(link('../artists/'+encodeURIComponent(a)+'/index.html',name(a)));
-      step.append(make('span','cx-route-arrow',' → '+relation(found.edge,a,b)+' → '));
-      step.append(link('../artists/'+encodeURIComponent(b)+'/index.html',name(b)));
-      const source=link(found.edge.source_url,'Source ↗','cx-source');
-      source.target='_blank';source.rel='noopener noreferrer';
-      step.append(source);
-      if(found.edge.note) step.append(make('p','cx-small',found.edge.note));
-      ol.append(step);
+    const hops = path.length - 1;
+    const head = make('h3', 'cx-path-title');
+    head.append(make('span', null, name(start) + ' → ' + name(end)), make('span', 'cx-hops', hops + (hops === 1 ? ' link' : ' links')));
+    const chain = make('ol', 'cx-chain');
+    for (let i = 0; i < path.length; i++) {
+      const li = make('li', 'cx-chain-step');
+      li.append(chainNode(path[i]));
+      if (i < path.length - 1) {
+        const a = path[i], b = path[i+1];
+        const found = adjacency.get(a).find(x => x.id === b);
+        const rel = make('div', 'cx-chain-rel');
+        rel.append(make('span', 'cx-chain-verb', verb(found.edge, a)));
+        if (found.edge.note) rel.append(make('span', 'cx-chain-note', found.edge.note));
+        const source = link(found.edge.source_url, 'source ↗', 'cx-source');
+        source.target = '_blank'; source.rel = 'noopener noreferrer';
+        rel.append(source);
+        li.append(rel);
+      }
+      chain.append(li);
     }
-    pathArea.append(ol);
-    pathArea.append(make('p','cx-small','Paths are chains of independently verified relationships—not proof of a shared stage or timeline.'));
+    pathArea.append(head, chain);
+    get('cx-share').hidden = false;
+    highlightOnMap(path);
+    const url = shareUrl();
+    window.history.replaceState(null, '', url.pathname + url.search);
   }
   focusInput.addEventListener('change', () => setFocus(focusInput.value));
-  get('cx-find').addEventListener('click',showPath);
+  get('cx-find').addEventListener('click', showPath);
+  get('cx-swap').addEventListener('click', () => { const t = fromInput.value; fromInput.value = toInput.value; toInput.value = t; showPath(); });
+  const mainWeb = data.nodes.filter(n => n.component === 0).map(n => n.id);
+  get('cx-random').addEventListener('click', () => {
+    // Pick two names in the main web that are at least three links apart.
+    for (let tries = 0; tries < 60; tries++) {
+      const a = mainWeb[Math.floor(Math.random() * mainWeb.length)], b = mainWeb[Math.floor(Math.random() * mainWeb.length)];
+      const p = shortest(a, b);
+      if (p && p.length >= 4) { fromInput.value = a; toInput.value = b; break; }
+    }
+    showPath();
+  });
+  get('cx-share').addEventListener('click', async () => {
+    const status = get('cx-share-status');
+    const url = shareUrl().toString();
+    try { await navigator.clipboard.writeText(url); status.textContent = 'Link copied.'; }
+    catch (_) { status.textContent = url; }
+  });
   document.querySelectorAll('.cx-example').forEach(button => button.addEventListener('click', () => {
-    fromInput.value = button.dataset.start;toInput.value = button.dataset.end;showPath();
+    fromInput.value = button.dataset.start; toInput.value = button.dataset.end; showPath();
     pathArea.scrollIntoView({behavior:'smooth',block:'nearest'});
   }));
+  for (const [id, node] of mapNodes) {
+    node.addEventListener('click', ev => {
+      ev.preventDefault();
+      setFocus(id);
+      get('cx-focus-panel').scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  }
   const search = get('cx-ledger-search');
   const ledger = [...document.querySelectorAll('.cx-ledger-item')];
   search.addEventListener('input', () => {
@@ -175,13 +250,9 @@
   // Shareable paths: /connections/?from=primus&to=phish
   const sharedFrom = params.get('from'), sharedTo = params.get('to');
   const shared = byId.has(sharedFrom) && byId.has(sharedTo);
-  fromInput.value = shared ? sharedFrom : 'trey-anastasio';
-  toInput.value = shared ? sharedTo : 'les-claypool';
+  fromInput.value = shared ? sharedFrom : 'gov-t-mule';
+  toInput.value = shared ? sharedTo : 'grateful-dead';
   showPath();
-  if (shared) pathArea.scrollIntoView({block:'center'});
-  get('cx-find').addEventListener('click', () => {
-    const url = new URL(window.location.href);
-    url.searchParams.set('from', fromInput.value);url.searchParams.set('to', toInput.value);
-    window.history.replaceState(null, '', url.pathname + url.search + url.hash);
-  });
+  if (shared) get('cx-path-panel').scrollIntoView({block:'start'});
+  if (requested && !shared) get('cx-focus-panel').scrollIntoView({block:'start'});
 })();

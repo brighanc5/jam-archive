@@ -41,9 +41,19 @@ for entry in [
 ]:
  sid,name,url,kind,entity=entry
  if not any(s['id']==sid for s in db['sources']):db['sources'].append({'id':sid,'name':name,'url':url,'kind':kind,'entity':entity,'access':'External source link only; separate permission required for data replication'})
+# Editable Family Tree additions live in data/family_tree.json (see CLAUDE.md).
+# Merged here, after every legacy entity list, so entries can reference any of them.
+import family_tree_data
+_ft=family_tree_data.merge(db)
+ids={e['name']:e['id'] for e in db['entities']}
+print(f'family_tree.json: {_ft[0]} entries added, {_ft[1]} links added, {_ft[2]} links upgraded')
 p.write_text(json.dumps(db,ensure_ascii=False,indent=2)+'\n')
 con=sqlite3.connect(ROOT/'jam_archive.sqlite')
 con.execute('PRAGMA foreign_keys=ON')
+for ent in db['entities']:
+ con.execute('INSERT OR IGNORE INTO entity(id,name,type,origins_json,aliases_json) VALUES(?,?,?,?,?)',(ent['id'],ent['name'],ent['type'],json.dumps(ent['origins']),json.dumps(ent['aliases'])))
+for r in db['relationships']:
+ con.execute('INSERT OR REPLACE INTO artist_relationship(source_entity_id,target_entity_id,relation,evidence_url,notes,verification) VALUES(?,?,?,?,?,?)',(r['from'],r['to'],r['type'],r['source_url'],r['note'],r['verification']))
 for name,typ in expansion:
  ent=next((e for e in db['entities'] if e['name']==name),None)
  con.execute('INSERT OR IGNORE INTO entity(id,name,type,origins_json,aliases_json) VALUES(?,?,?,?,?)',(ent['id'],ent['name'],ent['type'],json.dumps(ent['origins']),json.dumps(ent['aliases'])))
