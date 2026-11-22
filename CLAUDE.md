@@ -51,6 +51,7 @@ The site grew as 14 release layers. `build_v014.py` runs `build_v013.py`, which 
 | `build_v014.py` (→ whole chain) | Generates all pages and `site/assets/*.json` |
 | `scripts/polish_site.py` | Global look (`jam_look.css`), mobile nav (`jam_experience.js`), copy tweaks |
 | `scripts/presentation_fixes.py` | Homepage fixes: expiring listings, cleanup, layout fixes |
+| `scripts/site_nav.py` | One menu on every inner page (edit `MAIN`/`MORE` there) + Family Tree card (bandmates, landmark paths) on artist pages |
 | `validate.py`, `scripts/audit_site.py`, `tests/`, `safety_check.py`, `check_public_site.py` | Integrity, links, safety, tests |
 
 Where data lives:

@@ -93,3 +93,24 @@ header{background:#191323!important;border-bottom-color:#62436d!important}
 }
 @media(max-width:370px){.ja-mobile-bar a{font-size:10px}.ja-mobile-bar a span:first-child{font-size:19px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+/* ---- One menu everywhere (scripts/site_nav.py) ---- */
+.ja-header nav{display:flex;align-items:center;gap:6px 18px;flex-wrap:wrap}
+.ja-header nav a{display:inline-flex;align-items:center;min-height:36px;color:#efe4cf}
+.ja-header nav a[aria-current="page"]{color:#e7fa95;box-shadow:inset 0 -2px 0 #e7fa95}
+.ja-more{position:relative}
+.ja-more summary{cursor:pointer;font-weight:800;font-size:13px;color:#efe4cf;list-style:none;min-height:36px;display:flex;align-items:center}
+.ja-more summary::-webkit-details-marker{display:none}
+.ja-more summary::after{content:" ▾"}
+.ja-more[data-current] summary{color:#e7fa95}
+.ja-more>div{position:absolute;right:0;top:100%;z-index:50;min-width:190px;padding:8px;border:1px solid #62436d;border-radius:10px;background:#1d1729;box-shadow:0 12px 30px #0008;display:grid}
+.ja-more>div a{padding:6px 10px;border-radius:6px}
+.ja-more>div a:hover{background:#2b2238}
+/* ---- Family Tree card on artist pages ---- */
+.ja-chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px}
+.ja-chip{padding:6px 12px;border-radius:99px;border:1px solid #62436d;background:#241d31;text-decoration:none;font-weight:700;font-size:13px}
+.ja-chip:hover{border-color:#e7fa95}
+.ja-paths{display:grid;gap:8px;margin:10px 0 14px}
+.ja-path-link{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-radius:10px;background:#20301c;color:#d4f59a;text-decoration:none;font-weight:800}
+.ja-path-link span{font:800 11px system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#1b1621;background:#d4f59a;padding:4px 8px;border-radius:99px;white-space:nowrap}
+.ja-more .ja-m{display:none}
+@media(max-width:760px){.ja-header nav{overflow:visible!important;flex-wrap:nowrap!important}.ja-header nav>a{display:none!important}.ja-more .ja-m{display:flex}.ja-more .ja-d{display:none}.ja-more summary{border:1px solid #62436d;border-radius:8px;padding:0 12px}.ja-more>div{min-width:220px}}
