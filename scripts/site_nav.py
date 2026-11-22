@@ -29,6 +29,7 @@ MAIN = [
 ]
 MORE = [
     ('Search everything', '/#discover', None),
+    ('Upcoming shows', '/upcoming/', '/upcoming/'),
     ('Story trails', '/trails/', '/trails/'),
     ('Time Machine', '/time-machine/', '/time-machine/'),
     ('Song Paths', '/song-paths/', '/song-paths/'),

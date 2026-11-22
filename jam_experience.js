@@ -18,3 +18,25 @@
   window.addEventListener('hashchange',openSearch);openSearch();
  }
 })();
+/* Upcoming shows: hide dates that have passed (pages stay static; see scripts/build_upcoming.py). */
+(()=>{'use strict';
+ const today=new Date().toLocaleDateString('en-CA');
+ const past=el=>(el.dataset.showEnd||el.dataset.showDate)<today;
+ const show=document.querySelector('article.ja-show[data-show-date]');
+ if(show&&past(show)){
+  show.querySelector('.ja-ticket-box')?.setAttribute('hidden','');
+  show.querySelector('.ja-prices')?.setAttribute('hidden','');
+  show.querySelector('.ja-past-note')?.removeAttribute('hidden');
+ }
+ for(const el of document.querySelectorAll('li[data-show-date],.item[data-show-date]'))if(past(el))el.hidden=true;
+ const lists=[...document.querySelectorAll('[data-show-list]')];
+ let any=false;
+ for(const list of lists){
+  const left=[...list.querySelectorAll('[data-show-date]')].some(el=>!el.hidden);
+  any=any||left;
+  const none=list.querySelector('.ja-none-left');
+  if(none)none.hidden=left;
+  else if(!left&&list.tagName==='SECTION'&&!list.classList.contains('card'))list.hidden=true;
+ }
+ if(location.pathname==='/upcoming/'){const n=document.querySelector('main>.ja-none-left');if(n)n.hidden=any}
+})();

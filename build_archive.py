@@ -76,66 +76,24 @@ new_sources=[
 ids={s['id'] for s in data['sources']}
 for id,name,url,kind,entity in new_sources:
  if id not in ids: data['sources'].append({'id':id,'name':name,'url':url,'kind':kind,'entity':entity,'access':'Source link and citation; no bulk-reuse permission inferred'})
-# A bounded, manually checked snapshot of future show ANNOUNCEMENTS, not ticket inventory.
+# Announced upcoming shows live in data/upcoming_shows.json (validated by upcoming_shows.py).
+# Not ticket inventory: each entry is checked against the artist's or venue's own announcement.
+import upcoming_shows, family_tree_data
+# Shows may name anyone in the catalog or in data/family_tree.json (merged later, in build_v03).
+show_ids=dict(nameid)
+for _ft in family_tree_data.load().get('entries',[]):
+ show_ids.setdefault(_ft['name'],_ft.get('id') or family_tree_data.slug(_ft['name']))
 events=[]
-def event(day,band,venue,city,region,source,**kwargs):
- entity_ids=[nameid.get(n) for n in kwargs.pop('artists',[band])]
- if any(x is None for x in entity_ids): raise ValueError((band,entity_ids))
- events.append(dict(id=slug(day+'-'+band+'-'+venue),date=day,artist_id=nameid[band],artist=band,
-  performers=entity_ids,venue=venue,city=city,region=region,source_url=source,
-  source_type='official artist / venue announcement' if kwargs.pop('official',True) else 'artist-maintained listing + secondary corroboration',
-  verified_as_of='2026-10-26',status='announced',**kwargs))
-# Goose's owned Bandcamp schedule, corroborated by fall tour listings and venue pages.
-GB='https://goosetheband.bandcamp.com/'
-for day,venue,city,region in [
- ('2026-11-03','The Midland Theatre','Kansas City','MO'),('2026-11-04','The Midland Theatre','Kansas City','MO'),
- ('2026-11-06','Miller High Life Theatre','Milwaukee','WI'),('2026-11-07','Miller High Life Theatre','Milwaukee','WI'),
- ('2026-11-08','Miller High Life Theatre','Milwaukee','WI'),('2026-11-10','The Truth','Nashville','TN'),
- ('2026-11-11','The Truth','Nashville','TN'),('2026-11-13','Mohegan Sun Arena','Uncasville','CT'),
- ('2026-11-14','Mohegan Sun Arena','Uncasville','CT'),('2026-11-15','Cross Insurance Arena','Portland','ME'),
- ('2026-11-18','John Paul Jones Arena','Charlottesville','VA'),('2026-11-19','Citizens Live at The Wylie','Pittsburgh','PA'),
- ('2026-11-20','Citizens Live at The Wylie','Pittsburgh','PA'),('2026-11-21','Blue Cross Arena','Rochester','NY')]:
- link=('https://www.midlandkc.com/events/detail/1465853' if day=='2026-11-03' else 'https://www.bluecrossarena.com/events/2026/goose' if day=='2026-11-21' else GB)
- event(day,'Goose',venue,city,region,link,official=day in ('2026-11-03','2026-11-21'),corroboration='https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information')
-# Source: Trey Anastasio official fall tour, including a separately confirmed billing collaboration.
-T='https://trey.com/trey-anastasio-band-fall-tour-announced/'
-for day,venue,city,region in [
- ('2026-11-10','State Theatre','Portland','ME'),('2026-11-12','Palace Theatre','Albany','NY'),
- ('2026-11-13',"Loew's Jersey Theatre",'Jersey City','NJ'),('2026-11-14','The Anthem','Washington','DC'),
- ('2026-11-16','The Capitol Theatre','Port Chester','NY'),('2026-11-20','DCU Center','Worcester','MA'),
- ('2026-11-21','DCU Center','Worcester','MA')]:
- special=day in ('2026-11-20','2026-11-21')
- event(day,'Trey Anastasio Band',venue,city,region,
-  'https://trey.com/dsfbenefit/' if special else T,
-  artists=['Trey Anastasio Band','Trey Anastasio','Billy Strings'] if special else ['Trey Anastasio Band','Trey Anastasio'],
-  note='Confirmed onstage performance by Trey Anastasio and Billy Strings together, backed by TAB' if special else 'Trey Anastasio Band',
-  collaboration_confirmed=special)
-# Official Widespread Panic show calendar.
-W='https://widespreadpanic.com/shows/'
-for day,venue,city,region in [
- ('2026-10-30','UNO Lakefront Arena','New Orleans','LA'),('2026-10-31','UNO Lakefront Arena','New Orleans','LA'),
- ('2026-12-30','Bojangles Coliseum','Charlotte','NC'),('2026-12-31','Bojangles Coliseum','Charlotte','NC'),
- ('2027-01-19','Panic en la Playa Catorce','Riviera Maya','Quintana Roo, MX'),
- ('2027-01-20','Panic en la Playa Catorce','Riviera Maya','Quintana Roo, MX'),
- ('2027-01-21','Panic en la Playa Catorce','Riviera Maya','Quintana Roo, MX'),
- ('2027-01-22','Panic en la Playa Catorce','Riviera Maya','Quintana Roo, MX')]: event(day,'Widespread Panic',venue,city,region,W)
-# Tedeschi Trucks Band published itinerary; same day 2026-10-26 included.
-TT='https://www.tedeschitrucksband.com/tour'
-for day,venue,city,region in [
- ('2026-10-26','The Chicago Theatre','Chicago','IL'),('2026-10-27','The Chicago Theatre','Chicago','IL'),
- ('2026-11-15','Comtec Portbase','Nagoya','Japan'),('2026-11-16','Festival Hall','Osaka','Japan'),
- ('2026-11-18','Ariake Arena','Tokyo','Japan'),('2026-11-19','Ariake Arena','Tokyo','Japan'),
- ('2026-11-21','EX Theater Roppongi','Tokyo','Japan'),
- ('2027-04-15','TTB Sun, Sand & Soul','Miramar Beach','FL'),
- ('2027-07-29','Red Rocks Amphitheatre','Morrison','CO'),('2027-07-30','Red Rocks Amphitheatre','Morrison','CO'),
- ('2027-07-31','Red Rocks Amphitheatre','Morrison','CO'),('2027-09-09','Big Blues Bender','Las Vegas','NV')]:
- event(day,'Tedeschi Trucks Band',venue,city,region,TT,date_end='2027-04-17' if day=='2027-04-15' else '2027-09-12' if day=='2027-09-09' else None)
-# JRAD: official site.
-J='https://joerussosalmostdead.com/'
-for day,venue,city,region in [
- ('2026-11-12','State Theatre','New Brunswick','NJ'),('2026-11-13','Warner Theatre','Washington','DC'),
- ('2026-11-14','The Met Philadelphia','Philadelphia','PA'),('2027-02-27','Amp Jam 3','Live Oak','FL')]:
- event(day,"Joe Russo's Almost Dead",venue,city,region,J)
+for s in upcoming_shows.load(known_names=set(show_ids)):
+ e=dict(id=s['id'],date=s['date'],artist_id=show_ids[s['artist']],artist=s['artist'],
+  performers=[show_ids[n] for n in (s.get('performers') or [s['artist']])],
+  venue=s['venue'],city=s['city'],region=s['region'],source_url=s['source'],
+  source_type='official artist / venue announcement' if s.get('official',True) else 'artist-maintained listing + secondary corroboration',
+  verified_as_of=s['checked_on'],status='announced',
+  ticket_url=(s.get('tickets') or {}).get('official_url'))
+ for k in ('date_end','corroboration','note','collaboration_confirmed'):
+  if s.get(k): e[k]=s[k]
+ events.append(e)
 assert len({e['id'] for e in events})==len(events)
 assert len([s for s in data['source_entries'] if s['list']=='founding'])==110
 assert len([s for s in data['source_entries'] if s['list']=='precursor'])==11

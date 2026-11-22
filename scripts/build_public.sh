@@ -7,6 +7,7 @@ python3 build_v014.py
 python3 scripts/polish_site.py
 python3 scripts/presentation_fixes.py
 python3 scripts/build_trails.py
+python3 scripts/build_upcoming.py
 python3 scripts/site_nav.py
 python3 scripts/house_style.py
 python3 validate.py
