@@ -1,0 +1,105 @@
+{
+ "slug": "colorado-jamgrass",
+ "title": "From Crested Butte to the Fillmore",
+ "deck": "How String Cheese Incident, Keller Williams, Yonder Mountain and Leftover Salmon are wired together through actual musicians, not just a shared sound.",
+ "description": "A sourced trail through the Colorado jamgrass scene: String Cheese Incident, Keller Williams, Grateful Grass, Yonder Mountain String Band, the Emmitt-Nershi Band and Leftover Salmon.",
+ "credits": "Research: Research Packet 001. Every claim below was re-checked against the linked source before publishing.",
+ "sections": [
+  {
+   "heading": "Two mountain towns",
+   "text": "The String Cheese Incident came together in Telluride and Crested Butte in 1993. The founding four were Michael Kang, Keith Moseley, Bill Nershi and Michael Travis; keyboardist Kyle Hollingsworth joined in 1996, and percussionist Jason Hann came aboard in the mid-2000s. Hold on to Moseley and Nershi. They are the two doors out of this band. Moseley and Jason Hann later became the rhythm section of The Contribution, a band conceived by Railroad Earth's Tim Carbone with New Monsoon's Jeff Miller and Phil Ferlino.",
+   "sources": [
+    [
+     "Colorado Music Hall of Fame: The String Cheese Incident",
+     "https://cmhof.org/colorado-artists-spotlight-the-string-cheese-incident/"
+    ],
+    [
+     "String Cheese Incident: The Contribution",
+     "https://www.stringcheeseincident.com/?p=1433"
+    ]
+   ],
+   "path": [
+    "the-string-cheese-incident",
+    "railroad-earth"
+   ]
+  },
+  {
+   "heading": "A record with Keller",
+   "text": "Keller Williams' 1999 album Breathe was made in alliance with String Cheese Incident, and it was his first release on the band's own label. It is the first documented meeting of the two, and the start of a long run of shared projects.",
+   "sources": [
+    [
+     "Keller Williams: press biography",
+     "https://kellerwilliams.net/press"
+    ]
+   ],
+   "path": [
+    "keller-williams",
+    "the-string-cheese-incident"
+   ]
+  },
+  {
+   "heading": "Dead songs, bluegrass hands",
+   "text": "On February 8, 2006, at the Fillmore in Denver, Keller, Moseley and Yonder Mountain String Band founding mandolinist Jeff Austin played Grateful Dead songs as bluegrass. Keller released the recording, REX, as a digital album in 2008. One night, three bands' worth of people. (Keller's general Grateful Grass page dates that first show to 2008; the album's own page gives the 2006 recording date, which is the one we use.)",
+   "sources": [
+    [
+     "Keller Williams: REX",
+     "https://kellerwilliams.net/rex"
+    ],
+    [
+     "Jeff Austin biography",
+     "https://www.jeffaustin.com/bio"
+    ],
+    [
+     "Keller Williams: Grateful Grass",
+     "https://kellerwilliams.net/grateful-grass"
+    ]
+   ],
+   "path": [
+    "yonder-mountain-string-band",
+    "the-string-cheese-incident"
+   ]
+  },
+  {
+   "heading": "The salmon branch",
+   "text": "Bill Nershi formed the Emmitt-Nershi Band with Drew Emmitt, who co-founded Leftover Salmon with Vince Herman. Its banjo player, Andy Thorn, officially joined Leftover Salmon in 2011. Same scene, different band, documented personnel at every step.",
+   "sources": [
+    [
+     "SCI Fidelity: Emmitt-Nershi Band",
+     "https://scifidelity.com/artists/emmitt-nershi-band/"
+    ],
+    [
+     "Leftover Salmon: the band",
+     "https://www.leftoversalmon.com/band"
+    ]
+   ],
+   "path": [
+    "the-string-cheese-incident",
+    "leftover-salmon"
+   ]
+  },
+  {
+   "heading": "And back to the Dead",
+   "text": "Keller's link to the Grateful Dead is not just the songs. In 2010 he played in the Rhythm Devils, the band built around Dead drummers Bill Kreutzmann and Mickey Hart. Playing someone's songs is a tribute; being in their drummers' band is a connection, and the Family Tree only counts the second.",
+   "sources": [
+    [
+     "Dead.net: Rhythm Devils 2010",
+     "https://www.dead.net/node/16299"
+    ]
+   ],
+   "path": [
+    "keller-williams",
+    "grateful-dead"
+   ]
+  }
+ ],
+ "listening": [
+  [
+   "Grateful Grass, REX (recorded Feb 8, 2006)",
+   "https://kellerwilliams.net/rex"
+  ],
+  [
+   "Emmitt-Nershi Band, New Country Blues",
+   "https://scifidelity.com/artists/emmitt-nershi-band/"
+  ]
+ ]
+}

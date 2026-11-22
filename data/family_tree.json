@@ -222,6 +222,95 @@
    "aliases": [
     "Bill Kreutzmann Trio"
    ]
+  },
+  {
+   "name": "Michael Kang",
+   "type": "person"
+  },
+  {
+   "name": "Keith Moseley",
+   "type": "person"
+  },
+  {
+   "name": "Bill Nershi",
+   "type": "person"
+  },
+  {
+   "name": "Michael Travis",
+   "type": "person"
+  },
+  {
+   "name": "Kyle Hollingsworth",
+   "type": "person"
+  },
+  {
+   "name": "Jason Hann",
+   "type": "person"
+  },
+  {
+   "name": "Jeff Austin",
+   "type": "person"
+  },
+  {
+   "name": "Drew Emmitt",
+   "type": "person"
+  },
+  {
+   "name": "Vince Herman",
+   "type": "person"
+  },
+  {
+   "name": "Andy Thorn",
+   "type": "person"
+  },
+  {
+   "name": "Tim Carbone",
+   "type": "person"
+  },
+  {
+   "name": "Jeff Miller",
+   "type": "person"
+  },
+  {
+   "name": "Phil Ferlino",
+   "type": "person"
+  },
+  {
+   "name": "Bill Payne",
+   "type": "person"
+  },
+  {
+   "name": "Grateful Grass",
+   "type": "project"
+  },
+  {
+   "name": "Emmitt-Nershi Band",
+   "type": "band",
+   "aliases": [
+    "Emmitt–Nershi Band"
+   ]
+  },
+  {
+   "name": "EOTO",
+   "type": "band"
+  },
+  {
+   "name": "The Contribution",
+   "type": "band"
+  },
+  {
+   "name": "Rhythm Devils",
+   "type": "band",
+   "aliases": [
+    "The Rhythm Devils"
+   ]
+  },
+  {
+   "name": "Keller Williams with Moseley, Droll & Sipe",
+   "type": "project",
+   "aliases": [
+    "Keller Williams with Moseley, Droll and Sipe"
+   ]
   }
  ],
  "links": [
@@ -997,6 +1086,216 @@
    "to": "Phil Lesh & Friends",
    "source": "https://www.jambase.com/article/happy-80th-birthday-phil-lesh-8-incredible-phil-lesh-friends-lineups",
    "note": "Vegoose lineup, October 29, 2006"
+  },
+  {
+   "from": "Michael Kang",
+   "to": "The String Cheese Incident",
+   "source": "https://cmhof.org/colorado-artists-spotlight-the-string-cheese-incident/",
+   "note": "Founding member, 1993"
+  },
+  {
+   "from": "Keith Moseley",
+   "to": "The String Cheese Incident",
+   "source": "https://cmhof.org/colorado-artists-spotlight-the-string-cheese-incident/",
+   "note": "Founding member, 1993"
+  },
+  {
+   "from": "Bill Nershi",
+   "to": "The String Cheese Incident",
+   "source": "https://cmhof.org/colorado-artists-spotlight-the-string-cheese-incident/",
+   "note": "Founding member, 1993"
+  },
+  {
+   "from": "Michael Travis",
+   "to": "The String Cheese Incident",
+   "source": "https://cmhof.org/colorado-artists-spotlight-the-string-cheese-incident/",
+   "note": "Founding member, 1993"
+  },
+  {
+   "from": "Kyle Hollingsworth",
+   "to": "The String Cheese Incident",
+   "source": "https://cmhof.org/colorado-artists-spotlight-the-string-cheese-incident/",
+   "note": "Joined 1996"
+  },
+  {
+   "from": "Jason Hann",
+   "to": "The String Cheese Incident",
+   "source": "https://cmhof.org/colorado-artists-spotlight-the-string-cheese-incident/",
+   "note": "Auxiliary percussion from the mid-2000s"
+  },
+  {
+   "from": "Keller Williams",
+   "to": "The String Cheese Incident",
+   "source": "https://kellerwilliams.net/press",
+   "note": "Breathe (1999), with SCI",
+   "type": "collaboration_with"
+  },
+  {
+   "from": "Keller Williams",
+   "to": "Grateful Grass",
+   "source": "https://kellerwilliams.net/rex",
+   "note": "Original trio; REX recorded at the Fillmore, Denver, Feb 8, 2006 (released 2008)"
+  },
+  {
+   "from": "Keith Moseley",
+   "to": "Grateful Grass",
+   "source": "https://kellerwilliams.net/rex",
+   "note": "Original trio; REX recorded at the Fillmore, Denver, Feb 8, 2006 (released 2008)"
+  },
+  {
+   "from": "Jeff Austin",
+   "to": "Grateful Grass",
+   "source": "https://kellerwilliams.net/rex",
+   "note": "Original trio; REX recorded at the Fillmore, Denver, Feb 8, 2006 (released 2008)"
+  },
+  {
+   "from": "Michael Kang",
+   "to": "Grateful Grass",
+   "source": "https://kellerwilliams.net/grateful-grass",
+   "note": "2013 reunion lineup"
+  },
+  {
+   "from": "Jeff Austin",
+   "to": "Yonder Mountain String Band",
+   "source": "https://www.jeffaustin.com/bio",
+   "note": "Founding member; left early 2014"
+  },
+  {
+   "from": "Drew Emmitt",
+   "to": "Emmitt-Nershi Band",
+   "source": "https://scifidelity.com/artists/emmitt-nershi-band/"
+  },
+  {
+   "from": "Bill Nershi",
+   "to": "Emmitt-Nershi Band",
+   "source": "https://scifidelity.com/artists/emmitt-nershi-band/"
+  },
+  {
+   "from": "Andy Thorn",
+   "to": "Emmitt-Nershi Band",
+   "source": "https://scifidelity.com/artists/emmitt-nershi-band/"
+  },
+  {
+   "from": "Drew Emmitt",
+   "to": "Leftover Salmon",
+   "source": "https://www.leftoversalmon.com/band",
+   "note": "Co-founder"
+  },
+  {
+   "from": "Vince Herman",
+   "to": "Leftover Salmon",
+   "source": "https://www.leftoversalmon.com/band",
+   "note": "Co-founder"
+  },
+  {
+   "from": "Andy Thorn",
+   "to": "Leftover Salmon",
+   "source": "https://www.leftoversalmon.com/band",
+   "note": "Joined 2011"
+  },
+  {
+   "from": "Michael Travis",
+   "to": "EOTO",
+   "source": "https://scifidelity.com/artists/eoto/",
+   "note": "Duo with Jason Hann"
+  },
+  {
+   "from": "Jason Hann",
+   "to": "EOTO",
+   "source": "https://scifidelity.com/artists/eoto/",
+   "note": "Duo with Michael Travis"
+  },
+  {
+   "from": "Tim Carbone",
+   "to": "The Contribution",
+   "source": "https://www.stringcheeseincident.com/?p=1433",
+   "note": "Conceived the band"
+  },
+  {
+   "from": "Jeff Miller",
+   "to": "The Contribution",
+   "source": "https://www.stringcheeseincident.com/?p=1433",
+   "note": "Conceived the band"
+  },
+  {
+   "from": "Phil Ferlino",
+   "to": "The Contribution",
+   "source": "https://www.stringcheeseincident.com/?p=1433",
+   "note": "Conceived the band"
+  },
+  {
+   "from": "Keith Moseley",
+   "to": "The Contribution",
+   "source": "https://www.stringcheeseincident.com/?p=1433",
+   "note": "Rhythm section on the recordings"
+  },
+  {
+   "from": "Jason Hann",
+   "to": "The Contribution",
+   "source": "https://www.stringcheeseincident.com/?p=1433",
+   "note": "Rhythm section on the recordings"
+  },
+  {
+   "from": "Tim Carbone",
+   "to": "Railroad Earth",
+   "source": "https://www.stringcheeseincident.com/?p=1433"
+  },
+  {
+   "from": "Jeff Miller",
+   "to": "New Monsoon",
+   "source": "https://www.stringcheeseincident.com/?p=1433"
+  },
+  {
+   "from": "Phil Ferlino",
+   "to": "New Monsoon",
+   "source": "https://www.stringcheeseincident.com/?p=1433"
+  },
+  {
+   "from": "Bill Payne",
+   "to": "Little Feat",
+   "source": "https://en.wikipedia.org/wiki/Bill_Payne",
+   "note": "Co-founder with Lowell George"
+  },
+  {
+   "from": "Bill Payne",
+   "to": "Leftover Salmon",
+   "source": "https://en.wikipedia.org/wiki/Bill_Payne",
+   "note": "Member, 2014 – December 2015"
+  },
+  {
+   "from": "Bill Payne",
+   "to": "Phil Lesh & Friends",
+   "source": "https://en.wikipedia.org/wiki/Bill_Payne",
+   "note": "Live shows, October 1999 – July 2000"
+  },
+  {
+   "from": "Bill Kreutzmann",
+   "to": "Rhythm Devils",
+   "source": "https://www.dead.net/node/16299",
+   "note": "Founders"
+  },
+  {
+   "from": "Mickey Hart",
+   "to": "Rhythm Devils",
+   "source": "https://www.dead.net/node/16299",
+   "note": "Founders"
+  },
+  {
+   "from": "Keller Williams",
+   "to": "Rhythm Devils",
+   "source": "https://www.dead.net/node/16299",
+   "note": "2010 lineup"
+  },
+  {
+   "from": "Keller Williams",
+   "to": "Keller Williams with Moseley, Droll & Sipe",
+   "source": "https://kellerwilliams.net/press",
+   "note": "Formed 2007"
+  },
+  {
+   "from": "Jeff Sipe",
+   "to": "Keller Williams with Moseley, Droll & Sipe",
+   "source": "https://www.bandsintown.com/a/151747-jeff-sipe"
   }
  ]
 }

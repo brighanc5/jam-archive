@@ -29,6 +29,7 @@ MAIN = [
 ]
 MORE = [
     ('Search everything', '/#discover', None),
+    ('Story trails', '/trails/', '/trails/'),
     ('Time Machine', '/time-machine/', '/time-machine/'),
     ('Song Paths', '/song-paths/', '/song-paths/'),
     ('Performance Lab', '/performance-lab/', '/performance-lab/'),
@@ -127,4 +128,33 @@ for aid, node in nodes.items():
     page.write_text(html, encoding='utf-8')
     cards += 1
 
-print(f'SITE NAV PASS: one menu on {pages} pages; Family Tree cards on {cards} artist pages')
+# ---- Site icon (stops a 404 on every browser visit) + unique titles ----
+import shutil
+ICON_TAGS = ('<link rel="icon" href="/favicon.ico" sizes="any">'
+             '<link rel="apple-touch-icon" href="/apple-touch-icon.png">')
+for asset in (ROOT / 'static').iterdir():
+    shutil.copyfile(asset, SITE / asset.name)
+titles = defaultdict(list)
+for f in SITE.rglob('*.html'):
+    html = f.read_text(encoding='utf-8')
+    if 'rel="apple-touch-icon"' not in html:
+        assert '</head>' in html, f'site_nav: no </head> in {f}'
+        html = html.replace('</head>', ICON_TAGS + '</head>', 1)
+        f.write_text(html, encoding='utf-8')
+    m = re.search(r'<title>(.*?)</title>', html, re.S)
+    if m:
+        titles[m.group(1)].append(f)
+renamed = 0
+for title, files in titles.items():
+    if len(files) < 2:
+        continue
+    for f in files:
+        slot = next((w for w in ('early', 'late') if f.parent.name.endswith('-' + w)), None)
+        if not slot:
+            continue
+        html = f.read_text(encoding='utf-8')
+        html = html.replace('<title>' + title + '</title>', '<title>' + title.replace(' · The Jam Archive', ' (' + slot + ' show) · The Jam Archive') + '</title>', 1)
+        f.write_text(html, encoding='utf-8')
+        renamed += 1
+
+print(f'SITE NAV PASS: one menu on {pages} pages; Family Tree cards on {cards} artist pages; icon on every page; {renamed} duplicate titles disambiguated')
