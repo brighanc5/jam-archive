@@ -103,6 +103,6 @@ class EraAtlasTest(unittest.TestCase):
  def test_global_audit_includes_new_routes(self):
   result=json.loads((SITE/'assets/site_audit.json').read_text())
   self.assertEqual(result['issues'],0)
-  self.assertEqual(result['html_pages_inspected'],850)
+  self.assertEqual(result['html_pages_inspected'],len(list(SITE.rglob('*.html'))))
   self.assertEqual(result['version'],'0.14')
 if __name__=='__main__':unittest.main()

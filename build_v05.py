@@ -36,7 +36,7 @@ def write(relative,data):
 
 subprocess.run([sys.executable,str(ROOT/'build_v04.py')],cwd=ROOT,check=True)
 cat=json.loads((ROOT/'catalog.json').read_text())
-assert len(cat['entities'])==196 and len(cat['source_entries'])==121
+assert len(cat['entities'])>=196 and len(cat['source_entries'])==121
 cat['about']['version']='0.5 / public discovery edition'
 cat['about']['disclaimer']='Historical and tour data are incomplete, dated research samples. The research agent does not run from this website; source information is linked, not rehosted.'
 # Omit all internal/synthetic observations from the public export.

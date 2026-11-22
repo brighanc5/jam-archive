@@ -142,6 +142,11 @@ assert len([s for s in data['source_entries'] if s['list']=='precursor'])==11
 data['about'].update(version='0.2 / source-connected preview',as_of='2026-10-26',
  disclaimer='Concert listings are a SOURCE-CHECKED SNAPSHOT as of October 26, 2026, not live updates, ticket availability, or notifications. The recording index is empty until optional authorized metadata ingestion.')
 data['events']=sorted(events,key=lambda x:(x['date'],x['artist']))
+# Editable Family Tree additions live in data/family_tree.json (see CLAUDE.md).
+import family_tree_data
+_ft=family_tree_data.merge(data)
+nameid={e['name']:e['id'] for e in data['entities']}; entities={e['id']:e for e in data['entities']}
+print(f'family_tree.json: {_ft[0]} entries added, {_ft[1]} links added, {_ft[2]} links upgraded')
 rec_file=ROOT/'recordings.json'
 if rec_file.exists(): data['recordings']=json.loads(rec_file.read_text())
 else: data['recordings']=[];rec_file.write_text('[]\n')
@@ -151,7 +156,7 @@ conn=sqlite3.connect(ROOT/'jam_archive.sqlite');conn.execute('PRAGMA foreign_key
 for e in data['entities']:
  conn.execute('INSERT OR IGNORE INTO entity(id,name,type,origins_json,aliases_json) VALUES (?,?,?,?,?)',(e['id'],e['name'],e['type'],json.dumps(e['origins']),json.dumps(e['aliases'])))
 for r in rels:
- conn.execute('INSERT OR IGNORE INTO artist_relationship(source_entity_id,target_entity_id,relation,evidence_url,notes,verification) VALUES(?,?,?,?,?,?)',(r['from'],r['to'],r['type'],r['source_url'],r['note'],r['verification']))
+ conn.execute('INSERT OR REPLACE INTO artist_relationship(source_entity_id,target_entity_id,relation,evidence_url,notes,verification) VALUES(?,?,?,?,?,?)',(r['from'],r['to'],r['type'],r['source_url'],r['note'],r['verification']))
 for s in data['sources']:
  target=nameid.get(s['entity']) if s.get('entity') else None
  conn.execute('INSERT OR IGNORE INTO external_source(id,name,url,source_type,access_notes,associated_entity_id) VALUES(?,?,?,?,?,?)',(s['id'],s['name'],s['url'],s['kind'],s['access'],target))

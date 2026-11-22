@@ -41,7 +41,7 @@ assert len(urls)==len(set(urls)), 'Duplicate sitemap entries'
 html_routes={origin + '/' + (str(path.parent.relative_to(site)).replace('\\', '/').strip('./').rstrip('/') + '/' if path.parent != site else '') for path in site.rglob('index.html')}
 assert set(urls)==html_routes, f'Sitemap does not exactly match the {len(html_routes)} public HTML routes: missing {list(html_routes-set(urls))[:3]}, extra {list(set(urls)-html_routes)[:3]}'
 assert all(url.startswith(origin+'/') for url in urls), 'Sitemap points at wrong origin'
-assert len(list((site/'artists').glob('*/index.html')))==196
+assert len(list((site/'artists').glob('*/index.html')))==len(json.loads((site/'assets/catalog.json').read_text())['entities'])
 assert len(list((site/'shows').glob('*/index.html')))==25
 assert (site/'performance-lab/index.html').is_file(), 'Missing v0.12 Performance Lab'
 assert (site/'performance-lab/lineages/index.html').is_file(), 'Missing recording-lineage page'
@@ -53,7 +53,8 @@ assert len(list((site/'deep-archive/shows').glob('*/index.html')))==12
 assert len(json.loads((site/'assets/deep-archive.json').read_text())['dossiers'])==22
 assert (site/'connections/index.html').is_file(), 'Missing v0.10 Family Tree'
 assert (site/'assets/connections.json').is_file(), 'Missing v0.10 graph source'
-assert len(json.loads((site/'assets/connections.json').read_text())['edges']) == 52, 'Unexpected verified graph size'
+_cat=json.loads((site/'assets/catalog.json').read_text())
+assert len(json.loads((site/'assets/connections.json').read_text())['edges']) == sum(r['verification']=='verified' for r in _cat['relationships']), 'Graph edges must equal verified catalog relationships'
 assert (site/'time-machine/index.html').is_file(), 'Missing Time Machine'
 assert (site/'song-paths/index.html').is_file(), 'Missing v0.9 Song Paths page'
 assert (site/'assets/song-paths.json').is_file(), 'Missing v0.9 Song Paths index'

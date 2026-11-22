@@ -5,11 +5,11 @@ from pathlib import Path
 root=Path(__file__).resolve().parent
 j=json.loads((root/'catalog.json').read_text())
 ids={e['id'] for e in j['entities']}
-assert len(j['entities'])==196 and len(ids)==196
+assert len(j['entities'])>=196 and len(ids)==len(j['entities'])
 assert sum(x['list']=='founding' for x in j['source_entries'])==110
 assert sum(x['list']=='precursor' for x in j['source_entries'])==11
 assert sum('expansion_candidate' in e['origins'] for e in j['entities'])==24
-assert len(j['relationships'])==77
+assert len({(r['from'],r['to'],r['type']) for r in j['relationships']})==len(j['relationships'])
 assert len(j['events'])==45
 assert len(j['historical_shows'])==25
 assert len(j['recording_sources'])>=9
@@ -31,7 +31,7 @@ for r in j['recording_sources']:
 con=sqlite3.connect(root/'jam_archive.sqlite')
 assert con.execute('PRAGMA integrity_check').fetchone()[0]=='ok'
 assert con.execute('PRAGMA foreign_key_check').fetchall()==[]
-for table,expected in [('entity',196),('source_seed',121),('artist_relationship',77),('event',45),('historical_show',25),('recording_source',len(j['recording_sources']))]:
+for table,expected in [('entity',len(j['entities'])),('source_seed',121),('artist_relationship',len(j['relationships'])),('event',45),('historical_show',25),('recording_source',len(j['recording_sources']))]:
  actual=con.execute('SELECT count(*) FROM '+table).fetchone()[0]
  assert actual==expected,(table,actual,expected)
 assert con.execute('select count(*) from historical_show_song').fetchone()[0]>=40
@@ -51,7 +51,7 @@ for i,script in enumerate(scripts):
   assert proc.returncode==0,(i,proc.stderr)
 assert (root/'site/assets/discovery.js').exists()
 assert not json.loads((root/'site/assets/catalog.json').read_text())['research']['items']
-assert len(list((root/'site/artists').glob('*/index.html')))==196
+assert len(list((root/'site/artists').glob('*/index.html')))==len(j['entities'])
 assert len(list((root/'site/shows').glob('*/index.html')))==25
 assert len(list((root/'site/songs').glob('*/index.html')))==len({x for h in j['historical_shows'] for x in h['songs']})
-print(f'PASS: {len(ids)} artists, 110+11 original rows, 77 relationships, 45 static events, 25 historic shows, 196 artist pages, dynamically generated song pages, 4 inline scripts, valid SQLite')
+print(f'PASS: {len(ids)} artists, 110+11 original rows, {len(j["relationships"])} relationships, 45 static events, 25 historic shows, {len(ids)} artist pages, dynamically generated song pages, 4 inline scripts, valid SQLite')

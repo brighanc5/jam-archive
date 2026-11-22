@@ -16,7 +16,7 @@ class ExperienceTests(unittest.TestCase):
   self.assertNotRegex(style,r'url\(\s*["\']?https?://')
  def test_every_page_includes_mobile_ui(self):
   pages=list(SITE.rglob('*.html'))
-  self.assertEqual(len(pages),850)
+  self.assertGreaterEqual(len(pages),850)
   for file in pages:
    html=file.read_text()
    self.assertEqual(html.count('/assets/jam-look.css'),1,file)
