@@ -6,7 +6,7 @@
 4. **Evidence.** Keep a `source_url`, last checked date, and verification status for individual historical shows. Multiple early/late sets are distinct performances. Recording item metadata must not automatically create a new concert record.
 5. **Curation.** Research observations stay pending until checked. Draft artist associations cannot be treated as an actual sit-in or current band membership.
 6. **Public release.** Synthetic fixtures live in the developer project only; the public built catalog strips all research queue observations. Source URLs must be HTTPS.
-7. **User data.** Watchlists and listening passports use browser localStorage. There is no account system. Exported backups stay with the user. There is no tracking or server-side storage in the static site.
+7. **User data.** Watchlists and listening passports use browser localStorage. There is no account system. Exported backups stay with the user. The static site stores nothing about you on a server. We count visits with Cloudflare Web Analytics, which sets no cookies, doesn't use localStorage, and doesn't fingerprint or track individual visitors across sites. It tells us things like which pages get read and roughly where visitors come from, in aggregate.
 8. **Code and content licensing.** Code authored for this project can be licensed separately from third-party metadata, show research, artwork and recordings. No blanket open-data or media license has been granted by inclusion in the catalog.
 
 This is an operational source-stewardship policy, not legal advice.

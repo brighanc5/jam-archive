@@ -55,6 +55,11 @@ check((site / '_headers').read_text(encoding='utf-8') == text('security_headers.
       'Published security headers differ from reviewed policy')
 check('connect-src \'self\'' in text('security_headers.txt') and 'frame-ancestors \'none\'' in text('security_headers.txt'),
       'Critical CSP restrictions missing')
+# The only third-party origins allowed anywhere in the CSP: Cloudflare Web Analytics
+# (cookieless; see DATA_RIGHTS.md). Anything else fails closed.
+_ALLOWED_CSP_ORIGINS = {'https://static.cloudflareinsights.com', 'https://cloudflareinsights.com'}
+_csp_origins = set(re.findall(r'https?://[^\s;]+', text('security_headers.txt')))
+check(_csp_origins <= _ALLOWED_CSP_ORIGINS, 'CSP allows an unreviewed third-party origin: ' + ', '.join(sorted(_csp_origins - _ALLOWED_CSP_ORIGINS)))
 
 banned_media_extensions = {'.mp3', '.flac', '.wav', '.ogg', '.m4a', '.aac', '.aiff', '.mp4', '.mov', '.webm'}
 for p in site.rglob('*'):
