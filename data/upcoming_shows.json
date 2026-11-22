@@ -1,0 +1,1535 @@
+{
+ "about": "Announced upcoming shows, checked by hand against the artist's or venue's own announcement. This is the only place show data lives: add or correct shows here. Rules: every show needs an https 'source' that announces it; 'id' never changes once published; 'tickets.official_url' is a direct link from the artist or venue (leave null to send fans to the source); 'marketplace_ids' and 'price_snapshots' are for ticket-price feeds (see docs/ticket-price-index.md) and stay empty until a provider is approved.",
+ "shows": [
+  {
+   "id": "2026-10-26-tedeschi-trucks-band-the-chicago-theatre",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2026-10-26",
+   "venue": "The Chicago Theatre",
+   "city": "Chicago",
+   "region": "IL",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-10-27-tedeschi-trucks-band-the-chicago-theatre",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2026-10-27",
+   "venue": "The Chicago Theatre",
+   "city": "Chicago",
+   "region": "IL",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-10-30-widespread-panic-uno-lakefront-arena",
+   "artist": "Widespread Panic",
+   "performers": [
+    "Widespread Panic"
+   ],
+   "date": "2026-10-30",
+   "venue": "UNO Lakefront Arena",
+   "city": "New Orleans",
+   "region": "LA",
+   "source": "https://widespreadpanic.com/shows/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-10-31-widespread-panic-uno-lakefront-arena",
+   "artist": "Widespread Panic",
+   "performers": [
+    "Widespread Panic"
+   ],
+   "date": "2026-10-31",
+   "venue": "UNO Lakefront Arena",
+   "city": "New Orleans",
+   "region": "LA",
+   "source": "https://widespreadpanic.com/shows/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-03-goose-the-midland-theatre",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-03",
+   "venue": "The Midland Theatre",
+   "city": "Kansas City",
+   "region": "MO",
+   "source": "https://www.midlandkc.com/events/detail/1465853",
+   "official": true,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-04-goose-the-midland-theatre",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-04",
+   "venue": "The Midland Theatre",
+   "city": "Kansas City",
+   "region": "MO",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-06-goose-miller-high-life-theatre",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-06",
+   "venue": "Miller High Life Theatre",
+   "city": "Milwaukee",
+   "region": "WI",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-07-goose-miller-high-life-theatre",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-07",
+   "venue": "Miller High Life Theatre",
+   "city": "Milwaukee",
+   "region": "WI",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-08-goose-miller-high-life-theatre",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-08",
+   "venue": "Miller High Life Theatre",
+   "city": "Milwaukee",
+   "region": "WI",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-10-goose-the-truth",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-10",
+   "venue": "The Truth",
+   "city": "Nashville",
+   "region": "TN",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-10-trey-anastasio-band-state-theatre",
+   "artist": "Trey Anastasio Band",
+   "performers": [
+    "Trey Anastasio Band",
+    "Trey Anastasio"
+   ],
+   "date": "2026-11-10",
+   "venue": "State Theatre",
+   "city": "Portland",
+   "region": "ME",
+   "source": "https://trey.com/trey-anastasio-band-fall-tour-announced/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-11-goose-the-truth",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-11",
+   "venue": "The Truth",
+   "city": "Nashville",
+   "region": "TN",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-12-joe-russo-s-almost-dead-state-theatre",
+   "artist": "Joe Russo's Almost Dead",
+   "performers": [
+    "Joe Russo's Almost Dead"
+   ],
+   "date": "2026-11-12",
+   "venue": "State Theatre",
+   "city": "New Brunswick",
+   "region": "NJ",
+   "source": "https://joerussosalmostdead.com/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-12-trey-anastasio-band-palace-theatre",
+   "artist": "Trey Anastasio Band",
+   "performers": [
+    "Trey Anastasio Band",
+    "Trey Anastasio"
+   ],
+   "date": "2026-11-12",
+   "venue": "Palace Theatre",
+   "city": "Albany",
+   "region": "NY",
+   "source": "https://trey.com/trey-anastasio-band-fall-tour-announced/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-13-goose-mohegan-sun-arena",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-13",
+   "venue": "Mohegan Sun Arena",
+   "city": "Uncasville",
+   "region": "CT",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-13-joe-russo-s-almost-dead-warner-theatre",
+   "artist": "Joe Russo's Almost Dead",
+   "performers": [
+    "Joe Russo's Almost Dead"
+   ],
+   "date": "2026-11-13",
+   "venue": "Warner Theatre",
+   "city": "Washington",
+   "region": "DC",
+   "source": "https://joerussosalmostdead.com/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-13-trey-anastasio-band-loew-s-jersey-theatre",
+   "artist": "Trey Anastasio Band",
+   "performers": [
+    "Trey Anastasio Band",
+    "Trey Anastasio"
+   ],
+   "date": "2026-11-13",
+   "venue": "Loew's Jersey Theatre",
+   "city": "Jersey City",
+   "region": "NJ",
+   "source": "https://trey.com/trey-anastasio-band-fall-tour-announced/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-14-goose-mohegan-sun-arena",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-14",
+   "venue": "Mohegan Sun Arena",
+   "city": "Uncasville",
+   "region": "CT",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-14-joe-russo-s-almost-dead-the-met-philadelphia",
+   "artist": "Joe Russo's Almost Dead",
+   "performers": [
+    "Joe Russo's Almost Dead"
+   ],
+   "date": "2026-11-14",
+   "venue": "The Met Philadelphia",
+   "city": "Philadelphia",
+   "region": "PA",
+   "source": "https://joerussosalmostdead.com/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-14-trey-anastasio-band-the-anthem",
+   "artist": "Trey Anastasio Band",
+   "performers": [
+    "Trey Anastasio Band",
+    "Trey Anastasio"
+   ],
+   "date": "2026-11-14",
+   "venue": "The Anthem",
+   "city": "Washington",
+   "region": "DC",
+   "source": "https://trey.com/trey-anastasio-band-fall-tour-announced/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-15-goose-cross-insurance-arena",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-15",
+   "venue": "Cross Insurance Arena",
+   "city": "Portland",
+   "region": "ME",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-15-tedeschi-trucks-band-comtec-portbase",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2026-11-15",
+   "venue": "Comtec Portbase",
+   "city": "Nagoya",
+   "region": "Japan",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-16-tedeschi-trucks-band-festival-hall",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2026-11-16",
+   "venue": "Festival Hall",
+   "city": "Osaka",
+   "region": "Japan",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-16-trey-anastasio-band-the-capitol-theatre",
+   "artist": "Trey Anastasio Band",
+   "performers": [
+    "Trey Anastasio Band",
+    "Trey Anastasio"
+   ],
+   "date": "2026-11-16",
+   "venue": "The Capitol Theatre",
+   "city": "Port Chester",
+   "region": "NY",
+   "source": "https://trey.com/trey-anastasio-band-fall-tour-announced/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-18-goose-john-paul-jones-arena",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-18",
+   "venue": "John Paul Jones Arena",
+   "city": "Charlottesville",
+   "region": "VA",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-18-tedeschi-trucks-band-ariake-arena",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2026-11-18",
+   "venue": "Ariake Arena",
+   "city": "Tokyo",
+   "region": "Japan",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-19-goose-citizens-live-at-the-wylie",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-19",
+   "venue": "Citizens Live at The Wylie",
+   "city": "Pittsburgh",
+   "region": "PA",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-19-tedeschi-trucks-band-ariake-arena",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2026-11-19",
+   "venue": "Ariake Arena",
+   "city": "Tokyo",
+   "region": "Japan",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-20-goose-citizens-live-at-the-wylie",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-20",
+   "venue": "Citizens Live at The Wylie",
+   "city": "Pittsburgh",
+   "region": "PA",
+   "source": "https://goosetheband.bandcamp.com/",
+   "official": false,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-20-trey-anastasio-band-dcu-center",
+   "artist": "Trey Anastasio Band",
+   "performers": [
+    "Trey Anastasio Band",
+    "Trey Anastasio",
+    "Billy Strings"
+   ],
+   "date": "2026-11-20",
+   "venue": "DCU Center",
+   "city": "Worcester",
+   "region": "MA",
+   "source": "https://trey.com/dsfbenefit/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "collaboration_confirmed": true,
+   "note": "Confirmed onstage performance by Trey Anastasio and Billy Strings together, backed by TAB",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-21-goose-blue-cross-arena",
+   "artist": "Goose",
+   "performers": [
+    "Goose"
+   ],
+   "date": "2026-11-21",
+   "venue": "Blue Cross Arena",
+   "city": "Rochester",
+   "region": "NY",
+   "source": "https://www.bluecrossarena.com/events/2026/goose",
+   "official": true,
+   "corroboration": "https://seatgeek.com/blog/goose-fall-tour-2026-full-schedule-and-ticket-information",
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-21-tedeschi-trucks-band-ex-theater-roppongi",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2026-11-21",
+   "venue": "EX Theater Roppongi",
+   "city": "Tokyo",
+   "region": "Japan",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-11-21-trey-anastasio-band-dcu-center",
+   "artist": "Trey Anastasio Band",
+   "performers": [
+    "Trey Anastasio Band",
+    "Trey Anastasio",
+    "Billy Strings"
+   ],
+   "date": "2026-11-21",
+   "venue": "DCU Center",
+   "city": "Worcester",
+   "region": "MA",
+   "source": "https://trey.com/dsfbenefit/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "collaboration_confirmed": true,
+   "note": "Confirmed onstage performance by Trey Anastasio and Billy Strings together, backed by TAB",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-12-30-umphrey-s-mcgee-ogden-theatre",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2026-12-30",
+   "venue": "Ogden Theatre",
+   "city": "Denver",
+   "region": "CO",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-12-30-widespread-panic-bojangles-coliseum",
+   "artist": "Widespread Panic",
+   "performers": [
+    "Widespread Panic"
+   ],
+   "date": "2026-12-30",
+   "venue": "Bojangles Coliseum",
+   "city": "Charlotte",
+   "region": "NC",
+   "source": "https://widespreadpanic.com/shows/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-12-31-umphrey-s-mcgee-ogden-theatre",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2026-12-31",
+   "venue": "Ogden Theatre",
+   "city": "Denver",
+   "region": "CO",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2026-12-31-widespread-panic-bojangles-coliseum",
+   "artist": "Widespread Panic",
+   "performers": [
+    "Widespread Panic"
+   ],
+   "date": "2026-12-31",
+   "venue": "Bojangles Coliseum",
+   "city": "Charlotte",
+   "region": "NC",
+   "source": "https://widespreadpanic.com/shows/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-01-umphrey-s-mcgee-ogden-theatre",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-01-01",
+   "venue": "Ogden Theatre",
+   "city": "Denver",
+   "region": "CO",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-15-umphrey-s-mcgee-kemba-live",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-01-15",
+   "venue": "KEMBA Live!",
+   "city": "Columbus",
+   "region": "OH",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-16-umphrey-s-mcgee-hollywood-casino-aurora",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-01-16",
+   "venue": "Hollywood Casino Aurora",
+   "city": "Aurora",
+   "region": "IL",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-17-umphrey-s-mcgee-castle-theatre",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-01-17",
+   "venue": "Castle Theatre",
+   "city": "Bloomington",
+   "region": "IN",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-19-widespread-panic-panic-en-la-playa-catorce",
+   "artist": "Widespread Panic",
+   "performers": [
+    "Widespread Panic"
+   ],
+   "date": "2027-01-19",
+   "venue": "Panic en la Playa Catorce",
+   "city": "Riviera Maya",
+   "region": "Quintana Roo, MX",
+   "source": "https://widespreadpanic.com/shows/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-20-umphrey-s-mcgee-epic-event-center",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-01-20",
+   "venue": "EPIC Event Center",
+   "city": "Green Bay",
+   "region": "WI",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-20-widespread-panic-panic-en-la-playa-catorce",
+   "artist": "Widespread Panic",
+   "performers": [
+    "Widespread Panic"
+   ],
+   "date": "2027-01-20",
+   "venue": "Panic en la Playa Catorce",
+   "city": "Riviera Maya",
+   "region": "Quintana Roo, MX",
+   "source": "https://widespreadpanic.com/shows/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-21-umphrey-s-mcgee-the-morris-performing-arts-center",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-01-21",
+   "venue": "The Morris Performing Arts Center",
+   "city": "South Bend",
+   "region": "IN",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-21-widespread-panic-panic-en-la-playa-catorce",
+   "artist": "Widespread Panic",
+   "performers": [
+    "Widespread Panic"
+   ],
+   "date": "2027-01-21",
+   "venue": "Panic en la Playa Catorce",
+   "city": "Riviera Maya",
+   "region": "Quintana Roo, MX",
+   "source": "https://widespreadpanic.com/shows/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-22-umphrey-s-mcgee-clyde-theatre",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-01-22",
+   "venue": "Clyde Theatre",
+   "city": "Fort Wayne",
+   "region": "IN",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-22-widespread-panic-panic-en-la-playa-catorce",
+   "artist": "Widespread Panic",
+   "performers": [
+    "Widespread Panic"
+   ],
+   "date": "2027-01-22",
+   "venue": "Panic en la Playa Catorce",
+   "city": "Riviera Maya",
+   "region": "Quintana Roo, MX",
+   "source": "https://widespreadpanic.com/shows/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-23-umphrey-s-mcgee-temple-theatre",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-01-23",
+   "venue": "Temple Theatre",
+   "city": "Saginaw",
+   "region": "MI",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-01-24-umphrey-s-mcgee-the-kent-stage",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-01-24",
+   "venue": "The Kent Stage",
+   "city": "Kent",
+   "region": "OH",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-03-umphrey-s-mcgee-sound-board-at-motorcity-casino-hotel",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-02-03",
+   "venue": "Sound Board at MotorCity Casino Hotel",
+   "city": "Detroit",
+   "region": "MI",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-04-umphrey-s-mcgee-the-bluebird-nightclub",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-02-04",
+   "venue": "The Bluebird Nightclub",
+   "city": "Bloomington",
+   "region": "IN",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-05-umphrey-s-mcgee-the-rail",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-02-05",
+   "venue": "The Rail",
+   "city": "Lexington",
+   "region": "KY",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-06-umphrey-s-mcgee-hollywood-casino-at-charles-town-races",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-02-06",
+   "venue": "Hollywood Casino at Charles Town Races",
+   "city": "Charles Town",
+   "region": "WV",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-07-umphrey-s-mcgee-the-town-ballroom",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-02-07",
+   "venue": "The Town Ballroom",
+   "city": "Buffalo",
+   "region": "NY",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-08-umphrey-s-mcgee-academy-of-music-theatre",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-02-08",
+   "venue": "Academy of Music Theatre",
+   "city": "Northampton",
+   "region": "MA",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-10-umphrey-s-mcgee-the-foundry",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-02-10",
+   "venue": "The Foundry",
+   "city": "Waynesboro",
+   "region": "VA",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-11-umphrey-s-mcgee-the-queen",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-02-11",
+   "venue": "The Queen",
+   "city": "Wilmington",
+   "region": "DE",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-12-umphrey-s-mcgee-the-capitol-theatre",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-02-12",
+   "venue": "The Capitol Theatre",
+   "city": "Port Chester",
+   "region": "NY",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-13-umphrey-s-mcgee-penn-s-peak",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-02-13",
+   "venue": "Penn's Peak",
+   "city": "Jim Thorpe",
+   "region": "PA",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-02-27-joe-russo-s-almost-dead-amp-jam-3",
+   "artist": "Joe Russo's Almost Dead",
+   "performers": [
+    "Joe Russo's Almost Dead"
+   ],
+   "date": "2027-02-27",
+   "venue": "Amp Jam 3",
+   "city": "Live Oak",
+   "region": "FL",
+   "source": "https://joerussosalmostdead.com/",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-02-umphrey-s-mcgee-pappy-harriet-s-pioneertown-palace",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-02",
+   "venue": "Pappy & Harriet's Pioneertown Palace",
+   "city": "Pioneertown",
+   "region": "CA",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-03-umphrey-s-mcgee-belly-up-tavern",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-03",
+   "venue": "Belly Up Tavern",
+   "city": "Solana Beach",
+   "region": "CA",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-04-umphrey-s-mcgee-ventura-music-hall",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-04",
+   "venue": "Ventura Music Hall",
+   "city": "Ventura",
+   "region": "CA",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-05-umphrey-s-mcgee-the-guild-theatre",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-05",
+   "venue": "The Guild Theatre",
+   "city": "Menlo Park",
+   "region": "CA",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-06-umphrey-s-mcgee-harrah-s-lake-tahoe-south-shore-room",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-06",
+   "venue": "Harrah's Lake Tahoe South Shore Room",
+   "city": "Stateline",
+   "region": "NV",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-07-umphrey-s-mcgee-mystic-theater-music-hall",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-07",
+   "venue": "Mystic Theater & Music Hall",
+   "city": "Petaluma",
+   "region": "CA",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-09-umphrey-s-mcgee-jackson-hole-center-for-the-arts-center-theater",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-09",
+   "venue": "Jackson Hole Center for the Arts - Center Theater",
+   "city": "Jackson",
+   "region": "WY",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-11-umphrey-s-mcgee-the-depot",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-11",
+   "venue": "The Depot",
+   "city": "Salt Lake City",
+   "region": "UT",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-12-umphrey-s-mcgee-the-avalon-theatre",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-12",
+   "venue": "The Avalon Theatre",
+   "city": "Grand Junction",
+   "region": "CO",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-13-umphrey-s-mcgee-sheridan-opera-house",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-13",
+   "venue": "Sheridan Opera House",
+   "city": "Telluride",
+   "region": "CO",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-14-umphrey-s-mcgee-sheridan-opera-house",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-14",
+   "venue": "Sheridan Opera House",
+   "city": "Telluride",
+   "region": "CO",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-18-umphrey-s-mcgee-belly-up-aspen",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-18",
+   "venue": "Belly Up Aspen",
+   "city": "Aspen",
+   "region": "CO",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-03-19-umphrey-s-mcgee-belly-up-aspen",
+   "artist": "Umphrey's McGee",
+   "performers": [
+    "Umphrey's McGee"
+   ],
+   "date": "2027-03-19",
+   "venue": "Belly Up Aspen",
+   "city": "Aspen",
+   "region": "CO",
+   "source": "https://umphreys.com/tour",
+   "official": true,
+   "checked_on": "2026-11-21",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-04-15-tedeschi-trucks-band-ttb-sun-sand-soul",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2027-04-15",
+   "date_end": "2027-04-17",
+   "venue": "TTB Sun, Sand & Soul",
+   "city": "Miramar Beach",
+   "region": "FL",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-07-29-tedeschi-trucks-band-red-rocks-amphitheatre",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2027-07-29",
+   "venue": "Red Rocks Amphitheatre",
+   "city": "Morrison",
+   "region": "CO",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-07-30-tedeschi-trucks-band-red-rocks-amphitheatre",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2027-07-30",
+   "venue": "Red Rocks Amphitheatre",
+   "city": "Morrison",
+   "region": "CO",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-07-31-tedeschi-trucks-band-red-rocks-amphitheatre",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2027-07-31",
+   "venue": "Red Rocks Amphitheatre",
+   "city": "Morrison",
+   "region": "CO",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  },
+  {
+   "id": "2027-09-09-tedeschi-trucks-band-big-blues-bender",
+   "artist": "Tedeschi Trucks Band",
+   "performers": [
+    "Tedeschi Trucks Band"
+   ],
+   "date": "2027-09-09",
+   "date_end": "2027-09-12",
+   "venue": "Big Blues Bender",
+   "city": "Las Vegas",
+   "region": "NV",
+   "source": "https://www.tedeschitrucksband.com/tour",
+   "official": true,
+   "checked_on": "2026-10-26",
+   "tickets": {
+    "official_url": null
+   },
+   "marketplace_ids": {},
+   "price_snapshots": []
+  }
+ ]
+}

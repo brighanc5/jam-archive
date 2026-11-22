@@ -42,6 +42,10 @@ Edit **`data/family_tree.json`**. Nothing else needs to change.
 - The build fails with a plain-English list of problems (unknown name, missing source, duplicate).
 - Path-finding treats every link as an edge. Membership is not a sit-in: keep one-off guest appearances out of `member_of`.
 
+## Adding upcoming shows
+
+Edit **`data/upcoming_shows.json`**. Each show needs an `id` (never change it once published), `artist` (a name already in the catalog or Family Tree), `date`, `venue`, `city`, `region`, an https `source` that announces the show (the band's or venue's own page), and `checked_on`. Leave `marketplace_ids` and `price_snapshots` empty until a ticket feed is approved; see `docs/ticket-price-index.md` for the rules.
+
 ## How the build works (and where to put changes)
 
 The site grew as 14 release layers. `build_v014.py` runs `build_v013.py`, which runs `build_v012.py`, and so on down to `build_archive.py` → `seed_v01.py`. Each layer writes or patches files in `site/`. Then `build_public.sh` runs:
@@ -52,13 +56,15 @@ The site grew as 14 release layers. `build_v014.py` runs `build_v013.py`, which 
 | `scripts/polish_site.py` | Global look (`jam_look.css`), mobile nav (`jam_experience.js`), copy tweaks |
 | `scripts/presentation_fixes.py` | Homepage fixes: expiring listings, cleanup, layout fixes |
 | `scripts/build_trails.py` | Story trails from `data/trails/*.json` → `/trails/<slug>/` (every section needs a source; every Family Tree path must exist) |
+| `scripts/build_upcoming.py` | Upcoming shows from `data/upcoming_shows.json` → `/upcoming/` and `/upcoming/<id>/` (past dates hide in the browser; price table only with 2+ approved providers) |
 | `scripts/site_nav.py` | One menu on every inner page (edit `MAIN`/`MORE` there) + Family Tree card (bandmates, landmark paths) on artist pages |
 | `scripts/house_style.py` | House palette (recolours every page stylesheet by hue family), self-hosted fonts (`static/fonts` → `/assets/fonts`), sentence-cased labels, drops internal "v0.x / taxonomy" labels |
 | `validate.py`, `scripts/audit_site.py`, `tests/`, `safety_check.py`, `check_public_site.py` | Integrity, links, safety, tests |
 
 Where data lives:
 - Artists and relationships: `seed_v01.py` + `build_archive.py` (legacy, inline Python) **plus `data/family_tree.json` (preferred for all new additions)**, merged by `family_tree_data.py` inside `build_v03.py` (after every legacy entity list, so links can reference any existing name).
-- Shows, studies, atlas: `history_seed.py`, `data/*.json`.
+- Upcoming shows: `data/upcoming_shows.json` (validated by `upcoming_shows.py`).
+- Past shows, studies, atlas: `history_seed.py`, `data/*.json`.
 - Story trails: `data/trails/<slug>.json` (title, deck, sections with text + sources + an optional `path: [from_id, to_id]`).
 - Homepage: `template.html` (a single-page app with tabs; the catalog is embedded as `const db={…}`).
 - Family Tree (`/connections/`): page HTML, map layout and examples in `build_v010.py`; behavior in `connections.js`; styles in `connections.css`. The whole-web map is laid out at build time (deterministic), so it renders without JavaScript.
@@ -81,7 +87,7 @@ Rules of thumb:
 - `scripts/safety_check.py` fails closed on any new `wrangler.jsonc` key (prevents billable settings). `previews: {}` is allowed and must stay empty.
 - `site/`, `catalog.json`, `index.html`, `*.sqlite` at the repo root are generated, so they're gitignored.
 - Content Security Policy (`site/_headers`) blocks third-party scripts, fonts and images. Keep everything self-hosted.
-- The tour snapshot in `build_archive.py` is dated; past events hide client-side.
+- Upcoming shows are hand-checked, not a live feed; past dates hide client-side (`jam_experience.js`).
 
 ## Editorial standards (non-negotiable)
 

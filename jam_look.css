@@ -181,3 +181,23 @@ header{background:#211812!important;border-bottom:1px solid var(--seam)!importan
 }
 @media(max-width:370px){.ja-mobile-bar a{font-size:10px}.ja-mobile-bar a span:first-child{font-size:19px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* ---- Upcoming shows (scripts/build_upcoming.py) ---- */
+.ja-show-when{font-variation-settings:"CASL" 1;font-weight:750;color:var(--marquee);margin:0 0 4px}
+.ja-show-note{border-left:3px solid var(--marker);padding:6px 12px;background:var(--board-2)}
+.ja-ticket-box{margin:22px 0;padding:18px 20px;border:1px solid var(--seam);border-left:6px solid var(--marquee);background:var(--board);border-radius:4px}
+.ja-ticket-box .button{display:inline-block;padding:12px 18px;font-size:16px}
+.ja-ticket-box p{margin:12px 0 0}
+.ja-past-note{margin:22px 0;padding:14px 18px;border:1px dashed var(--seam);border-radius:4px}
+.ja-dates{list-style:none;padding:0;margin:8px 0 26px;display:grid;gap:0}
+.ja-dates li a{display:grid;grid-template-columns:7.5em minmax(0,14em) minmax(0,1fr);gap:4px 16px;align-items:baseline;padding:11px 4px;border-bottom:1px solid var(--seam);text-decoration:none;color:var(--text)}
+.ja-dates li a:hover{background:var(--board)}
+.ja-dates li a:hover b{color:var(--marquee)}
+.ja-date{font-variation-settings:"CASL" 1;font-weight:800;color:var(--marquee)}
+.ja-dates li a>span:last-child{color:var(--soft)}
+.card .ja-dates li a{grid-template-columns:7.5em minmax(0,1fr)}
+.ja-table-wrap{overflow-x:auto}
+.ja-prices table{width:100%;border-collapse:collapse;font-size:15px}
+.ja-prices th,.ja-prices td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--seam)}
+.ja-prices th{font-weight:700;color:var(--soft)}
+@media(max-width:760px){.ja-dates li a{grid-template-columns:6.5em minmax(0,1fr)}.ja-dates li a>span:last-child{grid-column:2}}

@@ -10,6 +10,7 @@ if [[ "${1:-}" == "--quick" ]]; then
   python3 scripts/polish_site.py >/dev/null
   python3 scripts/presentation_fixes.py
   python3 scripts/build_trails.py
+  python3 scripts/build_upcoming.py
   python3 scripts/site_nav.py
   python3 scripts/house_style.py
 else
