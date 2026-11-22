@@ -311,6 +311,123 @@
    "aliases": [
     "Keller Williams with Moseley, Droll and Sipe"
    ]
+  },
+  {
+   "name": "Rob Derhak",
+   "type": "person"
+  },
+  {
+   "name": "Al Schnier",
+   "type": "person"
+  },
+  {
+   "name": "Chuck Garvey",
+   "type": "person"
+  },
+  {
+   "name": "Vinnie Amico",
+   "type": "person"
+  },
+  {
+   "name": "Jim Loughlin",
+   "type": "person"
+  },
+  {
+   "name": "Nate Wilson",
+   "type": "person"
+  },
+  {
+   "name": "Brendan Bayliss",
+   "type": "person"
+  },
+  {
+   "name": "Joel Cummins",
+   "type": "person"
+  },
+  {
+   "name": "Andy Farag",
+   "type": "person"
+  },
+  {
+   "name": "Ryan Stasik",
+   "type": "person"
+  },
+  {
+   "name": "Scotty Zwang",
+   "type": "person"
+  },
+  {
+   "name": "Jake Cinninger",
+   "type": "person"
+  },
+  {
+   "name": "Kris Myers",
+   "type": "person"
+  },
+  {
+   "name": "Dave Matthews",
+   "type": "person"
+  },
+  {
+   "name": "Carter Beauford",
+   "type": "person"
+  },
+  {
+   "name": "LeRoi Moore",
+   "type": "person"
+  },
+  {
+   "name": "Stefan Lessard",
+   "type": "person"
+  },
+  {
+   "name": "Jeff Coffin",
+   "type": "person"
+  },
+  {
+   "name": "Rashawn Ross",
+   "type": "person"
+  },
+  {
+   "name": "Tim Reynolds",
+   "type": "person"
+  },
+  {
+   "name": "Buddy Strong",
+   "type": "person"
+  },
+  {
+   "name": "Howard Levy",
+   "type": "person"
+  },
+  {
+   "name": "Marlon B. Lewis",
+   "type": "person"
+  },
+  {
+   "name": "Sam Altman",
+   "type": "person"
+  },
+  {
+   "name": "Mike Greenfield",
+   "type": "person"
+  },
+  {
+   "name": "Roy \"Future Man\" Wooten",
+   "type": "person",
+   "aliases": [
+    "Future Man",
+    "Futureman",
+    "Roy Wooten"
+   ]
+  },
+  {
+   "name": "Electron",
+   "type": "band"
+  },
+  {
+   "name": "Floodwood",
+   "type": "band"
   }
  ],
  "links": [
@@ -804,8 +921,8 @@
   {
    "from": "Allen Aucoin",
    "to": "The Disco Biscuits",
-   "source": "https://en.wikipedia.org/wiki/Disco_Biscuits",
-   "note": "Drummer since 2005"
+   "source": "https://www.jambase.com/article/disco-biscuits-drummer-allen-aucoin-departure",
+   "note": "Drummer 2005–2025, replacing founding drummer Sam Altman"
   },
   {
    "from": "Marc Brownstein",
@@ -1296,6 +1413,223 @@
    "from": "Jeff Sipe",
    "to": "Keller Williams with Moseley, Droll & Sipe",
    "source": "https://www.bandsintown.com/a/151747-jeff-sipe"
+  },
+  {
+   "from": "Rob Derhak",
+   "to": "moe.",
+   "source": "https://www.moe.org/pages/band"
+  },
+  {
+   "from": "Al Schnier",
+   "to": "moe.",
+   "source": "https://www.moe.org/pages/band"
+  },
+  {
+   "from": "Chuck Garvey",
+   "to": "moe.",
+   "source": "https://www.moe.org/pages/band"
+  },
+  {
+   "from": "Vinnie Amico",
+   "to": "moe.",
+   "source": "https://www.moe.org/pages/band"
+  },
+  {
+   "from": "Jim Loughlin",
+   "to": "moe.",
+   "source": "https://www.moe.org/pages/band"
+  },
+  {
+   "from": "Nate Wilson",
+   "to": "moe.",
+   "source": "https://www.moe.org/pages/band"
+  },
+  {
+   "from": "Brendan Bayliss",
+   "to": "Umphrey's McGee",
+   "source": "https://umphreys.com/faq",
+   "note": "Formed at Notre Dame, December 1997"
+  },
+  {
+   "from": "Joel Cummins",
+   "to": "Umphrey's McGee",
+   "source": "https://umphreys.com/faq",
+   "note": "Formed at Notre Dame, December 1997"
+  },
+  {
+   "from": "Andy Farag",
+   "to": "Umphrey's McGee",
+   "source": "https://umphreys.com/faq"
+  },
+  {
+   "from": "Ryan Stasik",
+   "to": "Umphrey's McGee",
+   "source": "https://umphreys.com/faq"
+  },
+  {
+   "from": "Scotty Zwang",
+   "to": "Umphrey's McGee",
+   "source": "https://umphreys.com/faq",
+   "note": "Full-time drummer since May 2025"
+  },
+  {
+   "from": "Jake Cinninger",
+   "to": "Umphrey's McGee",
+   "source": "https://umphreys.com/faq",
+   "note": "Stepped away permanently, July 2026"
+  },
+  {
+   "from": "Kris Myers",
+   "to": "Umphrey's McGee",
+   "source": "https://umphreys.com/faq",
+   "note": "Longtime drummer, before Scotty Zwang"
+  },
+  {
+   "from": "Scotty Zwang",
+   "to": "Ghost Light",
+   "source": "https://en.wikipedia.org/wiki/Tom_Hamilton_Jr.",
+   "note": "Co-founder, 2018"
+  },
+  {
+   "from": "moe.",
+   "to": "Umphrey's McGee",
+   "source": "https://umphreys.com/faq",
+   "note": "moe.mentUM: co-headlining tour with interwoven sit-ins and joint encores",
+   "type": "collaboration_with"
+  },
+  {
+   "from": "Dave Matthews",
+   "to": "Dave Matthews Band",
+   "source": "https://redlightmanagement.com/artists/dave-matthews-band/",
+   "note": "Founder"
+  },
+  {
+   "from": "Carter Beauford",
+   "to": "Dave Matthews Band",
+   "source": "https://redlightmanagement.com/artists/dave-matthews-band/",
+   "note": "Joined 1991"
+  },
+  {
+   "from": "LeRoi Moore",
+   "to": "Dave Matthews Band",
+   "source": "https://redlightmanagement.com/artists/dave-matthews-band/",
+   "note": "Founding saxophonist; died August 2008"
+  },
+  {
+   "from": "Stefan Lessard",
+   "to": "Dave Matthews Band",
+   "source": "https://redlightmanagement.com/artists/dave-matthews-band/"
+  },
+  {
+   "from": "Jeff Coffin",
+   "to": "Dave Matthews Band",
+   "source": "https://redlightmanagement.com/artists/dave-matthews-band/",
+   "note": "Saxophone, after LeRoi Moore's death"
+  },
+  {
+   "from": "Rashawn Ross",
+   "to": "Dave Matthews Band",
+   "source": "https://redlightmanagement.com/artists/dave-matthews-band/"
+  },
+  {
+   "from": "Tim Reynolds",
+   "to": "Dave Matthews Band",
+   "source": "https://redlightmanagement.com/artists/dave-matthews-band/"
+  },
+  {
+   "from": "Buddy Strong",
+   "to": "Dave Matthews Band",
+   "source": "https://redlightmanagement.com/artists/dave-matthews-band/"
+  },
+  {
+   "from": "Béla Fleck",
+   "to": "Béla Fleck and the Flecktones",
+   "source": "https://www.flecktones.com/about",
+   "note": "Founded the band in 1988"
+  },
+  {
+   "from": "Victor Wooten",
+   "to": "Béla Fleck and the Flecktones",
+   "source": "https://en.wikipedia.org/wiki/B%C3%A9la_Fleck_and_the_Flecktones",
+   "note": "Original member, 1988"
+  },
+  {
+   "from": "Roy \"Future Man\" Wooten",
+   "to": "Béla Fleck and the Flecktones",
+   "source": "https://en.wikipedia.org/wiki/B%C3%A9la_Fleck_and_the_Flecktones",
+   "note": "Original member, 1988"
+  },
+  {
+   "from": "Howard Levy",
+   "to": "Béla Fleck and the Flecktones",
+   "source": "https://en.wikipedia.org/wiki/B%C3%A9la_Fleck_and_the_Flecktones",
+   "note": "Original member; left late 1992, returned 2009"
+  },
+  {
+   "from": "Jeff Coffin",
+   "to": "Béla Fleck and the Flecktones",
+   "source": "https://www.flecktones.com/about",
+   "note": "Joined after Levy left; moved to DMB"
+  },
+  {
+   "from": "Jeff Coffin",
+   "to": "Jeff Sipe",
+   "source": "https://en.wikipedia.org/wiki/Jeff_Sipe",
+   "note": "Co-led album Duet (Compass, 2011)",
+   "type": "collaboration_with"
+  },
+  {
+   "from": "Marlon B. Lewis",
+   "to": "The Disco Biscuits",
+   "source": "https://www.jambase.com/article/disco-biscuits-drummer-allen-aucoin-departure",
+   "note": "Drums from late 2025"
+  },
+  {
+   "from": "Sam Altman",
+   "to": "The Disco Biscuits",
+   "source": "https://www.jambase.com/article/disco-biscuits-drummer-allen-aucoin-departure",
+   "note": "Founding drummer, until 2005"
+  },
+  {
+   "from": "Marc Brownstein",
+   "to": "Electron",
+   "source": "https://jambands.com/news/2025/01/05/electron-supergroup-featuring-members-of-disco-biscuits-lotus-and-more-announce-one-off-run-at-ardmore-music-hall/",
+   "note": "2025 lineup"
+  },
+  {
+   "from": "Aron Magner",
+   "to": "Electron",
+   "source": "https://jambands.com/news/2025/01/05/electron-supergroup-featuring-members-of-disco-biscuits-lotus-and-more-announce-one-off-run-at-ardmore-music-hall/",
+   "note": "2025 lineup"
+  },
+  {
+   "from": "Tom Hamilton",
+   "to": "Electron",
+   "source": "https://jambands.com/news/2025/01/05/electron-supergroup-featuring-members-of-disco-biscuits-lotus-and-more-announce-one-off-run-at-ardmore-music-hall/",
+   "note": "2025 lineup"
+  },
+  {
+   "from": "Mike Greenfield",
+   "to": "Electron",
+   "source": "https://jambands.com/news/2025/01/05/electron-supergroup-featuring-members-of-disco-biscuits-lotus-and-more-announce-one-off-run-at-ardmore-music-hall/",
+   "note": "2025 lineup"
+  },
+  {
+   "from": "Mike Greenfield",
+   "to": "Lotus",
+   "source": "https://jambands.com/news/2025/01/05/electron-supergroup-featuring-members-of-disco-biscuits-lotus-and-more-announce-one-off-run-at-ardmore-music-hall/"
+  },
+  {
+   "from": "Al Schnier",
+   "to": "Floodwood",
+   "source": "https://jambands.com/news/moe-s-al-and-vinnie-will-tour-with-floodwood-2",
+   "note": "2011 lineup"
+  },
+  {
+   "from": "Vinnie Amico",
+   "to": "Floodwood",
+   "source": "https://jambands.com/news/moe-s-al-and-vinnie-will-tour-with-floodwood-2",
+   "note": "2011 lineup"
   }
  ]
 }

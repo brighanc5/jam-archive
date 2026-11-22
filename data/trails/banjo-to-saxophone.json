@@ -1,0 +1,91 @@
+{
+ "slug": "banjo-to-saxophone",
+ "title": "From Banjo to Saxophone",
+ "deck": "The Flecktones, one summer on the road with Umphrey's McGee, and the saxophonist who carried the thread to Dave Matthews Band.",
+ "description": "A sourced trail from Béla Fleck and the Flecktones through the 2006 Acoustic Planet tour with Umphrey's McGee to Jeff Coffin joining Dave Matthews Band.",
+ "credits": "Research: Research Packet 002. We re-checked every claim against the linked source before publishing and cut the ones we couldn't back up.",
+ "sections": [
+  {
+   "heading": "A banjo player gets a TV slot",
+   "text": "Béla Fleck pulled the band together in 1988 for a PBS broadcast. The original four were Fleck on banjo, Victor Wooten on bass, Victor's brother Roy \"Future Man\" Wooten on the Drumitar (a guitar-shaped controller he rigged up to play drum sounds), and Howard Levy on harmonica and keys.",
+   "sources": [
+    [
+     "Wikipedia: Béla Fleck and the Flecktones",
+     "https://en.wikipedia.org/wiki/B%C3%A9la_Fleck_and_the_Flecktones"
+    ]
+   ],
+   "path": [
+    "bela-fleck",
+    "victor-wooten"
+   ]
+  },
+  {
+   "heading": "Enter the saxophone",
+   "text": "Levy stepped away in late 1992, and saxophonist Jeff Coffin eventually took the open chair. Keep an eye on Coffin. He's the one who carries this story out of the Flecktones.",
+   "sources": [
+    [
+     "Béla Fleck & the Flecktones: about",
+     "https://www.flecktones.com/about"
+    ]
+   ],
+   "path": [
+    "jeff-coffin",
+    "bela-fleck-and-the-flecktones"
+   ]
+  },
+  {
+   "heading": "Acoustic Planet, August 2006",
+   "text": "In August 2006 the Flecktones toured with Marc Broussard and Umphrey's McGee, and the sets bled together. One taper's listing from the run (dated August 14) has Fleck, Future Man and Coffin sitting in with Umphrey's before the band handed off straight into the Flecktones' set. Three nights later in Glen Allen, Virginia, Coffin played sax on \"Intentions Clear,\" Victor Wooten played bass from off-stage on \"Push the Pig\" as it segued into the Flecktones, and Keller Williams turned up on vocals and guitar. Funny thing: the Family Tree doesn't count sit-ins, so on the map these two bands sit at opposite ends of the web. Hit the path below and see how far apart they look on paper.",
+   "sources": [
+    [
+     "etree: Umphrey's McGee, Aug 14, 2006",
+     "https://etreedb-test.ibiblio.org/performance/333586"
+    ],
+    [
+     "etree: Umphrey's McGee, Aug 17, 2006 (Glen Allen, VA)",
+     "https://etreedb-test.ibiblio.org/shn/77641"
+    ]
+   ],
+   "path": [
+    "umphrey-s-mcgee",
+    "bela-fleck-and-the-flecktones"
+   ]
+  },
+  {
+   "heading": "2008",
+   "text": "Dave Matthews Band's founding saxophonist, LeRoi Moore, died in August 2008. The Flecktones' own history says Coffin was invited to join DMB after Moore's death, and DMB's management now lists him in the band, alongside Dave Matthews, Carter Beauford, Stefan Lessard, Rashawn Ross, Tim Reynolds and Buddy Strong.",
+   "sources": [
+    [
+     "Béla Fleck & the Flecktones: about",
+     "https://www.flecktones.com/about"
+    ],
+    [
+     "Red Light Management: Dave Matthews Band",
+     "https://redlightmanagement.com/artists/dave-matthews-band/"
+    ]
+   ],
+   "path": [
+    "bela-fleck-and-the-flecktones",
+    "dave-matthews-band"
+   ]
+  },
+  {
+   "heading": "Where the saxophone leads next",
+   "text": "Coffin also co-led a duo record, Duet, with drummer Jeff Sipe, who played in the early Aquarium Rescue Unit. Follow that thread and it runs all the way back to the Grateful Dead.",
+   "sources": [
+    [
+     "Wikipedia: Jeff Sipe",
+     "https://en.wikipedia.org/wiki/Jeff_Sipe"
+    ],
+    [
+     "Wikipedia: Aquarium Rescue Unit",
+     "https://en.wikipedia.org/wiki/Col._Bruce_Hampton_and_the_Aquarium_Rescue_Unit"
+    ]
+   ],
+   "path": [
+    "dave-matthews-band",
+    "grateful-dead"
+   ]
+  }
+ ]
+}
