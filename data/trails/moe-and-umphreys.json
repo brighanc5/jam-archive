@@ -1,0 +1,87 @@
+{
+ "slug": "moe-and-umphreys",
+ "title": "Two Bands, One Tour",
+ "deck": "moe. and Umphrey's McGee share a summer stage, and each band's side roads lead somewhere you wouldn't guess.",
+ "description": "A sourced trail through moe. and Umphrey's McGee: the moe.mentUM co-headlining tour, moe.'s side projects, and how Umphrey's new drummer ties them to the Grateful Dead's family.",
+ "credits": "Research: Research Packet 002. We re-checked every claim against the linked source before publishing and cut the ones we couldn't back up.",
+ "sections": [
+  {
+   "heading": "A Notre Dame band",
+   "text": "Umphrey's McGee started in December 1997 at the University of Notre Dame in South Bend, Indiana. Brendan Bayliss on guitar and vocals and Joel Cummins on keys are still at the core, with Andy Farag on percussion and Ryan Stasik on bass.",
+   "sources": [
+    [
+     "Umphrey's McGee: FAQ",
+     "https://umphreys.com/faq"
+    ]
+   ],
+   "path": [
+    "brendan-bayliss",
+    "umphrey-s-mcgee"
+   ]
+  },
+  {
+   "heading": "moe.mentUM",
+   "text": "moe. is Rob Derhak, Al Schnier, Chuck Garvey, Vinnie Amico, Jim Loughlin and keyboardist Nate Wilson. Together with Umphrey's they've toured as moe.mentUM, a co-headlining summer tour where the two bands sit in on each other's sets and close the night with shared encores. It's a real collaboration rather than a merger, so on the Family Tree it shows up as one, not as shared membership.",
+   "sources": [
+    [
+     "moe.: the band",
+     "https://www.moe.org/pages/band"
+    ],
+    [
+     "Umphrey's McGee: FAQ",
+     "https://umphreys.com/faq"
+    ]
+   ],
+   "path": [
+    "moe",
+    "umphrey-s-mcgee"
+   ]
+  },
+  {
+   "heading": "Side road one: Floodwood",
+   "text": "Al Schnier and Vinnie Amico toured with Floodwood, alongside Jason Barady on mandolin and Nick Piccininni on banjo (both from Woodenspoon) and Zachary Fleitz on bass.",
+   "sources": [
+    [
+     "Jambands: moe.'s Al and Vinnie will tour with Floodwood",
+     "https://jambands.com/news/moe-s-al-and-vinnie-will-tour-with-floodwood-2"
+    ]
+   ],
+   "path": [
+    "al-schnier",
+    "floodwood"
+   ]
+  },
+  {
+   "heading": "Side road two: the keyboard chair",
+   "text": "Nate Wilson played keys in Percy Hill with bassist John Leccese, and the two of them were part of the early lineup of Assembly of Dust, with Reid Genauer on vocals and rhythm guitar. Genauer's former band was Strangefolk, and one Assembly of Dust record re-imagines songs he wrote for them.",
+   "sources": [
+    [
+     "Assembly of Dust: music",
+     "https://www.aodust.com/music"
+    ]
+   ],
+   "path": [
+    "moe",
+    "strangefolk"
+   ]
+  },
+  {
+   "heading": "A new drummer, a new branch",
+   "text": "Scotty Zwang officially became Umphrey's full-time drummer in May 2025, and Jake Cinninger stepped away from the band for good in July 2026. Zwang co-founded Ghost Light with Tom Hamilton, and Hamilton's other bands run straight into the Grateful Dead's extended family.",
+   "sources": [
+    [
+     "Umphrey's McGee: FAQ",
+     "https://umphreys.com/faq"
+    ],
+    [
+     "Wikipedia: Tom Hamilton Jr.",
+     "https://en.wikipedia.org/wiki/Tom_Hamilton_Jr."
+    ]
+   ],
+   "path": [
+    "umphrey-s-mcgee",
+    "grateful-dead"
+   ]
+  }
+ ]
+}

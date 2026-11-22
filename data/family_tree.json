@@ -428,6 +428,34 @@
   {
    "name": "Floodwood",
    "type": "band"
+  },
+  {
+   "name": "Assembly of Dust",
+   "type": "band"
+  },
+  {
+   "name": "Percy Hill",
+   "type": "band"
+  },
+  {
+   "name": "Strangefolk",
+   "type": "band"
+  },
+  {
+   "name": "Reid Genauer",
+   "type": "person"
+  },
+  {
+   "name": "Adam Terrell",
+   "type": "person"
+  },
+  {
+   "name": "John Leccese",
+   "type": "person"
+  },
+  {
+   "name": "Andy Herrick",
+   "type": "person"
   }
  ],
  "links": [
@@ -1630,6 +1658,54 @@
    "to": "Floodwood",
    "source": "https://jambands.com/news/moe-s-al-and-vinnie-will-tour-with-floodwood-2",
    "note": "2011 lineup"
+  },
+  {
+   "from": "Reid Genauer",
+   "to": "Assembly of Dust",
+   "source": "https://www.aodust.com/music",
+   "note": "Vocals and rhythm guitar"
+  },
+  {
+   "from": "Adam Terrell",
+   "to": "Assembly of Dust",
+   "source": "https://www.aodust.com/music",
+   "note": "Lead guitar"
+  },
+  {
+   "from": "John Leccese",
+   "to": "Assembly of Dust",
+   "source": "https://www.aodust.com/music",
+   "note": "Bass"
+  },
+  {
+   "from": "Andy Herrick",
+   "to": "Assembly of Dust",
+   "source": "https://www.aodust.com/music",
+   "note": "Drums"
+  },
+  {
+   "from": "Nate Wilson",
+   "to": "Assembly of Dust",
+   "source": "https://www.aodust.com/music",
+   "note": "Keyboards, from the Recollection era"
+  },
+  {
+   "from": "Nate Wilson",
+   "to": "Percy Hill",
+   "source": "https://www.aodust.com/music",
+   "note": "Keyboards"
+  },
+  {
+   "from": "John Leccese",
+   "to": "Percy Hill",
+   "source": "https://www.aodust.com/music",
+   "note": "Bass"
+  },
+  {
+   "from": "Reid Genauer",
+   "to": "Strangefolk",
+   "source": "https://www.aodust.com/music",
+   "note": "His former band, per AOD"
   }
  ]
 }
