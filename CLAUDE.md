@@ -51,12 +51,14 @@ The site grew as 14 release layers. `build_v014.py` runs `build_v013.py`, which 
 | `build_v014.py` (→ whole chain) | Generates all pages and `site/assets/*.json` |
 | `scripts/polish_site.py` | Global look (`jam_look.css`), mobile nav (`jam_experience.js`), copy tweaks |
 | `scripts/presentation_fixes.py` | Homepage fixes: expiring listings, cleanup, layout fixes |
+| `scripts/build_trails.py` | Story trails from `data/trails/*.json` → `/trails/<slug>/` (every section needs a source; every Family Tree path must exist) |
 | `scripts/site_nav.py` | One menu on every inner page (edit `MAIN`/`MORE` there) + Family Tree card (bandmates, landmark paths) on artist pages |
 | `validate.py`, `scripts/audit_site.py`, `tests/`, `safety_check.py`, `check_public_site.py` | Integrity, links, safety, tests |
 
 Where data lives:
 - Artists and relationships: `seed_v01.py` + `build_archive.py` (legacy, inline Python) **plus `data/family_tree.json` (preferred for all new additions)**, merged by `family_tree_data.py` inside `build_v03.py` (after every legacy entity list, so links can reference any existing name).
 - Shows, studies, atlas: `history_seed.py`, `data/*.json`.
+- Story trails: `data/trails/<slug>.json` (title, deck, sections with text + sources + an optional `path: [from_id, to_id]`).
 - Homepage: `template.html` (a single-page app with tabs; the catalog is embedded as `const db={…}`).
 - Family Tree (`/connections/`): page HTML, map layout and examples in `build_v010.py`; behavior in `connections.js`; styles in `connections.css`. The whole-web map is laid out at build time (deterministic), so it renders without JavaScript.
 
