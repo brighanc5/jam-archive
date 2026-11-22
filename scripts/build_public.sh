@@ -8,6 +8,7 @@ python3 scripts/polish_site.py
 python3 scripts/presentation_fixes.py
 python3 scripts/build_trails.py
 python3 scripts/site_nav.py
+python3 scripts/house_style.py
 python3 validate.py
 python3 scripts/audit_site.py
 python3 -m unittest discover -s tests -v

@@ -8,7 +8,11 @@ class ExperienceTests(unittest.TestCase):
  def test_poster_assets_are_self_hosted(self):
   style=(SITE/'assets/jam-look.css').read_text()
   script=(SITE/'assets/jam-experience.js').read_text()
-  self.assertIn('repeating-conic-gradient',style)
+  # Fonts are self-hosted: every @font-face points at a file we ship.
+  import re
+  fonts=re.findall(r'url\((/assets/fonts/[^)]+)\)',style)
+  self.assertTrue(fonts)
+  for f in fonts: self.assertTrue((SITE/f.lstrip('/')).exists(),f)
   self.assertIn('prefers-reduced-motion',style)
   self.assertIn('safe-area-inset-bottom',style)
   self.assertIn('aria-label',script)

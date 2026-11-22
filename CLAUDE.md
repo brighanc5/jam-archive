@@ -53,6 +53,7 @@ The site grew as 14 release layers. `build_v014.py` runs `build_v013.py`, which 
 | `scripts/presentation_fixes.py` | Homepage fixes: expiring listings, cleanup, layout fixes |
 | `scripts/build_trails.py` | Story trails from `data/trails/*.json` → `/trails/<slug>/` (every section needs a source; every Family Tree path must exist) |
 | `scripts/site_nav.py` | One menu on every inner page (edit `MAIN`/`MORE` there) + Family Tree card (bandmates, landmark paths) on artist pages |
+| `scripts/house_style.py` | House palette (recolours every page stylesheet by hue family), self-hosted fonts (`static/fonts` → `/assets/fonts`), sentence-cased labels, drops internal "v0.x / taxonomy" labels |
 | `validate.py`, `scripts/audit_site.py`, `tests/`, `safety_check.py`, `check_public_site.py` | Integrity, links, safety, tests |
 
 Where data lives:
@@ -66,6 +67,13 @@ Rules of thumb:
 - **New data goes in `data/`.** Don't add more inline lists to the legacy Python.
 - **Prefer editing the layer that owns a page** over another string-replace patch. Patches (`str.replace`) fail silently when markup drifts; if you must patch, assert the target exists (see `presentation_fixes.py`'s `swap`).
 - **Tests should check invariants, not counts.** Don't pin "exactly 77 relationships"; check that outputs match inputs.
+
+## Look and feel
+
+- One stylesheet owns the look: `jam_look.css` (walnut room, marquee amber, paper). Headings are Caprasimo, everything else Recursive (both OFL, self-hosted in `static/fonts/`).
+- Don't hand-edit colours in page CSS. `house_style.py` maps every page colour onto the palette; change `jam_look.css` or its `HUE_MAP` instead.
+- The signature element is the path "setlist" (`.cx-path` with a chain, `.ja-path-link`): paper, marker ink, `>` segues. Keep the boldness there and the rest quiet.
+- Labels are sentence case, written for fans. No version numbers or internal taxonomy in visible text.
 
 ## Gotchas
 

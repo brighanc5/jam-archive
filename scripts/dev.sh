@@ -9,6 +9,9 @@ if [[ "${1:-}" == "--quick" ]]; then
   python3 build_v014.py >/dev/null
   python3 scripts/polish_site.py >/dev/null
   python3 scripts/presentation_fixes.py
+  python3 scripts/build_trails.py
+  python3 scripts/site_nav.py
+  python3 scripts/house_style.py
 else
   bash scripts/build_public.sh
 fi
