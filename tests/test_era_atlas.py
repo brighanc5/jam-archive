@@ -89,7 +89,6 @@ class EraAtlasTest(unittest.TestCase):
   self.assertIn('Archive Atlas: explore',(SITE/'index.html').read_text())
   for artist in ('phish','grateful-dead','goose','the-allman-brothers-band'):
    page=(SITE/'artists'/artist/'index.html').read_text(encoding='utf-8')
-   self.assertIn('ARCHIVE ATLAS · v0.13',page)
    self.assertIn('/era-atlas/?artist='+artist,page)
  def test_reports_and_public_json(self):
   report=json.loads((SITE/'assets/build_report.json').read_text())

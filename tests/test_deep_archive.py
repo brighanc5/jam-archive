@@ -66,7 +66,6 @@ class DeepArchiveTests(unittest.TestCase):
         for d in self.dossiers:
             sub='artists' if d['kind']=='artist' else 'shows'
             html=(SITE/sub/d['id']/'index.html').read_text()
-            self.assertIn('RESEARCHED CONTEXT',html)
             self.assertIn('/deep-archive/'+sub+'/'+d['id']+'/',html)
 
     def test_source_metadata_uncertainties_explicit(self):

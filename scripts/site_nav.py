@@ -116,7 +116,7 @@ for aid, node in nodes.items():
         n = hops(aid, target)
         if n:
             paths.append('<a class="ja-path-link" href="/connections/?from=' + E(aid) + '&amp;to=' + E(target) + '">' +
-                         E(node['name']) + ' → ' + E(nodes[target]['name']) + ' <span>' + str(n) + (' link' if n == 1 else ' links') + '</span></a>')
+                         E(node['name']) + ' &gt; ' + E(nodes[target]['name']) + ' <span>' + str(n) + (' link' if n == 1 else ' links') + '</span></a>')
     if not related and not paths:
         continue
     card = ('<div class="card ja-tree-card"><div class="eyebrow">FAMILY TREE</div><h2>' + title + '</h2>' +
@@ -133,6 +133,8 @@ import shutil
 ICON_TAGS = ('<link rel="icon" href="/favicon.ico" sizes="any">'
              '<link rel="apple-touch-icon" href="/apple-touch-icon.png">')
 for asset in (ROOT / 'static').iterdir():
+    if asset.is_dir():
+        continue  # fonts are shipped by house_style.py
     shutil.copyfile(asset, SITE / asset.name)
 titles = defaultdict(list)
 for f in SITE.rglob('*.html'):

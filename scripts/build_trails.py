@@ -58,7 +58,7 @@ for spec_file in sorted((ROOT / 'data/trails').glob('*.json')):
             k = hops(a, b)
             assert k, f'build_trails: no verified path {a} -> {b} ({slug} section {n})'
             path_html = ('<a class="ja-path-link" href="/connections/?from=' + E(a) + '&amp;to=' + E(b) + '">' +
-                         E(names[a]) + ' → ' + E(names[b]) + ' <span>' + str(k) + (' link' if k == 1 else ' links') + '</span></a>')
+                         E(names[a]) + ' &gt; ' + E(names[b]) + ' <span>' + str(k) + (' link' if k == 1 else ' links') + '</span></a>')
         body.append('<section class="card ja-trail-step"><div class="eyebrow">STOP ' + str(n) + '</div><h2>' + E(sec['heading']) + '</h2>'
                     '<p>' + E(sec['text']) + '</p>' + path_html +
                     '<p class="tiny">Sources: ' + ' · '.join(link(*s) for s in sec['sources']) + '</p></section>')

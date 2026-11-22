@@ -183,7 +183,7 @@
     }
     const hops = path.length - 1;
     const head = make('h3', 'cx-path-title');
-    head.append(make('span', null, name(start) + ' → ' + name(end)), make('span', 'cx-hops', hops + (hops === 1 ? ' link' : ' links')));
+    head.append(make('span', null, name(start) + ' > ' + name(end)), make('span', 'cx-hops', hops + (hops === 1 ? ' link' : ' links')));
     const chain = make('ol', 'cx-chain');
     for (let i = 0; i < path.length; i++) {
       const li = make('li', 'cx-chain-step');
