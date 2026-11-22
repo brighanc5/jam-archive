@@ -16,13 +16,28 @@ The data model already has room for prices. Each show has these slots:
 "tickets": {"official_url": null},
 "marketplace_ids": {"ticketmaster": "vvG1…", "tickpick": "…"},
 "price_snapshots": [
-  {"provider": "tickpick", "market": "resale", "all_in": true, "price_each": 84.5,
-   "quantity": 2, "currency": "USD", "section": "GA floor",
+  {"provider": "tickpick", "event_id": "…same as marketplace_ids.tickpick…", "feed": "api",
+   "market": "resale", "all_in": true, "price_each": 84.5, "quantity": 2,
+   "seats_together": true, "view": "normal", "currency": "USD", "section": "GA floor",
    "captured_at": "2026-12-01T14:00:00Z", "url": "https://…", "affiliate": true}
 ]
 ```
 
-`upcoming_shows.py` validates every field. A show page shows a price table only when `comparable_prices()` finds the latest all-in quote for the same number of tickets from **at least two** approved providers. One seller on its own is a link, not a comparison. Tests enforce this gate.
+`upcoming_shows.py` validates every field, and the **build fails** if a quote:
+- names an `event_id` that isn't this show's `marketplace_ids[provider]` (no fuzzy matching, ever);
+- has a `feed` other than `api` or `licensed_feed` (so demo or hand-typed prices can't get in);
+- isn't `all_in: true`, or has a price with more than 2 decimals;
+- has a `captured_at` without a timezone, a `view` outside `normal`/`restricted`/`unknown`, or a non-boolean `seats_together`;
+- links to a reserved test domain (`example.com`, `*.test`, …).
+
+A show page shows a price table only when `comparable_prices()` finds, from **at least two** approved providers in one currency, the latest quote that is:
+- for the requested number of tickets (2) **with seats together**;
+- **normal view** (restricted or unknown views are never compared);
+- **fresh**: no older than `MAX_QUOTE_AGE` (24 hours) and not from the future.
+
+`exclusion_reasons()` says why any quote was left out. The table carries `data-fresh-until` (oldest quote + 24 hours). After that, `jam_experience.js` hides it and shows the empty state, so a page that hasn't been rebuilt never shows an old price as current. When there's no comparison, every show page says so plainly: "No price comparison for this show yet." Tests in `tests/test_upcoming.py` cover each rule.
+
+These rules come from the offline Ticket Price Index v0.1 prototype (Nov 2026). Its JavaScript comparator also supported itemized fees and seat categories. We kept **all-in only** (simpler, and what the FTC rule requires us to show) and left categories as the free-text `section` until a real feed shows what it reports.
 
 ## Rules (non-negotiable)
 

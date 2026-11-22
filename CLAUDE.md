@@ -56,7 +56,7 @@ The site grew as 14 release layers. `build_v014.py` runs `build_v013.py`, which 
 | `scripts/polish_site.py` | Global look (`jam_look.css`), mobile nav (`jam_experience.js`), copy tweaks |
 | `scripts/presentation_fixes.py` | Homepage fixes: expiring listings, cleanup, layout fixes |
 | `scripts/build_trails.py` | Story trails from `data/trails/*.json` → `/trails/<slug>/` (every section needs a source; every Family Tree path must exist) |
-| `scripts/build_upcoming.py` | Upcoming shows from `data/upcoming_shows.json` → `/upcoming/` and `/upcoming/<id>/` (past dates hide in the browser; price table only with 2+ approved providers) |
+| `scripts/build_upcoming.py` | Upcoming shows from `data/upcoming_shows.json` → `/upcoming/` and `/upcoming/<id>/` (past dates hide in the browser; price table only with fresh, event-matched quotes from 2+ approved providers, otherwise a plain "no comparison yet" note) |
 | `scripts/site_nav.py` | One menu on every inner page (edit `MAIN`/`MORE` there) + Family Tree card (bandmates, landmark paths) on artist pages |
 | `scripts/house_style.py` | House palette (recolours every page stylesheet by hue family), self-hosted fonts (`static/fonts` → `/assets/fonts`), sentence-cased labels, drops internal "v0.x / taxonomy" labels |
 | `validate.py`, `scripts/audit_site.py`, `tests/`, `safety_check.py`, `check_public_site.py` | Integrity, links, safety, tests |

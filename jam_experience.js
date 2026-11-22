@@ -28,6 +28,10 @@
   show.querySelector('.ja-prices')?.setAttribute('hidden','');
   show.querySelector('.ja-past-note')?.removeAttribute('hidden');
  }
+ // Stored prices expire: never leave an old snapshot looking current (see upcoming_shows.MAX_QUOTE_AGE).
+ const prices=show?.querySelector('.ja-prices[data-fresh-until]');
+ if(prices){const until=Date.parse(prices.dataset.freshUntil);
+  if(!(until>Date.now())){prices.hidden=true;show.querySelector('.ja-price-note')?.removeAttribute('hidden')}}
  for(const el of document.querySelectorAll('li[data-show-date],.item[data-show-date]'))if(past(el))el.hidden=true;
  const lists=[...document.querySelectorAll('[data-show-list]')];
  let any=false;

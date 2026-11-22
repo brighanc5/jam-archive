@@ -8,9 +8,11 @@ Every page is static. Past dates are hidden in the browser by jam_experience.js
 (data-show-date / data-show-end), so the build stays deterministic.
 
 Ticket prices: a show page gets a price table only when
-upcoming_shows.comparable_prices() returns quotes from at least two approved
-providers. Until then the page links to the official announcement and nothing
-else. See docs/ticket-price-index.md.
+upcoming_shows.comparable_prices() returns fresh, matched quotes from at least
+two approved providers. Otherwise the page links to the official announcement
+and says plainly that there's no comparison yet. A table carries
+data-fresh-until; once that passes, jam_experience.js hides it and shows the
+empty state instead. See docs/ticket-price-index.md.
 """
 from collections import defaultdict
 from datetime import date, datetime
@@ -92,7 +94,7 @@ def price_table(show):
             'Prices move fast; the seller\'s page is the final word.')
     if any(q.get('affiliate') for q in rows):
         note += ' Some of these links pay The Jam Archive a commission. It never changes the order, which is cheapest first.'
-    return ('<section class="card ja-prices"><h2>Ticket prices</h2><div class="ja-table-wrap"><table><thead><tr><th>Seller</th><th>Type</th><th>Lowest all-in</th><th>Seats</th><th>Checked</th><th></th></tr></thead>'
+    return ('<section class="card ja-prices" data-fresh-until="' + E(upcoming_shows.fresh_until(rows)) + '"><h2>Ticket prices</h2><div class="ja-table-wrap"><table><thead><tr><th>Seller</th><th>Type</th><th>Lowest all-in</th><th>Seats</th><th>Checked</th><th></th></tr></thead>'
             '<tbody>' + body + '</tbody></table></div><p class="tiny">' + E(note) + '</p></section>')
 
 
@@ -110,10 +112,14 @@ for e in events:
     ticket_url = e.get('ticket_url') or e['source_url']
     who = ("the artist's or venue's own announcement" if e['source_type'].startswith('official')
            else "the band's own schedule, cross-checked with " + host(e['corroboration']) if e.get('corroboration') else "the band's own schedule")
+    prices = price_table(s)
+    # Empty state: shown whenever there's no comparison, and revealed by jam_experience.js if a table goes stale.
+    price_note = ('<p class="tiny ja-price-note"' + (' hidden' if prices else '') + '>No price comparison for this show yet. '
+                  'We only compare prices from approved seller feeds, with every mandatory fee included and the time each was checked.</p>')
     tickets = ('<div class="ja-ticket-box"><a class="button" href="' + E(ticket_url) + '" target="_blank" rel="noopener noreferrer">' +
                ('Get tickets' if e.get('ticket_url') else 'Tickets and info') + ' ↗</a>'
                '<p class="tiny">From ' + E(who) + ' on ' + E(host(e['source_url'])) + ', checked ' + E(day(e['verified_as_of'], '%B %-d, %Y')) +
-               '. Plans change, so confirm there before you buy.</p></div>')
+               '. Plans change, so confirm there before you buy.</p>' + price_note + '</div>')
     past = ('<div class="ja-past-note" hidden><p>This one\'s in the books. Setlists and tapes usually turn up within a few days; '
             'start with <a href="/artists/' + E(aid) + '/">' + E(artist) + '\'s page</a>.</p></div>')
     collab = ('<p class="ja-show-note">' + E(e['note']) + '</p>') if e.get('collaboration_confirmed') and e.get('note') else ''
@@ -135,7 +141,7 @@ for e in events:
                 '</ol><p class="empty ja-none-left" hidden>No other upcoming dates on our list.</p></section>')
     body = ('<article class="ja-show" data-show-date="' + E(e['date']) + '" data-show-end="' + E(e.get('date_end') or e['date']) + '">'
             '<p class="ja-show-when">' + E(when(e)) + '</p><h1>' + E(artist) + '</h1><p class="lead">' + E(place) + '</p>' + with_line + collab +
-            tickets + past + price_table(s) + '</article>' + tree + more +
+            tickets + past + prices + '</article>' + tree + more +
             '<p><a href="/upcoming/">All upcoming shows</a> · <a href="/artists/' + E(aid) + '/">About ' + E(artist) + '</a></p>')
     desc = artist + ' at ' + place + ' on ' + when(e) + '. Where to find tickets, and who\'s in the band.'
     out = SITE / 'upcoming' / e['id'] / 'index.html'
